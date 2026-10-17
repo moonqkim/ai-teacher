@@ -75,7 +75,7 @@ nav a:hover { background: var(--surface-2); color: var(--text); }
 .stars.s5 .star { width: 19px; height: 19px; }
 .one { margin: 0; }
 .teach { margin: 6px 0 0; display: grid; gap: 6px; }
-.teach div { display: grid; grid-template-columns: 64px 1fr; gap: 8px; font-size: 14.5px; }
+.teach div { display: grid; grid-template-columns: 84px 1fr; gap: 8px; font-size: 14.5px; }
 .teach dt { color: var(--muted); font-weight: 600; font-size: 13px; padding-top: 1px; }
 .teach dd { margin: 0; }
 .teach.fold { display: none; }

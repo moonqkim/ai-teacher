@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>2026-10-02 · 개발 · 최소한의 AI 뉴스</title>
+<title>2026-10-02 · 오늘 소식 · 최소한의 AI 뉴스</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="../static/style.css?v=73b1c7e9b5">
+<link rel="stylesheet" href="../static/style.css?v=9a70dea4a3">
 <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
 </head>
 <body>
@@ -23,7 +23,7 @@
   </div>
   
   <div class="wrap viewbar" role="tablist" aria-label="보기 선택">
-    <a role="tab" href="../daily/2026-10-02.html" class="on" aria-selected="true">개발</a><a role="tab" href="../biz/daily/2026-10-02.html" class="" aria-selected="false">비즈니스</a><a role="tab" href="../peers/index.html" class="" aria-selected="false">동종 서비스 AI 현황판</a>
+    <a role="tab" href="../daily/2026-10-02.html" class="on" aria-selected="true">오늘 소식</a><a role="tab" href="../peers/index.html" class="" aria-selected="false">동종 서비스 AI 현황판</a>
   </div>
   
 </header>
@@ -35,7 +35,7 @@
 <section class="hero">
   <div class="date-nav">
     <a href="../daily/2026-10-01.html">← 2026-10-01</a>
-    <span class="date">2026-10-02 · 개발</span>
+    <span class="date">2026-10-02 · 오늘 소식</span>
     <a href="../daily/2026-10-03.html">2026-10-03 →</a>
   </div>
   <h1>에이전트 인프라가 깔리고, 데이터 문은 닫힌다</h1>
@@ -45,7 +45,7 @@
     <ol><li>구글이 클라우드 CLI용 원격 MCP 서버를 프리뷰로 열었다</li><li>레딧이 RSS·공개 API 접근을 닫아 공짜 수집이 어려워진다</li><li>Restate가 200억 유치, 에이전트 실행 인프라에 돈이 몰린다</li></ol>
   </div>
   
-  <p class="sub">후보 285건 중 15건을 골랐어요 · 소스 95/107 정상
+  <p class="sub">후보 285건 중 18건을 골랐어요 · 소스 95/107 정상
     · 요약 Claude Code
     </p>
 
@@ -74,8 +74,8 @@
   <dl class="teach fold">
     
     <div><dt>비유</dt><dd>비서에게 회사 업무 시스템 사용 권한을 정식으로 내주는 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>예약 로그 BigQuery 집계나 배포 점검 같은 반복 운영을 에이전트에게 맡기는 실험을 작은 범위로 해 볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>프리뷰 단계이니 권한 범위를 최소로 끊고 운영 계정 대신 샌드박스 프로젝트에서 먼저 붙여 보자. MCP는 AI가 외부 도구에 연결되는 표준 규격이다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>예약 로그 BigQuery 집계나 배포 점검 같은 반복 운영을 에이전트에게 맡기는 실험을 작은 범위로 해 볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>프리뷰 단계이니 권한 범위를 최소로 끊고 운영 계정 대신 샌드박스 프로젝트에서 먼저 붙여 보자. MCP는 AI가 외부 도구에 연결되는 표준 규격이다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -100,8 +100,8 @@
   <dl class="teach fold">
     
     <div><dt>비유</dt><dd>누구나 드나들던 공원에 입장권 게이트가 생긴 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>여행·숙박 후기 수집이나 트렌드 모니터링에 외부 공개 피드를 쓰고 있다면 대체 경로와 계약형 데이터로 점검해 두자.</dd></div>
-    <div><dt>개발자</dt><dd>RSS·비공식 API에 의존하는 수집 파이프라인은 장애 알림과 폴백을 미리 걸어 두는 게 안전하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>여행·숙박 후기 수집이나 트렌드 모니터링에 외부 공개 피드를 쓰고 있다면 대체 경로와 계약형 데이터로 점검해 두자.</dd></div>
+    <div><dt>개발 포인트</dt><dd>RSS·비공식 API에 의존하는 수집 파이프라인은 장애 알림과 폴백을 미리 걸어 두는 게 안전하다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -126,8 +126,8 @@
   <dl class="teach fold">
     
     <div><dt>비유</dt><dd>긴 요리를 하다 불이 꺼져도 중간부터 다시 데우는 레시피 기록과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>예약·결제처럼 여러 단계가 얽힌 에이전트 작업에 워크플로 엔진(Temporal 등) 도입을 비교 검토해 볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>창업자가 Apache Flink(대용량 스트림 처리 오픈소스) 출신이고 Temporal과 경쟁 구도라는 점이 기술 선택 시 참고가 된다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>예약·결제처럼 여러 단계가 얽힌 에이전트 작업에 워크플로 엔진(Temporal 등) 도입을 비교 검토해 볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>창업자가 Apache Flink(대용량 스트림 처리 오픈소스) 출신이고 Temporal과 경쟁 구도라는 점이 기술 선택 시 참고가 된다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -152,8 +152,8 @@
   <dl class="teach fold">
     
     <div><dt>비유</dt><dd>시범 매장 한 곳에서 성공한 메뉴를 전국 지점에 깔는 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>사내 AI 도구를 일부 팀 파일럿에서 전사 확산으로 넘기는 기준을 정리해 볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>제목만 공개된 소식이라 적용 범위·규모는 원문 확인이 필요하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>사내 AI 도구를 일부 팀 파일럿에서 전사 확산으로 넘기는 기준을 정리해 볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>제목만 공개된 소식이라 적용 범위·규모는 원문 확인이 필요하다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -178,8 +178,8 @@
   <dl class="teach fold">
     
     <div><dt>비유</dt><dd>문장에서 형광펜으로 필요한 단어만 골라 긋는 도구와 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>리뷰·문의 텍스트에서 지역·날짜·인원 같은 항목을 뽑아내는 전처리에 저비용 대안으로 시험해 볼 만하다.</dd></div>
-    <div><dt>개발자</dt><dd>토큰 분류(문장 속 단어마다 꼬리표를 붙이는 작업) 계열이라 LLM보다 응답이 빠르고 비용 예측이 쉬운 편이다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>리뷰·문의 텍스트에서 지역·날짜·인원 같은 항목을 뽑아내는 전처리에 저비용 대안으로 시험해 볼 만하다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>토큰 분류(문장 속 단어마다 꼬리표를 붙이는 작업) 계열이라 LLM보다 응답이 빠르고 비용 예측이 쉬운 편이다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -204,8 +204,8 @@
   <dl class="teach fold">
     
     <div><dt>비유</dt><dd>요리사가 직접 주방을 설계하는 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>MD·CS 담당자가 직접 프롬프트와 업무 흐름을 만드는 파일럿을 한 팀에서 먼저 돌려볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>개발자 역할이 &#39;기능 구현&#39;에서 &#39;현업이 쓸 도구·가드레일 제공&#39;으로 옮겨간다는 신호다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>MD·CS 담당자가 직접 프롬프트와 업무 흐름을 만드는 파일럿을 한 팀에서 먼저 돌려볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>개발자 역할이 &#39;기능 구현&#39;에서 &#39;현업이 쓸 도구·가드레일 제공&#39;으로 옮겨간다는 신호다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -234,21 +234,21 @@
   <div class="chips js-chips">
     <button class="on" data-f="all">전체</button>
     
-    <button data-f="A2">A2 개발자 도구·API <small>2</small></button>
-    
-    <button data-f="A4">A4 오픈소스 <small>2</small></button>
-    
     <button data-f="B1">B1 기업 도입 사례 <small>2</small></button>
     
     <button data-f="B2">B2 산업별 적용 <small>2</small></button>
     
-    <button data-f="B3">B3 국내 사례 <small>2</small></button>
+    <button data-f="B3">B3 국내 사례 <small>3</small></button>
+    
+    <button data-f="C7">C7 내 업계 트랙 <small>5</small></button>
     
     <button data-f="B4">B4 실패·사고 사례 <small>1</small></button>
     
     <button data-f="C1">C1 투자·M&amp;A <small>1</small></button>
     
-    <button data-f="C7">C7 내 업계 트랙 <small>3</small></button>
+    <button data-f="A2">A2 개발자 도구·API <small>2</small></button>
+    
+    <button data-f="A4">A4 오픈소스 <small>2</small></button>
     
   </div>
 </section>
@@ -258,129 +258,7 @@
 
 
 <section class="group">
-  <h2 class="sec">A · 새로 나온 기술 <small>제목만 훑어보세요</small></h2>
-  
-  <div class="catblock" data-cat="A2">
-    <h4>A2 개발자 도구·API</h4>
-    <div class="grid">
-<article class="card" data-cat="A2" data-text="레딧, rss 중단·공개 api 접근 종료 레딧이 ai 봇 때문에 rss 지원을 끝내고 공개 데이터 접근을 조인다. reddit is killing rss feeds and ending public api access because of ai bots techcrunch ai">
-  <div class="meta">
-    
-    <span class="chip cat-A">A2 개발자 도구·API</span>
-    <span>TechCrunch AI</span>
-    <span>· 10-01 02:45</span>
-    
-  </div>
-  <h3><a href="https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/" target="_blank" rel="noopener">레딧, RSS 중단·공개 API 접근 종료</a></h3>
-  <p class="one">레딧이 AI 봇 때문에 RSS 지원을 끝내고 공개 데이터 접근을 조인다.</p>
-  
-  
-  
-  
-  <dl class="teach fold">
-    <div><dt>왜 중요?</dt><dd>공개 웹 데이터를 공짜로 긁어 쓰던 시대가 닫히고 있다.</dd></div>
-    <div><dt>비유</dt><dd>누구나 드나들던 공원에 입장권 게이트가 생긴 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>여행·숙박 후기 수집이나 트렌드 모니터링에 외부 공개 피드를 쓰고 있다면 대체 경로와 계약형 데이터로 점검해 두자.</dd></div>
-    <div><dt>개발자</dt><dd>RSS·비공식 API에 의존하는 수집 파이프라인은 장애 알림과 폴백을 미리 걸어 두는 게 안전하다.</dd></div>
-  </dl>
-  <button class="more" type="button">더 풀어서 보기</button>
-  
-  <p class="orig"><a href="https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/" target="_blank" rel="noopener">원제: Reddit is killing RSS feeds and ending public API access because of AI bots ↗</a></p>
-  
-</article>
-
-<article class="card" data-cat="A2" data-text="구글 클라우드 cli용 원격 mcp 서버 프리뷰 ai 에이전트가 gcloud·bq 명령을 직접 쓸 수 있는 원격 mcp 서버가 프리뷰로 나왔다. empower your agents with the google cloud cli remote mcp server google cloud ai blog">
-  <div class="meta">
-    
-    <span class="chip cat-A">A2 개발자 도구·API</span>
-    <span>Google Cloud AI Blog</span>
-    <span>· 10-01 01:00</span>
-    
-  </div>
-  <h3><a href="https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-cli-remote-mcp-server-in-preview/" target="_blank" rel="noopener">구글 클라우드 CLI용 원격 MCP 서버 프리뷰</a></h3>
-  <p class="one">AI 에이전트가 gcloud·bq 명령을 직접 쓸 수 있는 원격 MCP 서버가 프리뷰로 나왔다.</p>
-  
-  
-  
-  
-  <dl class="teach fold">
-    <div><dt>왜 중요?</dt><dd>에이전트가 인프라 운영과 데이터 작업을 표준 방식으로 다룰 길이 열린다.</dd></div>
-    <div><dt>비유</dt><dd>비서에게 회사 업무 시스템 사용 권한을 정식으로 내주는 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>예약 로그 BigQuery 집계나 배포 점검 같은 반복 운영을 에이전트에게 맡기는 실험을 작은 범위로 해 볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>프리뷰 단계이니 권한 범위를 최소로 끊고 운영 계정 대신 샌드박스 프로젝트에서 먼저 붙여 보자. MCP는 AI가 외부 도구에 연결되는 표준 규격이다.</dd></div>
-  </dl>
-  <button class="more" type="button">더 풀어서 보기</button>
-  
-  <p class="orig"><a href="https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-cli-remote-mcp-server-in-preview/" target="_blank" rel="noopener">원제: Empower your agents with the Google Cloud CLI remote MCP server ↗</a></p>
-  
-</article>
-</div>
-  </div>
-  
-  <div class="catblock" data-cat="A4">
-    <h4>A4 오픈소스</h4>
-    <div class="grid">
-<article class="card" data-cat="A4" data-text="gliner2.5-decide, 허깅페이스 트렌딩 토큰 분류용 모델 gliner2.5-decide가 다운로드 3.4만 건으로 인기다. fastino/gliner2.5-decide (hf 트렌딩) hf 트렌딩 모델">
-  <div class="meta">
-    
-    <span class="chip cat-A">A4 오픈소스</span>
-    <span>HF 트렌딩 모델</span>
-    <span>· 10-01 04:08</span>
-    
-  </div>
-  <h3><a href="https://huggingface.co/fastino/GLiNER2.5-Decide" target="_blank" rel="noopener">GLiNER2.5-Decide, 허깅페이스 트렌딩</a></h3>
-  <p class="one">토큰 분류용 모델 GLiNER2.5-Decide가 다운로드 3.4만 건으로 인기다.</p>
-  
-  
-  
-  
-  <dl class="teach fold">
-    <div><dt>왜 중요?</dt><dd>가벼운 정보 추출 모델이 대형 모델 호출을 줄여 준다.</dd></div>
-    <div><dt>비유</dt><dd>문장에서 형광펜으로 필요한 단어만 골라 긋는 도구와 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>리뷰·문의 텍스트에서 지역·날짜·인원 같은 항목을 뽑아내는 전처리에 저비용 대안으로 시험해 볼 만하다.</dd></div>
-    <div><dt>개발자</dt><dd>토큰 분류(문장 속 단어마다 꼬리표를 붙이는 작업) 계열이라 LLM보다 응답이 빠르고 비용 예측이 쉬운 편이다.</dd></div>
-  </dl>
-  <button class="more" type="button">더 풀어서 보기</button>
-  
-  <p class="orig"><a href="https://huggingface.co/fastino/GLiNER2.5-Decide" target="_blank" rel="noopener">원제: fastino/GLiNER2.5-Decide (HF 트렌딩) ↗</a></p>
-  
-</article>
-
-<article class="card" data-cat="A4" data-text="ai 티 빼주는 일본어 교정 스킬, 별 541 ai가 쓴 문장의 어색함을 자연스러운 일본어로 고치는 에이전트 스킬이 떴다. nanaism/yomiyasu ★541 github 신규 llm 레포">
-  <div class="meta">
-    
-    <span class="chip cat-A">A4 오픈소스</span>
-    <span>GitHub 신규 LLM 레포</span>
-    <span>· 09-30 20:49</span>
-    
-  </div>
-  <h3><a href="https://github.com/nanaism/yomiyasu" target="_blank" rel="noopener">AI 티 빼주는 일본어 교정 스킬, 별 541</a></h3>
-  <p class="one">AI가 쓴 문장의 어색함을 자연스러운 일본어로 고치는 에이전트 스킬이 떴다.</p>
-  
-  
-  
-  
-  <dl class="teach fold">
-    <div><dt>왜 중요?</dt><dd>생성 문구를 그대로 쓰면 어색하다는 문제를 후처리로 푼다.</dd></div>
-    <div><dt>비유</dt><dd>번역기 초안을 원어민이 한 번 다듬어 주는 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>일본 고객 대상 숙소 소개나 상품 설명을 AI로 뽑을 때 마지막 다듬기 단계로 참고할 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>생성 → 교정 2단계 파이프라인 아이디어 자체는 한국어 카피 품질 관리에도 그대로 옮길 수 있다.</dd></div>
-  </dl>
-  <button class="more" type="button">더 풀어서 보기</button>
-  
-  <p class="orig"><a href="https://github.com/nanaism/yomiyasu" target="_blank" rel="noopener">원제: nanaism/yomiyasu ★541 ↗</a></p>
-  
-</article>
-</div>
-  </div>
-  
-</section>
-
-
-
-
-<section class="group">
-  <h2 class="sec">B · 산업 적용사례 <small>제목만 훑어보세요</small></h2>
+  <h2 class="sec">AI로 효과 본 사례 — 모든 산업 <small>제목만 훑어보세요</small></h2>
   
   <div class="catblock" data-cat="B1">
     <h4>B1 기업 도입 사례</h4>
@@ -402,8 +280,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>보수적인 금융권도 AI 전사 확산 단계로 넘어가고 있다.</dd></div>
     <div><dt>비유</dt><dd>시범 매장 한 곳에서 성공한 메뉴를 전국 지점에 깔는 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>사내 AI 도구를 일부 팀 파일럿에서 전사 확산으로 넘기는 기준을 정리해 볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>제목만 공개된 소식이라 적용 범위·규모는 원문 확인이 필요하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>사내 AI 도구를 일부 팀 파일럿에서 전사 확산으로 넘기는 기준을 정리해 볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>제목만 공개된 소식이라 적용 범위·규모는 원문 확인이 필요하다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -428,8 +306,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>규제 산업에서도 &#39;승인 가능한 운영 모델&#39;이 먼저면 전사 도입이 가능하다.</dd></div>
     <div><dt>비유</dt><dd>차를 사기 전에 주차장과 보험을 먼저 준비해 둔 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>AI 도구 도입 전에 권한·로그·데이터 범위 같은 운영 규칙 문서를 먼저 만들어 볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>담당자 말처럼 기능 검토보다 통제·보안 설계가 선행 과제라는 점이 실무 순서 힌트다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>AI 도구 도입 전에 권한·로그·데이터 범위 같은 운영 규칙 문서를 먼저 만들어 볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>담당자 말처럼 기능 검토보다 통제·보안 설계가 선행 과제라는 점이 실무 순서 힌트다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -459,8 +337,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>대중교통 자율주행이 정책·제도 정버 지원 단계로 들어섰다.</dd></div>
     <div><dt>비유</dt><dd>노선버스에 정해진 길만은 사람 없이 달리는 운전석을 두는 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>여행·레저 상품에서 공항·관광지 셔틀 등 자율주행 교통 연계 시나리오를 미리 검토해 볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>아직 상용화 &#39;기반 마련&#39;을 위한 협약 단계라 서비스 설계는 일정 확정 후가 안전하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>여행·레저 상품에서 공항·관광지 셔틀 등 자율주행 교통 연계 시나리오를 미리 검토해 볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>아직 상용화 &#39;기반 마련&#39;을 위한 협약 단계라 서비스 설계는 일정 확정 후가 안전하다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -485,8 +363,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>휴게소가 충전·도로 안전관리 신기술의 실험장이 된다.</dd></div>
     <div><dt>비유</dt><dd>고속도로 휴게소를 신제품 테스트 매장으로 쓰는 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>캠핑·로드트립 상품에 전기차 충전·휴게소 정보 연계 기능을 넣을 여지를 살펴볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>피지컬 AI(현실 세계에서 움직이는 AI)는 여기에서 연구·실증 단계이다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>캠핑·로드트립 상품에 전기차 충전·휴게소 정보 연계 기능을 넣을 여지를 살펴볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>피지컬 AI(현실 세계에서 움직이는 AI)는 여기에서 연구·실증 단계이다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -516,8 +394,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>로봇을 하나씩 자동화하던 방식에서 전체를 한 AI로 묶는 전환이다.</dd></div>
     <div><dt>비유</dt><dd>악기별 연습만 시키던 데서 지휘자 한 명을 세우는 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>물류·창고 자동화 파트너를 볼 때 개별 설비 제어냐 통합 제어냐를 구분해 평가해 볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>협동로봇·AMR(자율이동로봇)을 하나의 AI 체계로 연결하는 구조로, 오케스트레이션 설계 사례로 참고할 만하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>물류·창고 자동화 파트너를 볼 때 개별 설비 제어냐 통합 제어냐를 구분해 평가해 볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>협동로봇·AMR(자율이동로봇)을 하나의 AI 체계로 연결하는 구조로, 오케스트레이션 설계 사례로 참고할 만하다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -542,82 +420,38 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>SI 업계가 외부 기술 활용에서 자체 플랫폼 확보로 옮겨가고 있다.</dd></div>
     <div><dt>비유</dt><dd>완제품을 사 오던 가게가 직접 주방을 차리는 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>외주 파트너 선정 시 자체 AI 플랫폼·에이전트 보유 여부를 비교 항목에 넣어 볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>포스코DX는 R&amp;D비가 전년 동기 대비 62.1% 늘어 79억68발리제원, 매출 대비 비중은 0.86%→1.68%로 더 올랐다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>외주 파트너 선정 시 자체 AI 플랫폼·에이전트 보유 여부를 비교 항목에 넣어 볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>포스코DX는 R&amp;D비가 전년 동기 대비 62.1% 늘어 79억68발리제원, 매출 대비 비중은 0.86%→1.68%로 더 올랐다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
   <p class="orig"><a href="https://zdnet.co.kr/view/?no=20260923171505" target="_blank" rel="noopener">원제: [유미&#39;s 픽] 대기업 SI, AI 기술 내재화 가속…올 상반기 R&amp;D 투자 가장 많이 한 기업은 ↗</a></p>
   
 </article>
-</div>
-  </div>
-  
-  <div class="catblock" data-cat="B4">
-    <h4>B4 실패·사고 사례</h4>
-    <div class="grid">
-<article class="card" data-cat="B4" data-text="메타, &#39;muse가 메시지 읽었다&#39; 주장 반박 메타는 muse 에이전트가 허가 없이 메시지에 접근할 수 없다고 반박했다. meta disputes claim that muse read a user’s private messages without permission techcrunch ai">
+
+<article class="card" data-cat="B3" data-text="lg유플러스, ai 고객센터 2030년 2000억 목표 자사 고객센터에 ai를 먼저 적용·검증하며 기업 시장 확대를 추진한다. lgu+ &#34;2030년 ai 고객센터 연매출 2000억 목표&#34; 지디넷코리아">
   <div class="meta">
-    
-    <span class="chip cat-B">B4 실패·사고 사례</span>
-    <span>TechCrunch AI</span>
-    <span>· 10-01 01:24</span>
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B3 국내 사례</span>
+    <span>지디넷코리아</span>
+    <span>· 09-30 16:13</span>
     
   </div>
-  <h3><a href="https://techcrunch.com/2026/09/30/meta-disputes-claim-that-muse-read-a-users-private-messages-without-permission/" target="_blank" rel="noopener">메타, &#39;Muse가 메시지 읽었다&#39; 주장 반박</a></h3>
-  <p class="one">메타는 Muse 에이전트가 허가 없이 메시지에 접근할 수 없다고 반박했다.</p>
+  <h3><a href="https://zdnet.co.kr/view/?no=20260930142148" target="_blank" rel="noopener">LG유플러스, AI 고객센터 2030년 2000억 목표</a></h3>
+  <p class="one">자사 고객센터에 AI를 먼저 적용·검증하며 기업 시장 확대를 추진한다.</p>
   
   
   
   
   <dl class="teach fold">
-    <div><dt>왜 중요?</dt><dd>AI 에이전트의 권한 경계가 사용자 신뢰의 핵심 쟁점이 됐다.</dd></div>
-    <div><dt>비유</dt><dd>열쇠를 안 줬는는다는 집에 도우미가 들어갔다는 다툼과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>우리 서비스에 에이전트를 붙이려면 권한 요청·접근 로그를 사용자가 볼 수 있게 설계해 볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>기자 주장과 메타 해명이 엇갈리는 단계로, OS 권한 설정과 앱 실제 동작의 불일치를 테스트 항목으로 둘 만하다.</dd></div>
+    <div><dt>왜 중요?</dt><dd>AI 상담 솔루션 공급 경쟁이 커져 도입 선택지와 가격 협상력이 늘어난다.</dd></div>
+    <div><dt>비유</dt><dd>직접 운영하는 식당에서 먼저 메뉴를 시험해 보고 프랜차이즈로 파는 것과 비슷하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>성수기 예약 문의 폭주 대비용 AI 상담 도입 검토 시 비교 견적 대상으로 올려둘 수 있다.</dd></div>
+    
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
-  <p class="orig"><a href="https://techcrunch.com/2026/09/30/meta-disputes-claim-that-muse-read-a-users-private-messages-without-permission/" target="_blank" rel="noopener">원제: Meta disputes claim that Muse read a user’s private messages without permission ↗</a></p>
-  
-</article>
-</div>
-  </div>
-  
-</section>
-
-
-
-
-<section class="group">
-  <h2 class="sec">C · 더 보기 <small>제목만 훑어보세요</small></h2>
-  
-  <div class="catblock" data-cat="C1">
-    <h4>C1 투자·M&amp;A</h4>
-    <div class="grid">
-<article class="card" data-cat="C1" data-text="restate, 200억 투자 유치…ai 에이전트용 워크플로 내구성 있는 워크플로 인프라 스타트업 restate가 2000만 달러를 유치했다. restate lands $20m as the need for durable infrastructure increases with ai agents techcrunch ai">
-  <div class="meta">
-    
-    <span class="chip cat-C">C1 투자·M&amp;A</span>
-    <span>TechCrunch AI</span>
-    <span>· 09-30 23:27</span>
-    
-  </div>
-  <h3><a href="https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/" target="_blank" rel="noopener">Restate, 200억 투자 유치…AI 에이전트용 워크플로</a></h3>
-  <p class="one">내구성 있는 워크플로 인프라 스타트업 Restate가 2000만 달러를 유치했다.</p>
-  
-  
-  
-  
-  <dl class="teach fold">
-    <div><dt>왜 중요?</dt><dd>AI 에이전트가 늘며 &#39;중간에 끊기지 않는 실행&#39; 인프라 수요가 커졌다.</dd></div>
-    <div><dt>비유</dt><dd>긴 요리를 하다 불이 꺼져도 중간부터 다시 데우는 레시피 기록과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>예약·결제처럼 여러 단계가 얽힌 에이전트 작업에 워크플로 엔진(Temporal 등) 도입을 비교 검토해 볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>창업자가 Apache Flink(대용량 스트림 처리 오픈소스) 출신이고 Temporal과 경쟁 구도라는 점이 기술 선택 시 참고가 된다.</dd></div>
-  </dl>
-  <button class="more" type="button">더 풀어서 보기</button>
-  
-  <p class="orig"><a href="https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/" target="_blank" rel="noopener">원제: Restate lands $20M as the need for durable infrastructure increases with AI agents ↗</a></p>
+  <p class="orig"><a href="https://zdnet.co.kr/view/?no=20260930142148" target="_blank" rel="noopener">원제: LGU+ &#34;2030년 AI 고객센터 연매출 2000억 목표&#34; ↗</a></p>
   
 </article>
 </div>
@@ -643,8 +477,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>오프라인 공간 데이터를 AI 에이전트로 묶는 리테일 사례다.</dd></div>
     <div><dt>비유</dt><dd>감으로 하던 장사에 전담 데이터 분석가가 붙은 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>캠핑장·숙소 등 오프라인 거점의 방문 동선·혼잡도 분석을 에이전트로 자동화하는 기획을 그려볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>LLM(대규모 언어모델)·이미지 생성·VLM(이미지와 글을 함께 이해하는 모델)을 기존 제품에 &#39;접목&#39;한 구조라, 모델 교체보다 기존 파이프라인에 얹는 방식이 현실적임을 보여준다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>캠핑장·숙소 등 오프라인 거점의 방문 동선·혼잡도 분석을 에이전트로 자동화하는 기획을 그려볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>LLM(대규모 언어모델)·이미지 생성·VLM(이미지와 글을 함께 이해하는 모델)을 기존 제품에 &#39;접목&#39;한 구조라, 모델 교체보다 기존 파이프라인에 얹는 방식이 현실적임을 보여준다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -669,8 +503,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>에이전트 성패가 기술보다 추진 주체·업무 이해에 달렸음을 보여준다.</dd></div>
     <div><dt>비유</dt><dd>요리사가 직접 주방을 설계하는 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>MD·CS 담당자가 직접 프롬프트와 업무 흐름을 만드는 파일럿을 한 팀에서 먼저 돌려볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>개발자 역할이 &#39;기능 구현&#39;에서 &#39;현업이 쓸 도구·가드레일 제공&#39;으로 옮겨간다는 신호다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>MD·CS 담당자가 직접 프롬프트와 업무 흐름을 만드는 파일럿을 한 팀에서 먼저 돌려볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>개발자 역할이 &#39;기능 구현&#39;에서 &#39;현업이 쓸 도구·가드레일 제공&#39;으로 옮겨간다는 신호다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -695,12 +529,256 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>요청하지 않은 추천은 오히려 사용자 신뢰를 깎는다는 교훈이다.</dd></div>
     <div><dt>비유</dt><dd>묻지도 않았는데 옆에서 계속 물건을 권하는 점원과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>여행·상품 추천을 넣을 때 기본값을 &#39;끄기&#39;로 두고 사용자가 켜게 하는 옵트인 설계를 검토할 만하다.</dd></div>
-    <div><dt>개발자</dt><dd>추천 노출 위치·빈도·끄기 경로를 A/B로 나눠 불만 지표(이탈·차단율)를 함께 보는 게 안전하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>여행·상품 추천을 넣을 때 기본값을 &#39;끄기&#39;로 두고 사용자가 켜게 하는 옵트인 설계를 검토할 만하다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>추천 노출 위치·빈도·끄기 경로를 A/B로 나눠 불만 지표(이탈·차단율)를 함께 보는 게 안전하다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
   <p class="orig"><a href="https://techcrunch.com/2026/09/30/instincts-new-product-recommendations-are-giving-some-users-the-ick/" target="_blank" rel="noopener">원제: Instinct’s new product recommendations are giving some users the ick ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C7" data-text="놀유니버스, ai 과제 97개로 월 3600시간 절감 현업이 반복 업무에 ai를 적용해 월 약 3600시간을 아꼈다고 자체 집계했다. [디지털인사이트2026] 놀유니버스 &#34;현업이 ai로 업무 개선…ax 과제 97개 적용&#34; 디지털투데이">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>디지털투데이</span>
+    <span>· 09-30 18:00</span>
+    
+  </div>
+  <h3><a href="https://www.digitaltoday.co.kr/news/articleView.html?idxno=703643" target="_blank" rel="noopener">놀유니버스, AI 과제 97개로 월 3600시간 절감</a></h3>
+  <p class="one">현업이 반복 업무에 AI를 적용해 월 약 3600시간을 아꼈다고 자체 집계했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>여행·공연 예약 업계 경쟁사의 내부 효율 개선 수치라 비교 기준이 된다.</dd></div>
+    <div><dt>비유</dt><dd>공장 라인 곳곳의 작은 낭비를 100군데 고쳐 전체 속도를 올린 것과 비슷하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>우리 예약 확인·정산·문의 응대 중 반복 작업을 목록화해 절감 시간으로 성과를 측정해 볼 수 있다.</dd></div>
+    
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.digitaltoday.co.kr/news/articleView.html?idxno=703643" target="_blank" rel="noopener">원제: [디지털인사이트2026] 놀유니버스 &#34;현업이 AI로 업무 개선…AX 과제 97개 적용&#34; ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C7" data-text="딥핑소스, 태국 파트너와 공간 ai 확대 태국 원더ai와 협력해 6개 매장 실증 후 동남아 확대에 나선다. 딥핑소스, 태국 원더ai와 공간 ai 사업 본격화 지디넷코리아">
+  <div class="meta">
+    
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>지디넷코리아</span>
+    <span>· 10-01 16:12</span>
+    
+  </div>
+  <h3><a href="https://zdnet.co.kr/view/?no=20261001161234" target="_blank" rel="noopener">딥핑소스, 태국 파트너와 공간 AI 확대</a></h3>
+  <p class="one">태국 원더AI와 협력해 6개 매장 실증 후 동남아 확대에 나선다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>해외 진출은 기술보다 현지 파트너 네트워크가 관건임을 보여준다.</dd></div>
+    <div><dt>비유</dt><dd>낯선 동네에서 장사할 때 그 동네 부동산과 손잡는 것과 비슷하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>해외·지방 권역 확장 때 직접 영업보다 현지 제휴사 중심 모델을 검토할 근거로 쓸 수 있다.</dd></div>
+    
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://zdnet.co.kr/view/?no=20261001161234" target="_blank" rel="noopener">원제: 딥핑소스, 태국 원더AI와 공간 AI 사업 본격화 ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+<section class="group">
+  <h2 class="sec">시장 움직임 — 사고·규제·투자 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="B4">
+    <h4>B4 실패·사고 사례</h4>
+    <div class="grid">
+<article class="card" data-cat="B4" data-text="메타, &#39;muse가 메시지 읽었다&#39; 주장 반박 메타는 muse 에이전트가 허가 없이 메시지에 접근할 수 없다고 반박했다. meta disputes claim that muse read a user’s private messages without permission techcrunch ai">
+  <div class="meta">
+    
+    <span class="chip cat-B">B4 실패·사고 사례</span>
+    <span>TechCrunch AI</span>
+    <span>· 10-01 01:24</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/30/meta-disputes-claim-that-muse-read-a-users-private-messages-without-permission/" target="_blank" rel="noopener">메타, &#39;Muse가 메시지 읽었다&#39; 주장 반박</a></h3>
+  <p class="one">메타는 Muse 에이전트가 허가 없이 메시지에 접근할 수 없다고 반박했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 에이전트의 권한 경계가 사용자 신뢰의 핵심 쟁점이 됐다.</dd></div>
+    <div><dt>비유</dt><dd>열쇠를 안 줬는는다는 집에 도우미가 들어갔다는 다툼과 비슷하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>우리 서비스에 에이전트를 붙이려면 권한 요청·접근 로그를 사용자가 볼 수 있게 설계해 볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>기자 주장과 메타 해명이 엇갈리는 단계로, OS 권한 설정과 앱 실제 동작의 불일치를 테스트 항목으로 둘 만하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/30/meta-disputes-claim-that-muse-read-a-users-private-messages-without-permission/" target="_blank" rel="noopener">원제: Meta disputes claim that Muse read a user’s private messages without permission ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="C1">
+    <h4>C1 투자·M&amp;A</h4>
+    <div class="grid">
+<article class="card" data-cat="C1" data-text="restate, 200억 투자 유치…ai 에이전트용 워크플로 내구성 있는 워크플로 인프라 스타트업 restate가 2000만 달러를 유치했다. restate lands $20m as the need for durable infrastructure increases with ai agents techcrunch ai">
+  <div class="meta">
+    
+    <span class="chip cat-C">C1 투자·M&amp;A</span>
+    <span>TechCrunch AI</span>
+    <span>· 09-30 23:27</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/" target="_blank" rel="noopener">Restate, 200억 투자 유치…AI 에이전트용 워크플로</a></h3>
+  <p class="one">내구성 있는 워크플로 인프라 스타트업 Restate가 2000만 달러를 유치했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 에이전트가 늘며 &#39;중간에 끊기지 않는 실행&#39; 인프라 수요가 커졌다.</dd></div>
+    <div><dt>비유</dt><dd>긴 요리를 하다 불이 꺼져도 중간부터 다시 데우는 레시피 기록과 비슷하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>예약·결제처럼 여러 단계가 얽힌 에이전트 작업에 워크플로 엔진(Temporal 등) 도입을 비교 검토해 볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>창업자가 Apache Flink(대용량 스트림 처리 오픈소스) 출신이고 Temporal과 경쟁 구도라는 점이 기술 선택 시 참고가 된다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/" target="_blank" rel="noopener">원제: Restate lands $20M as the need for durable infrastructure increases with AI agents ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+<section class="group">
+  <h2 class="sec">기술·제품 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="A2">
+    <h4>A2 개발자 도구·API</h4>
+    <div class="grid">
+<article class="card" data-cat="A2" data-text="레딧, rss 중단·공개 api 접근 종료 레딧이 ai 봇 때문에 rss 지원을 끝내고 공개 데이터 접근을 조인다. reddit is killing rss feeds and ending public api access because of ai bots techcrunch ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>TechCrunch AI</span>
+    <span>· 10-01 02:45</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/" target="_blank" rel="noopener">레딧, RSS 중단·공개 API 접근 종료</a></h3>
+  <p class="one">레딧이 AI 봇 때문에 RSS 지원을 끝내고 공개 데이터 접근을 조인다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>공개 웹 데이터를 공짜로 긁어 쓰던 시대가 닫히고 있다.</dd></div>
+    <div><dt>비유</dt><dd>누구나 드나들던 공원에 입장권 게이트가 생긴 것과 비슷하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>여행·숙박 후기 수집이나 트렌드 모니터링에 외부 공개 피드를 쓰고 있다면 대체 경로와 계약형 데이터로 점검해 두자.</dd></div>
+    <div><dt>개발 포인트</dt><dd>RSS·비공식 API에 의존하는 수집 파이프라인은 장애 알림과 폴백을 미리 걸어 두는 게 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/" target="_blank" rel="noopener">원제: Reddit is killing RSS feeds and ending public API access because of AI bots ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="A2" data-text="구글 클라우드 cli용 원격 mcp 서버 프리뷰 ai 에이전트가 gcloud·bq 명령을 직접 쓸 수 있는 원격 mcp 서버가 프리뷰로 나왔다. empower your agents with the google cloud cli remote mcp server google cloud ai blog">
+  <div class="meta">
+    
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>Google Cloud AI Blog</span>
+    <span>· 10-01 01:00</span>
+    
+  </div>
+  <h3><a href="https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-cli-remote-mcp-server-in-preview/" target="_blank" rel="noopener">구글 클라우드 CLI용 원격 MCP 서버 프리뷰</a></h3>
+  <p class="one">AI 에이전트가 gcloud·bq 명령을 직접 쓸 수 있는 원격 MCP 서버가 프리뷰로 나왔다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>에이전트가 인프라 운영과 데이터 작업을 표준 방식으로 다룰 길이 열린다.</dd></div>
+    <div><dt>비유</dt><dd>비서에게 회사 업무 시스템 사용 권한을 정식으로 내주는 것과 비슷하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>예약 로그 BigQuery 집계나 배포 점검 같은 반복 운영을 에이전트에게 맡기는 실험을 작은 범위로 해 볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>프리뷰 단계이니 권한 범위를 최소로 끊고 운영 계정 대신 샌드박스 프로젝트에서 먼저 붙여 보자. MCP는 AI가 외부 도구에 연결되는 표준 규격이다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-cli-remote-mcp-server-in-preview/" target="_blank" rel="noopener">원제: Empower your agents with the Google Cloud CLI remote MCP server ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="A4">
+    <h4>A4 오픈소스</h4>
+    <div class="grid">
+<article class="card" data-cat="A4" data-text="gliner2.5-decide, 허깅페이스 트렌딩 토큰 분류용 모델 gliner2.5-decide가 다운로드 3.4만 건으로 인기다. fastino/gliner2.5-decide (hf 트렌딩) hf 트렌딩 모델">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>HF 트렌딩 모델</span>
+    <span>· 10-01 04:08</span>
+    
+  </div>
+  <h3><a href="https://huggingface.co/fastino/GLiNER2.5-Decide" target="_blank" rel="noopener">GLiNER2.5-Decide, 허깅페이스 트렌딩</a></h3>
+  <p class="one">토큰 분류용 모델 GLiNER2.5-Decide가 다운로드 3.4만 건으로 인기다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>가벼운 정보 추출 모델이 대형 모델 호출을 줄여 준다.</dd></div>
+    <div><dt>비유</dt><dd>문장에서 형광펜으로 필요한 단어만 골라 긋는 도구와 비슷하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>리뷰·문의 텍스트에서 지역·날짜·인원 같은 항목을 뽑아내는 전처리에 저비용 대안으로 시험해 볼 만하다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>토큰 분류(문장 속 단어마다 꼬리표를 붙이는 작업) 계열이라 LLM보다 응답이 빠르고 비용 예측이 쉬운 편이다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://huggingface.co/fastino/GLiNER2.5-Decide" target="_blank" rel="noopener">원제: fastino/GLiNER2.5-Decide (HF 트렌딩) ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="A4" data-text="ai 티 빼주는 일본어 교정 스킬, 별 541 ai가 쓴 문장의 어색함을 자연스러운 일본어로 고치는 에이전트 스킬이 떴다. nanaism/yomiyasu ★541 github 신규 llm 레포">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>GitHub 신규 LLM 레포</span>
+    <span>· 09-30 20:49</span>
+    
+  </div>
+  <h3><a href="https://github.com/nanaism/yomiyasu" target="_blank" rel="noopener">AI 티 빼주는 일본어 교정 스킬, 별 541</a></h3>
+  <p class="one">AI가 쓴 문장의 어색함을 자연스러운 일본어로 고치는 에이전트 스킬이 떴다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>생성 문구를 그대로 쓰면 어색하다는 문제를 후처리로 푼다.</dd></div>
+    <div><dt>비유</dt><dd>번역기 초안을 원어민이 한 번 다듬어 주는 것과 비슷하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>일본 고객 대상 숙소 소개나 상품 설명을 AI로 뽑을 때 마지막 다듬기 단계로 참고할 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>생성 → 교정 2단계 파이프라인 아이디어 자체는 한국어 카피 품질 관리에도 그대로 옮길 수 있다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://github.com/nanaism/yomiyasu" target="_blank" rel="noopener">원제: nanaism/yomiyasu ★541 ↗</a></p>
   
 </article>
 </div>
@@ -736,8 +814,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>특정 브랜드에 묶이지 않는 자율화 레이어가 돈을 끌어모은다.</dd></div>
     <div><dt>비유</dt><dd>차종 상관없이 끼워 쓰는 자율주행 키트와 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>현장·물류처럼 사람 구하기 어려운 운영 영역부터 자동화 후보를 뽑아 볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>브랜드 무관(brand-agnostic) 전략은 우리 제품의 외부 연동 설계에도 참고할 패턴이다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>현장·물류처럼 사람 구하기 어려운 운영 영역부터 자동화 후보를 뽑아 볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>브랜드 무관(brand-agnostic) 전략은 우리 제품의 외부 연동 설계에도 참고할 패턴이다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -762,8 +840,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>로봇의 가치는 본체가 아니라 운영·데이터 연결에서 나온다.</dd></div>
     <div><dt>비유</dt><dd>CCTV를 늘리는 대신 관제실을 제대로 만드는 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>숙소·캠핑장 시설 점검 기록을 수리 티켓으로 자동 전환하는 흐름을 그려 볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>데이터 수집→이상 감지→워크오더 생성까지 파이프라인으로 묶는 구조가 핵심이다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>숙소·캠핑장 시설 점검 기록을 수리 티켓으로 자동 전환하는 흐름을 그려 볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>데이터 수집→이상 감지→워크오더 생성까지 파이프라인으로 묶는 구조가 핵심이다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -793,8 +871,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>단일 답변보다 근거 묶음이 신뢰할 수 있는 결과를 만든다.</dd></div>
     <div><dt>비유</dt><dd>검색 한 줄 답이 아니라 여러 후기를 모아 비교하는 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>상품 추천·고객 문의 답변에 근거 출처를 함께 보여 주는 방식을 시험해 볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>RAG(검색 기반 생성)를 단일 검색에서 다중 근거 수집·대조 단계로 확장하는 설계가 필요하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>상품 추천·고객 문의 답변에 근거 출처를 함께 보여 주는 방식을 시험해 볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>RAG(검색 기반 생성)를 단일 검색에서 다중 근거 수집·대조 단계로 확장하는 설계가 필요하다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -819,8 +897,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>AI 사용 표기 규칙이 없으면 결과물 신뢰가 흔들린다.</dd></div>
     <div><dt>비유</dt><dd>보정 허용 범위를 안 정해 둔 사진 공모전과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>상품·숙소 이미지에 AI 생성·보정 여부를 어디까지 표기할지 내부 기준을 먼저 정해 두자.</dd></div>
-    <div><dt>개발자</dt><dd>생성 이미지에 메타데이터로 AI 사용 여부를 남기는 파이프라인을 미리 깔아 두면 좋다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>상품·숙소 이미지에 AI 생성·보정 여부를 어디까지 표기할지 내부 기준을 먼저 정해 두자.</dd></div>
+    <div><dt>개발 포인트</dt><dd>생성 이미지에 메타데이터로 AI 사용 여부를 남기는 파이프라인을 미리 깔아 두면 좋다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -850,8 +928,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>엔비디아 생태계 의존을 줄이려는 대안 스택이 실제로 쌓인다.</dd></div>
     <div><dt>비유</dt><dd>특정 브랜드 공구만 쓰던 작업장에 호환 공구 세트가 들어온 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>추론 비용을 줄일 대안 하드웨어 선택지가 생기는지 중장기로 지켜볼 만하다.</dd></div>
-    <div><dt>개발자</dt><dd>연산·통신 라이브러리가 공개된다는 건 커널 최적화를 외부에서도 손볼 수 있다는 뜻이다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>추론 비용을 줄일 대안 하드웨어 선택지가 생기는지 중장기로 지켜볼 만하다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>연산·통신 라이브러리가 공개된다는 건 커널 최적화를 외부에서도 손볼 수 있다는 뜻이다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -876,8 +954,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>AI 가속기 자체 설계 수요가 설계 전문업체로 번진다.</dd></div>
     <div><dt>비유</dt><dd>기성복 대신 맞춤 양복점에 주문이 몰리는 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>직접 영향은 적지만, 2028년 양산 예정이라 클라우드 가격 구조 변화의 장기 신호로 보면 된다.</dd></div>
-    <div><dt>개발자</dt><dd>대상은 하이퍼스케일러·클라우드 사업자용이며 생산은 2028년 시작 예정으로 아직 초기 단계다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>직접 영향은 적지만, 2028년 양산 예정이라 클라우드 가격 구조 변화의 장기 신호로 보면 된다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>대상은 하이퍼스케일러·클라우드 사업자용이며 생산은 2028년 시작 예정으로 아직 초기 단계다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -907,8 +985,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>AI 전용 기기의 다음 승부처가 &#39;감정적 애착&#39;으로 옮겨간다.</dd></div>
     <div><dt>비유</dt><dd>기능보다 정이 들어 못 버리는 반려 장난감과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>캐릭터·말투 같은 페르소나 설계를 우리 앱 챗봇 체험 요소로 먼저 실험해 볼 수 있다.</dd></div>
-    <div><dt>개발자</dt><dd>아직 테스트 단계 보도이므로 기기 대응보다 페르소나·대화 톤 자산을 쌓아 두는 쪽이 안전하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>캐릭터·말투 같은 페르소나 설계를 우리 앱 챗봇 체험 요소로 먼저 실험해 볼 수 있다.</dd></div>
+    <div><dt>개발 포인트</dt><dd>아직 테스트 단계 보도이므로 기기 대응보다 페르소나·대화 톤 자산을 쌓아 두는 쪽이 안전하다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -933,8 +1011,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>콘텐츠 제작에 데이터 기반 코치가 기본으로 붙는다.</dd></div>
     <div><dt>비유</dt><dd>영상 편집기에 전담 매니저가 따라붙는 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>마케팅팀 숏폼 제작에 바로 붙여 보고, 우리 상품 페이지에도 &#39;성과 기반 제안&#39; 패턴을 응용해 보자.</dd></div>
-    <div><dt>개발자</dt><dd>&#39;내 데이터 기준 개인화 제안&#39;은 추천 로직 없이도 지표 비교만으로 1차 구현이 가능하다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>마케팅팀 숏폼 제작에 바로 붙여 보고, 우리 상품 페이지에도 &#39;성과 기반 제안&#39; 패턴을 응용해 보자.</dd></div>
+    <div><dt>개발 포인트</dt><dd>&#39;내 데이터 기준 개인화 제안&#39;은 추천 로직 없이도 지표 비교만으로 1차 구현이 가능하다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -964,8 +1042,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>AI 의사결정에 사람 검토를 끼우는 것이 법적 요구가 된다.</dd></div>
     <div><dt>비유</dt><dd>자동 채점 결과를 교사가 반드시 확인하게 한 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>인사·근태 관련 자동화 기능엔 사람 최종 승인 단계를 설계에 못 박아 두자.</dd></div>
-    <div><dt>개발자</dt><dd>AI 판단에 대한 로그·근거 기록과 휴먼 인더 루프(사람 개입) 설계가 규제 대응의 기본이 된다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>인사·근태 관련 자동화 기능엔 사람 최종 승인 단계를 설계에 못 박아 두자.</dd></div>
+    <div><dt>개발 포인트</dt><dd>AI 판단에 대한 로그·근거 기록과 휴먼 인더 루프(사람 개입) 설계가 규제 대응의 기본이 된다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -990,8 +1068,8 @@
   <dl class="teach fold">
     <div><dt>왜 중요?</dt><dd>에이전트의 자동 커밋이 새로운 유출 경로가 됐다.</dd></div>
     <div><dt>비유</dt><dd>청소 로봇이 서류를 집어 밖에 내놓은 것과 비슷하다.</dd></div>
-    <div><dt>나한테?</dt><dd>코딩 에이전트의 파일 접근·푸시 권한을 점검하고 스크린샷·로그 경로를 제외 목록에 넣자.</dd></div>
-    <div><dt>개발자</dt><dd>.gitignore만 믿지 말고 커밋 전 시크릿·이미지 스캔과 공개 저장소 푸시 차단을 함께 걸어야 한다.</dd></div>
+    <div><dt>우리 회사는</dt><dd>코딩 에이전트의 파일 접근·푸시 권한을 점검하고 스크린샷·로그 경로를 제외 목록에 넣자.</dd></div>
+    <div><dt>개발 포인트</dt><dd>.gitignore만 믿지 말고 커밋 전 시크릿·이미지 스캔과 공개 저장소 푸시 차단을 함께 걸어야 한다.</dd></div>
   </dl>
   <button class="more" type="button">더 풀어서 보기</button>
   
@@ -1013,8 +1091,8 @@
 
 </main>
 <footer class="wrap foot">
-  생성 2026-10-17 11:22 KST · 공식 RSS·API만 수집 · 원문 저작권은 각 출처에 있습니다
+  생성 2026-10-17 11:53 KST · 공식 RSS·API만 수집 · 원문 저작권은 각 출처에 있습니다
 </footer>
-<script src="../static/app.js?v=73b1c7e9b5"></script>
+<script src="../static/app.js?v=9a70dea4a3"></script>
 </body>
 </html>
