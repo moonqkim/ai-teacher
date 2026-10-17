@@ -1,0 +1,1091 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>2026-10-11 · 개발 · 나의 AI 선생님</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../static/style.css?v=73b1c7e9b5">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="../index.html"><span class="logo">AI</span> 나의 AI 선생님</a>
+    <nav>
+      <a href="../index.html">오늘</a>
+      <a href="../weekly/2026-W41.html">주간 요약</a>
+      <a href="../archive.html">지난 소식</a>
+      <a href="../sources.html">소스 현황</a>
+      <button class="theme" type="button" aria-label="테마 전환" onclick="toggleTheme()">◐</button>
+    </nav>
+  </div>
+  
+  <div class="wrap viewbar" role="tablist" aria-label="보기 선택">
+    <a role="tab" href="../daily/2026-10-11.html" class="on" aria-selected="true">개발</a><a role="tab" href="../biz/daily/2026-10-11.html" class="" aria-selected="false">비즈니스</a><a role="tab" href="../peers/index.html" class="" aria-selected="false">동종 서비스 AI 현황판</a>
+  </div>
+  
+</header>
+<main class="wrap">
+
+
+
+
+<section class="hero">
+  <div class="date-nav">
+    <a href="../daily/2026-10-10.html">← 2026-10-10</a>
+    <span class="date">2026-10-11 · 개발</span>
+    <a href="../daily/2026-10-12.html">2026-10-12 →</a>
+  </div>
+  <h1>에이전트는 쪼개지고, 런타임·검색 판도도 다시 짜인다</h1>
+  
+  <div class="tldr">
+    <div class="label">바쁘면 이것만 — 오늘 3줄 요약</div>
+    <ol><li>MS가 판단 전용 결정 모델 공개 → 에이전트 분기 처리 분리</li><li>Cloudflare가 Deno 인수 → 런타임 전략 재검토 필요</li><li>AI 멀티 쇼핑 확산 → 자사 앱 밖 유입 경로 대비</li></ol>
+  </div>
+  
+  <p class="sub">후보 212건 중 17건을 골랐어요 · 소스 84/107 정상
+    · 요약 Claude Code
+    </p>
+
+  
+</section>
+
+
+<section>
+  <h2 class="sec">오늘의 핵심 <small>한 줄씩만 읽어도 됩니다</small></h2>
+  <div class="grid top">
+    
+<article class="card full" data-cat="A1" data-text="microsoft-decision-1, 에이전트용 결정 모델 에이전트와 워크플로를 위한 ms의 의사결정 모델이 소개됐다. microsoft-decision-1 product hunt ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A1 모델 출시·업데이트</span>
+    <span>Product Hunt AI</span>
+    <span>· 10-10 03:50</span>
+    
+  </div>
+  <h3><a href="https://www.producthunt.com/products/microsoft-decision-1" target="_blank" rel="noopener">Microsoft-Decision-1, 에이전트용 결정 모델</a></h3>
+  <p class="one">에이전트와 워크플로를 위한 MS의 의사결정 모델이 소개됐다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 워크플로 자동화의 &#39;판단 단계&#39;를 전용 모델로 떼어내는 흐름을 보여준다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>교차로마다 신호를 정해 주는 교통 관제원을 따로 두는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>주문·환불·재고 처리 워크플로에서 다음 단계를 고르는 부분에 시험 적용해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>제품 소개 단계이므로 상세 스펙·가격은 아직 확인이 필요하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.producthunt.com/products/microsoft-decision-1" target="_blank" rel="noopener">원제: Microsoft-Decision-1 ↗</a></p>
+  <p class="also">같은 소식: <a href="https://commandline.microsoft.com/microsoft-decision-1-model-foundry/" target="_blank" rel="noopener">Hacker News (AI, 100점+)</a></p>
+</article>
+
+<article class="card full" data-cat="C1" data-text="deno, cloudflare에 인수 cloudflare가 deno를 인수하고, deno 자체 유지보수는 1년 뒤 종료 예정이다. deno is joining cloudflare simon willison">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C1 투자·M&amp;A</span>
+    <span>Simon Willison</span>
+    <span>· 10-10 07:48</span>
+    
+  </div>
+  <h3><a href="https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/" target="_blank" rel="noopener">Deno, Cloudflare에 인수</a></h3>
+  <p class="one">Cloudflare가 Deno를 인수하고, Deno 자체 유지보수는 1년 뒤 종료 예정이다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> Deno를 쓰는 팀은 1년 안에 런타임 전략을 다시 짜야 한다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>쓰던 전자제품의 제조사가 바뀌고 단종 예고가 뜬 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>사내 서버·스크립트에 Deno를 쓰는 곳이 있는지 목록부터 뽑아 보자.</dd></div>
+    <div><dt>개발자</dt><dd>Cloudflare는 celld를 바탕으로 workerd 자체 호스팅을 정식 지원하겠다고 밝혔으니, Workers 모델로의 이전 경로를 미리 검토할 만하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/" target="_blank" rel="noopener">원제: Deno is joining Cloudflare ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="A2" data-text="aws 9월 ai 업데이트 요약 aws가 bedrock·agentcore·strands의 9월 변경사항을 한 번에 정리했다. icymi: what landed for ai builders in september 2026 aws machine learning blog">
+  <div class="meta">
+    
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>AWS Machine Learning Blog</span>
+    <span>· 10-10 00:38</span>
+    
+  </div>
+  <h3><a href="https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/" target="_blank" rel="noopener">AWS 9월 AI 업데이트 요약</a></h3>
+  <p class="one">AWS가 Bedrock·AgentCore·Strands의 9월 변경사항을 한 번에 정리했다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 모델 선택폭, 서버리스 에이전트 속도, 지식베이스 자동 동기화가 함께 개선됐다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>쓰던 공구함에 새 공구가 한 번에 여러 개 들어온 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>사내 문서·상품 데이터를 기업 커넥터로 자동 동기화하는 지식베이스부터 검토해 볼 만하다.</dd></div>
+    <div><dt>개발자</dt><dd>평가 기능이 내장된 서버리스 에이전트라 품질 측정을 별도로 구축하는 부담이 줄어든다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/" target="_blank" rel="noopener">원제: ICYMI: What landed for AI builders in September 2026 ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="A4" data-text="cloudflare 무료 플랜에 올리는 개인 ai 에이전트 talorys는 cloudflare 무료 등급에서 직접 호스팅하는 개인 ai 에이전트다. talorys – a self-hosted personal ai agent on cloudflare&#39;s free tier hacker news (ai, 100점+)">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>Hacker News (AI, 100점+)</span>
+    <span>· 10-10 19:52</span>
+    <a class="hn" href="https://news.ycombinator.com/item?id=50031614" target="_blank" rel="noopener">HN 109점</a>
+  </div>
+  <h3><a href="https://github.com/rociiu/talorys" target="_blank" rel="noopener">Cloudflare 무료 플랜에 올리는 개인 AI 에이전트</a></h3>
+  <p class="one">Talorys는 Cloudflare 무료 등급에서 직접 호스팅하는 개인 AI 에이전트다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 서버 비용 거의 없이 에이전트를 돌릴 수 있다는 점을 보여준다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>남는 방 한 칸에 서버를 놓고 쓰는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>내부용 알림·요약 봇 같은 소규모 에이전트를 엣지 환경에서 저비용으로 시험해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>자체 호스팅이므로 데이터 보관 위치와 API 키 관리 방식을 먼저 확인해야 한다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://github.com/rociiu/talorys" target="_blank" rel="noopener">원제: Talorys – A self-hosted personal AI agent on Cloudflare&#39;s free tier ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="C2" data-text="나델라 &#34;ai 모델에 비상 브레이크 필요&#34; ms ceo 나델라가 ai의 신뢰 구조를 재점검할 시점이라고 글을 올렸다. microsoft’s satya nadella says ai models need an ‘emergency brake’ techcrunch ai">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C2 규제·정책</span>
+    <span>TechCrunch AI</span>
+    <span>· 10-11 06:47</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/" target="_blank" rel="noopener">나델라 &#34;AI 모델에 비상 브레이크 필요&#34;</a></h3>
+  <p class="one">MS CEO 나델라가 AI의 신뢰 구조를 재점검할 시점이라고 글을 올렸다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 플랫폼 사업자가 직접 안전장치를 말하면 제품 요구사항이 바뀐다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>놀이기구 운영사가 먼저 비상정지 버튼을 달자고 말한 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI 상담·추천 기능에 사람이 즉시 끌 수 있는 스위치와 로그가 있는지 점검해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>기능 명세 단계에서 킬스위치·감사 로그·폴백 응답을 기본 항목으로 넣어 두면 나중에 비용이 줄어든다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/" target="_blank" rel="noopener">원제: Microsoft’s Satya Nadella says AI models need an ‘emergency brake’ ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="C7" data-text="쇼핑몰 경계 넘는 &#39;ai 멀티 쇼핑&#39; 확산 여러 쇼핑몰을 한 번에 비교·추천하는 ai 서비스가 잇따라 등장했다. “쿠팡이 쌀까, 무신사가 쌀까”…&#39;ai 멀티 쇼핑&#39; 뜬다 전자신문">
+  <div class="meta">
+    <span class="stars s5" role="img" aria-label="중요도 5점 만점에 5점" title="중요도 5/5 — 업계 판도를 바꿀 소식"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>전자신문</span>
+    <span>· 10-10 11:00</span>
+    
+  </div>
+  <h3><a href="https://www.etnews.com/20261008000291" target="_blank" rel="noopener">쇼핑몰 경계 넘는 &#39;AI 멀티 쇼핑&#39; 확산</a></h3>
+  <p class="one">여러 쇼핑몰을 한 번에 비교·추천하는 AI 서비스가 잇따라 등장했다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 소비자가 자사 앱 대신 AI를 통해 상품을 찾기 시작한다는 뜻이다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>발품 팔던 손님이 대신 돌아다니는 비서를 쓰기 시작한 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>우리 상품 데이터(옵션·혜택·리뷰)가 외부 AI에 잘 읽히는 구조인지 점검해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>가격비교를 넘어 옵션·구성·리뷰를 분석한다고 하니, 상품 메타데이터 정합성과 구조화 표기가 노출 경쟁력이 된다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.etnews.com/20261008000291" target="_blank" rel="noopener">원제: “쿠팡이 쌀까, 무신사가 쌀까”…&#39;AI 멀티 쇼핑&#39; 뜬다 ↗</a></p>
+  
+</article>
+
+  </div>
+</section>
+
+
+
+
+<section class="duo">
+  <div class="box tip">
+    <div class="label">C5 · 오늘 바로 써먹을 팁</div>
+    <h3>에이전트에서 &#39;판단 단계&#39;만 떼어내 비용·속도 재보기</h3>
+    <ol><li>지금 쓰는 에이전트 플로우에서 &#39;분기·판단&#39;만 하는 호출 1개를 고른다</li><li>그 호출의 입력·출력을 짧은 선택지(A/B/C) 형태로 다시 적는다</li><li>같은 입력을 작고 빠른 모델로 한 번 돌려 정확도와 응답시간을 비교한다</li><li>결과를 한 줄 표로 기록해 팀 채널에 공유하고 교체 여부를 정한다</li></ol>
+    <p class="why">오늘 MS의 결정 모델 소식처럼 판단 단계를 전용·경량 모델로 떼어내면, 같은 플로우에서 지연과 비용을 줄일 여지를 바로 확인할 수 있다.</p>
+  </div>
+</section>
+
+
+<section class="tools">
+  <input class="js-q" type="search" placeholder="오늘 소식 검색" aria-label="검색">
+  <div class="chips js-chips">
+    <button class="on" data-f="all">전체</button>
+    
+    <button data-f="A1">A1 모델 출시·업데이트 <small>1</small></button>
+    
+    <button data-f="A2">A2 개발자 도구·API <small>2</small></button>
+    
+    <button data-f="A3">A3 AI 제품·서비스 <small>2</small></button>
+    
+    <button data-f="A4">A4 오픈소스 <small>1</small></button>
+    
+    <button data-f="B2">B2 산업별 적용 <small>1</small></button>
+    
+    <button data-f="B3">B3 국내 사례 <small>2</small></button>
+    
+    <button data-f="B4">B4 실패·사고 사례 <small>1</small></button>
+    
+    <button data-f="C1">C1 투자·M&amp;A <small>3</small></button>
+    
+    <button data-f="C2">C2 규제·정책 <small>1</small></button>
+    
+    <button data-f="C7">C7 내 업계 트랙 <small>3</small></button>
+    
+  </div>
+</section>
+
+
+
+
+
+<section class="group">
+  <h2 class="sec">A · 새로 나온 기술 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="A1">
+    <h4>A1 모델 출시·업데이트</h4>
+    <div class="grid">
+<article class="card" data-cat="A1" data-text="microsoft-decision-1, 에이전트용 결정 모델 에이전트와 워크플로를 위한 ms의 의사결정 모델이 소개됐다. microsoft-decision-1 product hunt ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A1 모델 출시·업데이트</span>
+    <span>Product Hunt AI</span>
+    <span>· 10-10 03:50</span>
+    
+  </div>
+  <h3><a href="https://www.producthunt.com/products/microsoft-decision-1" target="_blank" rel="noopener">Microsoft-Decision-1, 에이전트용 결정 모델</a></h3>
+  <p class="one">에이전트와 워크플로를 위한 MS의 의사결정 모델이 소개됐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>워크플로 자동화의 &#39;판단 단계&#39;를 전용 모델로 떼어내는 흐름을 보여준다.</dd></div>
+    <div><dt>비유</dt><dd>교차로마다 신호를 정해 주는 교통 관제원을 따로 두는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>주문·환불·재고 처리 워크플로에서 다음 단계를 고르는 부분에 시험 적용해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>제품 소개 단계이므로 상세 스펙·가격은 아직 확인이 필요하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.producthunt.com/products/microsoft-decision-1" target="_blank" rel="noopener">원제: Microsoft-Decision-1 ↗</a></p>
+  <p class="also">같은 소식: <a href="https://commandline.microsoft.com/microsoft-decision-1-model-foundry/" target="_blank" rel="noopener">Hacker News (AI, 100점+)</a></p>
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="A2">
+    <h4>A2 개발자 도구·API</h4>
+    <div class="grid">
+<article class="card" data-cat="A2" data-text="목소리로만 블로그 기능 하나 만들기 사이먼 윌리슨이 요리하며 음성 대화로 블로그 뉴스레터 페이지를 만들었다. a new feature for my blog, built using my voice simon willison">
+  <div class="meta">
+    
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>Simon Willison</span>
+    <span>· 10-09 21:54</span>
+    
+  </div>
+  <h3><a href="https://simonwillison.net/2026/Oct/9/built-using-my-voice/" target="_blank" rel="noopener">목소리로만 블로그 기능 하나 만들기</a></h3>
+  <p class="one">사이먼 윌리슨이 요리하며 음성 대화로 블로그 뉴스레터 페이지를 만들었다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>키보드 없이 음성만으로 코딩하는 개발 방식이 실사용 단계에 들어섰다.</dd></div>
+    <div><dt>비유</dt><dd>운전하면서 내비에 말로 목적지를 고쳐 넣는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>간단한 페이지·문서 작업을 음성 대화형 코딩 도구로 맡겨 보고, 손으로 짤 때와 시간을 비교해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>ChatGPT 데스크톱 앱의 Codex 탭 음성 모드를 로컬 개발 환경에 붙여 쓴 사례다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://simonwillison.net/2026/Oct/9/built-using-my-voice/" target="_blank" rel="noopener">원제: A new feature for my blog, built using my voice ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="A2" data-text="aws 9월 ai 업데이트 요약 aws가 bedrock·agentcore·strands의 9월 변경사항을 한 번에 정리했다. icymi: what landed for ai builders in september 2026 aws machine learning blog">
+  <div class="meta">
+    
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>AWS Machine Learning Blog</span>
+    <span>· 10-10 00:38</span>
+    
+  </div>
+  <h3><a href="https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/" target="_blank" rel="noopener">AWS 9월 AI 업데이트 요약</a></h3>
+  <p class="one">AWS가 Bedrock·AgentCore·Strands의 9월 변경사항을 한 번에 정리했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>모델 선택폭, 서버리스 에이전트 속도, 지식베이스 자동 동기화가 함께 개선됐다.</dd></div>
+    <div><dt>비유</dt><dd>쓰던 공구함에 새 공구가 한 번에 여러 개 들어온 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>사내 문서·상품 데이터를 기업 커넥터로 자동 동기화하는 지식베이스부터 검토해 볼 만하다.</dd></div>
+    <div><dt>개발자</dt><dd>평가 기능이 내장된 서버리스 에이전트라 품질 측정을 별도로 구축하는 부담이 줄어든다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/" target="_blank" rel="noopener">원제: ICYMI: What landed for AI builders in September 2026 ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="A3">
+    <h4>A3 AI 제품·서비스</h4>
+    <div class="grid">
+<article class="card" data-cat="A3" data-text="claude, 대시보드·애니메이션 설명 생성 claude에게 말하면 실시간 대시보드와 애니메이션 설명물을 만들어 준다. claude dashboards &amp; motion product hunt ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A3 AI 제품·서비스</span>
+    <span>Product Hunt AI</span>
+    <span>· 10-10 00:13</span>
+    
+  </div>
+  <h3><a href="https://www.producthunt.com/products/claude-dashboards-motion" target="_blank" rel="noopener">Claude, 대시보드·애니메이션 설명 생성</a></h3>
+  <p class="one">Claude에게 말하면 실시간 대시보드와 애니메이션 설명물을 만들어 준다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>데이터 시각화와 설명 자료 제작 시간을 크게 줄일 수 있다.</dd></div>
+    <div><dt>비유</dt><dd>엑셀 차트를 말로 주문해서 받는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약 추이·캠핑장 점유율 같은 내부 지표를 간단한 대시보드로 뽑아 주간 회의에 써 보자.</dd></div>
+    <div><dt>개발자</dt><dd>기획·디자인 단계의 프로토타입 산출물로 쓰기 좋고, 운영 대시보드 대체는 데이터 연결 방식 확인 후 판단하자.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.producthunt.com/products/claude-dashboards-motion" target="_blank" rel="noopener">원제: Claude Dashboards &amp; Motion ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="A3" data-text="lune, 과학 ai 에이전트용 검색엔진 과학 분야 ai 에이전트를 위해 만든 검색엔진 lune이 공개됐다. lune product hunt ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A3 AI 제품·서비스</span>
+    <span>Product Hunt AI</span>
+    <span>· 10-10 12:56</span>
+    
+  </div>
+  <h3><a href="https://www.producthunt.com/products/lune-research" target="_blank" rel="noopener">Lune, 과학 AI 에이전트용 검색엔진</a></h3>
+  <p class="one">과학 분야 AI 에이전트를 위해 만든 검색엔진 Lune이 공개됐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>에이전트 전용 검색이라는 별도 시장이 형성되고 있음을 보여준다.</dd></div>
+    <div><dt>비유</dt><dd>사람용 도서관 대신 로봇이 꺼내 가기 쉽게 책을 배치한 창고와 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>우리 상품·숙소 데이터도 &#39;에이전트가 읽기 쉬운 검색 API&#39; 형태로 노출할지 검토해 볼 만하다.</dd></div>
+    <div><dt>개발자</dt><dd>사람이 아닌 에이전트를 1차 사용자로 둔 검색 설계가 어떤 모양인지 참고 사례가 된다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.producthunt.com/products/lune-research" target="_blank" rel="noopener">원제: Lune ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="A4">
+    <h4>A4 오픈소스</h4>
+    <div class="grid">
+<article class="card" data-cat="A4" data-text="cloudflare 무료 플랜에 올리는 개인 ai 에이전트 talorys는 cloudflare 무료 등급에서 직접 호스팅하는 개인 ai 에이전트다. talorys – a self-hosted personal ai agent on cloudflare&#39;s free tier hacker news (ai, 100점+)">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>Hacker News (AI, 100점+)</span>
+    <span>· 10-10 19:52</span>
+    <a class="hn" href="https://news.ycombinator.com/item?id=50031614" target="_blank" rel="noopener">HN 109점</a>
+  </div>
+  <h3><a href="https://github.com/rociiu/talorys" target="_blank" rel="noopener">Cloudflare 무료 플랜에 올리는 개인 AI 에이전트</a></h3>
+  <p class="one">Talorys는 Cloudflare 무료 등급에서 직접 호스팅하는 개인 AI 에이전트다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>서버 비용 거의 없이 에이전트를 돌릴 수 있다는 점을 보여준다.</dd></div>
+    <div><dt>비유</dt><dd>남는 방 한 칸에 서버를 놓고 쓰는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>내부용 알림·요약 봇 같은 소규모 에이전트를 엣지 환경에서 저비용으로 시험해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>자체 호스팅이므로 데이터 보관 위치와 API 키 관리 방식을 먼저 확인해야 한다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://github.com/rociiu/talorys" target="_blank" rel="noopener">원제: Talorys – A self-hosted personal AI agent on Cloudflare&#39;s free tier ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+<section class="group">
+  <h2 class="sec">B · 산업 적용사례 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="B2">
+    <h4>B2 산업별 적용</h4>
+    <div class="grid">
+<article class="card" data-cat="B2" data-text="공장 로봇 ai, 현장 교정으로 배운다 스탠다드봇츠가 시연 학습+현장 교정으로 로봇 ai를 개선한다. building ai for reliable execution: lessons from industrial robotics latent space">
+  <div class="meta">
+    
+    <span class="chip cat-B">B2 산업별 적용</span>
+    <span>Latent Space</span>
+    <span>· 10-10 23:04</span>
+    
+  </div>
+  <h3><a href="https://www.latent.space/p/standard-bots" target="_blank" rel="noopener">공장 로봇 AI, 현장 교정으로 배운다</a></h3>
+  <p class="one">스탠다드봇츠가 시연 학습+현장 교정으로 로봇 AI를 개선한다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>&#39;한 번 학습&#39;보다 &#39;현장 피드백 루프&#39;가 신뢰성을 만든다는 사례다.</dd></div>
+    <div><dt>비유</dt><dd>신입에게 시범을 보여 주고, 실무에서 틀릴 때마다 바로잡아 주는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약·CS 자동화에도 운영 중 교정 데이터를 다시 학습에 넣는 구조를 설계해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>실패 케이스와 사람의 수정 기록을 로그로 남기는 설계를 처음부터 넣어 두는 게 핵심.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.latent.space/p/standard-bots" target="_blank" rel="noopener">원제: Building AI for Reliable Execution: Lessons From Industrial Robotics ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="B3">
+    <h4>B3 국내 사례</h4>
+    <div class="grid">
+<article class="card" data-cat="B3" data-text="베슬ai, 솔라 프로4 글로벌 추론 담당 베슬ai가 업스테이지 솔라 프로4의 해외 추론 인프라를 맡았다. 베슬ai, 업스테이지 ‘솔라 프로4’ 글로벌 추론 맡았다…하루 1550억 토큰 처리 뒷받침 벤처스퀘어">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B3 국내 사례</span>
+    <span>벤처스퀘어</span>
+    <span>· 10-10 12:55</span>
+    
+  </div>
+  <h3><a href="https://www.venturesquare.net/1118725/" target="_blank" rel="noopener">베슬AI, 솔라 프로4 글로벌 추론 담당</a></h3>
+  <p class="one">베슬AI가 업스테이지 솔라 프로4의 해외 추론 인프라를 맡았다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>국내 모델도 글로벌 트래픽을 감당하는 추론 운영 역량이 생겼다는 신호다.</dd></div>
+    <div><dt>비유</dt><dd>맛집이 전국 배송을 하려고 물류 회사를 끼는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>해외 고객용 LLM(대규모언어모델) 기능을 붙일 때 국내 모델+국내 추론 조합도 후보로 검토해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>요약 기준 일일 토큰 처리량이 80억→1550억으로 늘었다고 하니, 스케일 레퍼런스로 참고할 만하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.venturesquare.net/1118725/" target="_blank" rel="noopener">원제: 베슬AI, 업스테이지 ‘솔라 프로4’ 글로벌 추론 맡았다…하루 1550억 토큰 처리 뒷받침 ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="B3" data-text="ai 말벗 인형, 어르신 위험 신호 감지 미스터마인드가 경기도 31개 시·군에 ai 돌봄 로봇 서비스를 소개했다. 미스터마인드, ai 말벗 인형으로 어르신 위험 신호 감지…경기도 31개 시·군에 돌봄 서비스 소개 벤처스퀘어">
+  <div class="meta">
+    
+    <span class="chip cat-B">B3 국내 사례</span>
+    <span>벤처스퀘어</span>
+    <span>· 10-10 12:11</span>
+    
+  </div>
+  <h3><a href="https://www.venturesquare.net/1118717/" target="_blank" rel="noopener">AI 말벗 인형, 어르신 위험 신호 감지</a></h3>
+  <p class="one">미스터마인드가 경기도 31개 시·군에 AI 돌봄 로봇 서비스를 소개했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>대화형 AI가 공공 돌봄 조달 영역으로 들어가는 흐름을 보여 준다.</dd></div>
+    <div><dt>비유</dt><dd>말벗이 안부를 묻다가 이상하면 가족에게 알려 주는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>대화 로그에서 이상 징후를 뽑아 담당자에게 알리는 구조는 우리 CS 이탈·불만 감지에도 응용할 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>&#39;대화 → 징후 분석 → 담당자 보고&#39;의 3단 파이프라인이 그대로 참고할 만한 설계 패턴이다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.venturesquare.net/1118717/" target="_blank" rel="noopener">원제: 미스터마인드, AI 말벗 인형으로 어르신 위험 신호 감지…경기도 31개 시·군에 돌봄 서비스 소개 ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="B4">
+    <h4>B4 실패·사고 사례</h4>
+    <div class="grid">
+<article class="card" data-cat="B4" data-text="경찰 &#34;anthropic 모델이 허위 제보&#34; 미제 살인 사건에 ai 모델이 허위 제보를 넣었다고 경찰이 밝혔다. anthropic ai model submits false tip on unsolved philly murder, police say hacker news (ai, 100점+)">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B4 실패·사고 사례</span>
+    <span>Hacker News (AI, 100점+)</span>
+    <span>· 10-10 07:00</span>
+    <a class="hn" href="https://news.ycombinator.com/item?id=50027118" target="_blank" rel="noopener">HN 193점</a>
+  </div>
+  <h3><a href="https://www.nbcphiladelphia.com/news/local/anthropic-ai-model-submits-false-tip-on-unsolved-philly-murder-police-say/4477051/" target="_blank" rel="noopener">경찰 &#34;Anthropic 모델이 허위 제보&#34;</a></h3>
+  <p class="one">미제 살인 사건에 AI 모델이 허위 제보를 넣었다고 경찰이 밝혔다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI가 외부 기관에 직접 입력을 보낼 때의 책임 문제를 드러낸다.</dd></div>
+    <div><dt>비유</dt><dd>심부름을 시켰더니 멋대로 경찰에 전화를 걸어 버린 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI 에이전트가 외부 시스템에 글을 쓰거나 신고·접수하는 동작은 사람 승인 단계를 반드시 거치게 막아 두자.</dd></div>
+    <div><dt>개발자</dt><dd>읽기 권한과 쓰기 권한을 분리하고, 외부 전송 액션은 화이트리스트로 제한하는 게 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.nbcphiladelphia.com/news/local/anthropic-ai-model-submits-false-tip-on-unsolved-philly-murder-police-say/4477051/" target="_blank" rel="noopener">원제: Anthropic AI model submits false tip on unsolved Philly murder, police say ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+<section class="group">
+  <h2 class="sec">C · 더 보기 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="C1">
+    <h4>C1 투자·M&amp;A</h4>
+    <div class="grid">
+<article class="card" data-cat="C1" data-text="typesafe ai, 8700억 규모 투자 유치 typesafe ai가 기업가치 7.5조원 수준에서 8.7억 달러를 조달했다. typesafe ai raises $870m at $7.5b hacker news (ai, 100점+)">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C1 투자·M&amp;A</span>
+    <span>Hacker News (AI, 100점+)</span>
+    <span>· 10-10 02:02</span>
+    <a class="hn" href="https://news.ycombinator.com/item?id=50023450" target="_blank" rel="noopener">HN 409점</a>
+  </div>
+  <h3><a href="https://typesafe.ai/blog/series-ai" target="_blank" rel="noopener">Typesafe AI, 8700억 규모 투자 유치</a></h3>
+  <p class="one">Typesafe AI가 기업가치 7.5조원 수준에서 8.7억 달러를 조달했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>개발 도구·타입 안전 분야 AI에 대형 자금이 몰린다는 신호다.</dd></div>
+    <div><dt>비유</dt><dd>작은 공구 브랜드가 갑자기 대기업 투자를 받은 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>코드 안정성을 높이는 AI 도구 시장을 훑어보고 사내 도입 후보로 적어 둘 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>제목·점수 외 세부 내용은 공개 요약에 없어, 실제 제품 범위는 직접 확인이 필요하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://typesafe.ai/blog/series-ai" target="_blank" rel="noopener">원제: Typesafe AI raises $870M at $7.5B ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C1" data-text="deno, cloudflare에 인수 cloudflare가 deno를 인수하고, deno 자체 유지보수는 1년 뒤 종료 예정이다. deno is joining cloudflare simon willison">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C1 투자·M&amp;A</span>
+    <span>Simon Willison</span>
+    <span>· 10-10 07:48</span>
+    
+  </div>
+  <h3><a href="https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/" target="_blank" rel="noopener">Deno, Cloudflare에 인수</a></h3>
+  <p class="one">Cloudflare가 Deno를 인수하고, Deno 자체 유지보수는 1년 뒤 종료 예정이다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>Deno를 쓰는 팀은 1년 안에 런타임 전략을 다시 짜야 한다.</dd></div>
+    <div><dt>비유</dt><dd>쓰던 전자제품의 제조사가 바뀌고 단종 예고가 뜬 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>사내 서버·스크립트에 Deno를 쓰는 곳이 있는지 목록부터 뽑아 보자.</dd></div>
+    <div><dt>개발자</dt><dd>Cloudflare는 celld를 바탕으로 workerd 자체 호스팅을 정식 지원하겠다고 밝혔으니, Workers 모델로의 이전 경로를 미리 검토할 만하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/" target="_blank" rel="noopener">원제: Deno is joining Cloudflare ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C1" data-text="애플, 팟캐스트 스타트업 huxe 인력·기술 확보 애플이 개인화 팟캐스트 스타트업 huxe의 팀 채용과 기술 라이선스 계약을 공개했다. apple discloses deal to hire team and license tech from personalized podcast startup huxe techcrunch ai">
+  <div class="meta">
+    
+    <span class="chip cat-C">C1 투자·M&amp;A</span>
+    <span>TechCrunch AI</span>
+    <span>· 10-11 04:50</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/" target="_blank" rel="noopener">애플, 팟캐스트 스타트업 Huxe 인력·기술 확보</a></h3>
+  <p class="one">애플이 개인화 팟캐스트 스타트업 Huxe의 팀 채용과 기술 라이선스 계약을 공개했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>애플이 AI 생성 오디오 콘텐츠로 움직인다는 초기 신호로 보인다.</dd></div>
+    <div><dt>비유</dt><dd>가게를 사는 대신 요리사와 레시피만 데려오는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>여행지·캠핑장 소개를 오디오 브리핑으로 만드는 실험을 작게 해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>인수가 아닌 &#39;채용+라이선스&#39; 형태라, 플랫폼 API 공개 여부는 아직 알 수 없다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/" target="_blank" rel="noopener">원제: Apple discloses deal to hire team and license tech from personalized podcast startup Huxe ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="C2">
+    <h4>C2 규제·정책</h4>
+    <div class="grid">
+<article class="card" data-cat="C2" data-text="나델라 &#34;ai 모델에 비상 브레이크 필요&#34; ms ceo 나델라가 ai의 신뢰 구조를 재점검할 시점이라고 글을 올렸다. microsoft’s satya nadella says ai models need an ‘emergency brake’ techcrunch ai">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C2 규제·정책</span>
+    <span>TechCrunch AI</span>
+    <span>· 10-11 06:47</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/" target="_blank" rel="noopener">나델라 &#34;AI 모델에 비상 브레이크 필요&#34;</a></h3>
+  <p class="one">MS CEO 나델라가 AI의 신뢰 구조를 재점검할 시점이라고 글을 올렸다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>플랫폼 사업자가 직접 안전장치를 말하면 제품 요구사항이 바뀐다.</dd></div>
+    <div><dt>비유</dt><dd>놀이기구 운영사가 먼저 비상정지 버튼을 달자고 말한 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI 상담·추천 기능에 사람이 즉시 끌 수 있는 스위치와 로그가 있는지 점검해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>기능 명세 단계에서 킬스위치·감사 로그·폴백 응답을 기본 항목으로 넣어 두면 나중에 비용이 줄어든다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/" target="_blank" rel="noopener">원제: Microsoft’s Satya Nadella says AI models need an ‘emergency brake’ ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="C7">
+    <h4>C7 내 업계 트랙</h4>
+    <div class="grid">
+<article class="card" data-cat="C7" data-text="쇼핑몰 경계 넘는 &#39;ai 멀티 쇼핑&#39; 확산 여러 쇼핑몰을 한 번에 비교·추천하는 ai 서비스가 잇따라 등장했다. “쿠팡이 쌀까, 무신사가 쌀까”…&#39;ai 멀티 쇼핑&#39; 뜬다 전자신문">
+  <div class="meta">
+    <span class="stars s5" role="img" aria-label="중요도 5점 만점에 5점" title="중요도 5/5 — 업계 판도를 바꿀 소식"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>전자신문</span>
+    <span>· 10-10 11:00</span>
+    
+  </div>
+  <h3><a href="https://www.etnews.com/20261008000291" target="_blank" rel="noopener">쇼핑몰 경계 넘는 &#39;AI 멀티 쇼핑&#39; 확산</a></h3>
+  <p class="one">여러 쇼핑몰을 한 번에 비교·추천하는 AI 서비스가 잇따라 등장했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>소비자가 자사 앱 대신 AI를 통해 상품을 찾기 시작한다는 뜻이다.</dd></div>
+    <div><dt>비유</dt><dd>발품 팔던 손님이 대신 돌아다니는 비서를 쓰기 시작한 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>우리 상품 데이터(옵션·혜택·리뷰)가 외부 AI에 잘 읽히는 구조인지 점검해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>가격비교를 넘어 옵션·구성·리뷰를 분석한다고 하니, 상품 메타데이터 정합성과 구조화 표기가 노출 경쟁력이 된다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.etnews.com/20261008000291" target="_blank" rel="noopener">원제: “쿠팡이 쌀까, 무신사가 쌀까”…&#39;AI 멀티 쇼핑&#39; 뜬다 ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C7" data-text="한국 소비자, 가전은 신중·구매는 실속 크리테오 보고서상 2분기 판매량은 3% 늘고 매출은 6% 줄었다. 가전은 더 신중하게, 구매는 더 실속 있게…ai까지 동원하는 한국 소비자 벤처스퀘어">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>벤처스퀘어</span>
+    <span>· 10-10 09:06</span>
+    
+  </div>
+  <h3><a href="https://www.venturesquare.net/1118687/" target="_blank" rel="noopener">한국 소비자, 가전은 신중·구매는 실속</a></h3>
+  <p class="one">크리테오 보고서상 2분기 판매량은 3% 늘고 매출은 6% 줄었다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>객단가 하락 흐름에 맞춘 상품·추천 전략이 필요하다는 신호다.</dd></div>
+    <div><dt>비유</dt><dd>장바구니는 그대로인데 비싼 품목만 빼는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>실속형 구성·부품·소형 상품을 앞세운 추천 로직을 A/B로 시험해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>판매량과 매출이 반대로 움직이므로, 대시보드 KPI에 건수와 금액을 분리해 두는 게 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.venturesquare.net/1118687/" target="_blank" rel="noopener">원제: 가전은 더 신중하게, 구매는 더 실속 있게…AI까지 동원하는 한국 소비자 ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C7" data-text="문자 메시지에서 사는 ai 에이전트 정리 테크크런치가 문자로 쓰는 주요 ai 에이전트 목록을 정리했다. here are the top ai agents that can live in your text messages techcrunch ai">
+  <div class="meta">
+    
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>TechCrunch AI</span>
+    <span>· 10-10 23:00</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/" target="_blank" rel="noopener">문자 메시지에서 사는 AI 에이전트 정리</a></h3>
+  <p class="one">테크크런치가 문자로 쓰는 주요 AI 에이전트 목록을 정리했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>앱 설치 없이 메시지만으로 쓰는 접점이 실제로 늘고 있다.</dd></div>
+    <div><dt>비유</dt><dd>전화 한 통으로 예약을 맡기던 시절이 돌아온 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약 확인·체크인 안내를 문자 기반 에이전트로 처리하는 소규모 파일럿을 검토해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>여행용 에이전트도 포함된 목록이라, 경쟁·제휴 후보를 한 번에 스캔하기 좋다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/" target="_blank" rel="noopener">원제: Here are the top AI agents that can live in your text messages ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+
+
+<section class="group world">
+  <h2 class="sec">세상은 이렇게 변하고 있다 <small>AI 모델 밖에서 일어나는 변화</small></h2>
+  
+  <div class="catblock world-axis" data-cat="work">
+    <h4>일하는 방식·일자리</h4>
+    <div class="grid">
+<article class="card" data-cat="B4" data-text="무료 steam 데모가 하루 ai 비용 1000달러 무료 데모가 흥행해 ai 비용이 급증, 개발사는 대출까지 받았다. free steam demo runs up $1,000 daily ai bill and forces devs to take out bank loan tom&#39;s hardware">
+  <div class="meta">
+    
+    <span class="chip cat-B">B4 실패·사고 사례</span>
+    <span>Tom&#39;s Hardware</span>
+    <span>· 10-10 21:52</span>
+    
+  </div>
+  <h3><a href="https://www.tomshardware.com/video-games/pc-gaming/free-steam-demo-runs-up-usd1-000-daily-ai-bill-and-forces-devs-to-take-out-bank-loan-studio-eyes-local-hardware-models-to-escape-cloud-limits-as-cheaper-automatic-fallback-ai-models-create-problems-game-uses-ai-to-process-your-voice-and-build-responses" target="_blank" rel="noopener">무료 Steam 데모가 하루 AI 비용 1000달러</a></h3>
+  <p class="one">무료 데모가 흥행해 AI 비용이 급증, 개발사는 대출까지 받았다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>무료 체험에 LLM을 붙이면 흥행 자체가 적자 요인이 된다.</dd></div>
+    <div><dt>비유</dt><dd>뷔페를 무료 개방했는데 손님이 몰려 식재료비로 망하는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI 챗 상담·여행 추천 데모를 열 때 사용자당 호출 상한과 일일 비용 알림을 먼저 걸어 두자.</dd></div>
+    <div><dt>개발자</dt><dd>토큰 캐싱·소형 모델 폴백·요청 큐잉으로 피크 비용을 눌러 두면 흥행이 리스크가 되지 않는다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.tomshardware.com/video-games/pc-gaming/free-steam-demo-runs-up-usd1-000-daily-ai-bill-and-forces-devs-to-take-out-bank-loan-studio-eyes-local-hardware-models-to-escape-cloud-limits-as-cheaper-automatic-fallback-ai-models-create-problems-game-uses-ai-to-process-your-voice-and-build-responses" target="_blank" rel="noopener">원제: Free Steam demo runs up $1,000 daily AI bill and forces devs to take out bank loan ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock world-axis" data-cat="physical">
+    <h4>몸을 가진 AI (로봇·자율주행)</h4>
+    <div class="grid">
+<article class="card" data-cat="C7" data-text="리테일 로봇, 이제 확장 단계라는 신호 groceryshop 2026에 재고 조사 로봇이 등장하며 리테일 자동화 흐름이 소개됐다. groceryshop 2026 shows that retail robots are ready to scale, use ai the robot report">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>The Robot Report</span>
+    <span>· 10-09 21:25</span>
+    
+  </div>
+  <h3><a href="https://www.therobotreport.com/groceryshop-2026-shows-retail-robots-ready-scale-use-ai/" target="_blank" rel="noopener">리테일 로봇, 이제 확장 단계라는 신호</a></h3>
+  <p class="one">Groceryshop 2026에 재고 조사 로봇이 등장하며 리테일 자동화 흐름이 소개됐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>매장 자동화가 시범을 넘어 확장 논의로 옮겨가는 분위기다.</dd></div>
+    <div><dt>비유</dt><dd>공장 로봇이 창고를 거쳐 매장 진열대까지 내려온 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>오프라인 매장·캠핑 용품 재고 데이터를 로봇·센서로 받을 수 있게 재고 API를 미리 표준화해 두자.</dd></div>
+    <div><dt>개발자</dt><dd>로봇이 만드는 재고 스캔 데이터는 실시간 재고 정확도 개선용 소스로 쓸 수 있다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.therobotreport.com/groceryshop-2026-shows-retail-robots-ready-scale-use-ai/" target="_blank" rel="noopener">원제: Groceryshop 2026 shows that retail robots are ready to scale, use AI ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="B4" data-text="휴머노이드 데모는 왜 현장에서 깨지나 로봇이 데모를 넘어 실제 환경에서 작동하려면 더 좋은 데이터와 사람의 판단이 필요하다는 분석. why humanoid robot demos still fail the generalization test the robot report">
+  <div class="meta">
+    
+    <span class="chip cat-B">B4 실패·사고 사례</span>
+    <span>The Robot Report</span>
+    <span>· 10-10 04:28</span>
+    
+  </div>
+  <h3><a href="https://www.therobotreport.com/why-humanoid-robot-demos-still-fail-the-generalization-test/" target="_blank" rel="noopener">휴머노이드 데모는 왜 현장에서 깨지나</a></h3>
+  <p class="one">로봇이 데모를 넘어 실제 환경에서 작동하려면 더 좋은 데이터와 사람의 판단이 필요하다는 분석.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>&#39;데모 성공 ≠ 실환경 성공&#39;은 AI 기능 전반에 적용되는 교훈이다.</dd></div>
+    <div><dt>비유</dt><dd>학원 모의고사만 잘 보던 학생이 실전에서 흔들리는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI 기능을 내보내기 전 실제 사용자 발화·예외 케이스로 만든 평가셋을 반드시 통과시키자.</dd></div>
+    <div><dt>개발자</dt><dd>데모 데이터와 운영 데이터의 분포 차이를 로그로 측정하는 것부터 시작하면 된다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.therobotreport.com/why-humanoid-robot-demos-still-fail-the-generalization-test/" target="_blank" rel="noopener">원제: Why humanoid robot demos still fail the generalization test ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock world-axis" data-cat="science">
+    <h4>과학·의료</h4>
+    <div class="grid">
+<article class="card" data-cat="C3" data-text="&#34;ai가 암호를 깰 가능성&#34;이라는 경고 인용 보안 연구자 매튜 그린이 기존 공개키 암호 신뢰를 잃을 확률을 15%로 봤다고 인용됐다. quoting matthew green simon willison">
+  <div class="meta">
+    
+    <span class="chip cat-C">C3 주목할 논문</span>
+    <span>Simon Willison</span>
+    <span>· 10-10 00:02</span>
+    
+  </div>
+  <h3><a href="https://simonwillison.net/2026/Oct/9/matthew-green/" target="_blank" rel="noopener">&#34;AI가 암호를 깰 가능성&#34;이라는 경고 인용</a></h3>
+  <p class="one">보안 연구자 매튜 그린이 기존 공개키 암호 신뢰를 잃을 확률을 15%로 봤다고 인용됐다.</p>
+  <p class="how"><b>원리</b> AI가 암호 해독에서 예상 밖 진전을 내는 속도와, 사람이 암호 표준을 교체하는 속도를 비교해 &#39;미리 준비하지 않으면 회복 못 한다&#39;고 주장한다.</p>
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>보안 표준 교체는 몇 년이 걸려 사후 대응이 불가능하다.</dd></div>
+    <div><dt>비유</dt><dd>지진 가능성이 낮아도 내진 설계는 미리 해 두는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>결제·회원 인증에 쓰는 암호 알고리즘 목록을 정리해 교체 가능한 구조인지 점검해 두자.</dd></div>
+    <div><dt>개발자</dt><dd>개인 의견·확률 추정이며 확정된 사실이 아니다. 암호 모듈을 교체 가능하게 추상화해 두는 정도가 합리적이다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://simonwillison.net/2026/Oct/9/matthew-green/" target="_blank" rel="noopener">원제: Quoting Matthew Green ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock world-axis" data-cat="infra">
+    <h4>인프라·에너지·지정학</h4>
+    <div class="grid">
+<article class="card" data-cat="C4" data-text="엔비디아, rtx 5090 생산 중단설 ai 데이터센터·전문용 gpu에 집중하려 rtx 5090 생산을 멈췄다는 보도가 나왔다. nvidia reportedly halts geforce rtx 5090 production in favor of ai data center and professional gpus tom&#39;s hardware">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C4 인프라·하드웨어</span>
+    <span>Tom&#39;s Hardware</span>
+    <span>· 10-10 21:20</span>
+    
+  </div>
+  <h3><a href="https://www.tomshardware.com/pc-components/gpus/nvidia-reportedly-halts-geforce-rtx-5090-production-in-favor-of-ai-data-center-and-professional-gpus-impending-supply-drought-expected-to-drive-up-prices-rtx-5080-24gb-rumored-as-new-gaming-flagship" target="_blank" rel="noopener">엔비디아, RTX 5090 생산 중단설</a></h3>
+  <p class="one">AI 데이터센터·전문용 GPU에 집중하려 RTX 5090 생산을 멈췄다는 보도가 나왔다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>고성능 GPU 공급이 소비자용에서 AI용으로 더 쏠릴 수 있다.</dd></div>
+    <div><dt>비유</dt><dd>인기 식당이 단체 주문만 받으려 일반석을 줄이는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>사내 GPU 장비 증설 계획이 있다면 가격·수급 변동을 전제로 클라우드 추론 비중을 다시 계산해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>보도·루머 단계이며 RTX 5080 24GB가 사실상 최상위가 된다는 것도 확정이 아니다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.tomshardware.com/pc-components/gpus/nvidia-reportedly-halts-geforce-rtx-5090-production-in-favor-of-ai-data-center-and-professional-gpus-impending-supply-drought-expected-to-drive-up-prices-rtx-5080-24gb-rumored-as-new-gaming-flagship" target="_blank" rel="noopener">원제: Nvidia reportedly halts GeForce RTX 5090 production in favor of AI data center and professional GPUs ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C4" data-text="텍사스에 3.66억달러 데이터센터 신청 앤트로픽과 연관된 3억6600만달러 규모 데이터센터 프로젝트가 텍사스 시더크릭에 신청됐다. anthropic-linked $366m data center project filed for in cedar creek, texas data center dynamics">
+  <div class="meta">
+    
+    <span class="chip cat-C">C4 인프라·하드웨어</span>
+    <span>Data Center Dynamics</span>
+    <span>· 10-09 23:27</span>
+    
+  </div>
+  <h3><a href="https://www.datacenterdynamics.com/en/news/anthropic-linked-366m-data-center-project-filed-for-in-cedar-creek-texas/" target="_blank" rel="noopener">텍사스에 3.66억달러 데이터센터 신청</a></h3>
+  <p class="one">앤트로픽과 연관된 3억6600만달러 규모 데이터센터 프로젝트가 텍사스 시더크릭에 신청됐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 추론 수요를 뒷받침하는 인프라 투자가 계속 늘고 있다.</dd></div>
+    <div><dt>비유</dt><dd>손님이 늘어 주방을 미리 크게 짓는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>모델 용량이 늘어나는 흐름이라, 장기 계약보다 사용량 기반 요금제로 유연하게 가져가도 된다.</dd></div>
+    <div><dt>개발자</dt><dd>신청 단계이며 착공·가동 일정은 기사에 없다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.datacenterdynamics.com/en/news/anthropic-linked-366m-data-center-project-filed-for-in-cedar-creek-texas/" target="_blank" rel="noopener">원제: Anthropic-linked $366m data center project filed for in Cedar Creek, Texas ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock world-axis" data-cat="daily">
+    <h4>일상·소비</h4>
+    <div class="grid">
+<article class="card" data-cat="B2" data-text="arc raiders 퍼블리셔, ai 안티치트 개발 치터와의 싸움이 커지며 ai 기반 치트 방지 체계를 개발 중이다. arc raiders publisher developing ai anti-cheat stack in escalating war with cheaters tom&#39;s hardware">
+  <div class="meta">
+    
+    <span class="chip cat-B">B2 산업별 적용</span>
+    <span>Tom&#39;s Hardware</span>
+    <span>· 10-09 19:00</span>
+    
+  </div>
+  <h3><a href="https://www.tomshardware.com/video-games/pc-gaming/arc-raiders-developer-uses-ai-to-detect-cheating-embark-cracks-down-on-cheaters-deploys-harsh-penalties-including-permaban-on-first-time-offenders" target="_blank" rel="noopener">Arc Raiders 퍼블리셔, AI 안티치트 개발</a></h3>
+  <p class="one">치터와의 싸움이 커지며 AI 기반 치트 방지 체계를 개발 중이다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI로 이상 행위를 잡는 방식은 어뷰징 방어 전반에 쓰인다.</dd></div>
+    <div><dt>비유</dt><dd>경기장에 심판을 늘리는 대신 전 구역 CCTV 분석을 붙이는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>쿠폰·리뷰 어뷰징, 좌석 매크로 예약 탐지에 같은 패턴 탐지 방식을 적용해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>계정·하드웨어 단위 영구 차단 정책은 오탐 시 피해가 커서 이의 제기 절차 설계가 함께 필요하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.tomshardware.com/video-games/pc-gaming/arc-raiders-developer-uses-ai-to-detect-cheating-embark-cracks-down-on-cheaters-deploys-harsh-penalties-including-permaban-on-first-time-offenders" target="_blank" rel="noopener">원제: Arc Raiders publisher developing AI anti-cheat stack in escalating war with cheaters ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C1" data-text="a16z: 소비자 ai, 구독 밖 수익이 관건 a16z의 올리비아 무어가 구독·api 외 수익원을 찾으면 소비자 ai에 큰 기회가 있다고 봤다. a16z’s olivia moore on the state of consumer ai techcrunch ai">
+  <div class="meta">
+    
+    <span class="chip cat-C">C1 투자·M&amp;A</span>
+    <span>TechCrunch AI</span>
+    <span>· 10-10 00:43</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/10/09/a16zs-olivia-moore-on-the-state-of-consumer-ai/" target="_blank" rel="noopener">a16z: 소비자 AI, 구독 밖 수익이 관건</a></h3>
+  <p class="one">a16z의 올리비아 무어가 구독·API 외 수익원을 찾으면 소비자 AI에 큰 기회가 있다고 봤다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 제품의 수익 모델이 구독에서 거래·커머스로 넓어질 수 있다.</dd></div>
+    <div><dt>비유</dt><dd>잡지가 구독료 대신 광고와 쇼핑으로 버는 쪽으로 옮겨가는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI 추천을 구독 기능이 아니라 예약 전환·수수료로 연결되는 지점에 배치해 실험해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>AI 응답에서 바로 예약·결제로 이어지는 전환 경로를 지표로 따로 추적할 가치가 있다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/10/09/a16zs-olivia-moore-on-the-state-of-consumer-ai/" target="_blank" rel="noopener">원제: a16z’s Olivia Moore on the state of consumer AI ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock world-axis" data-cat="rules">
+    <h4>규칙·사회</h4>
+    <div class="grid">
+<article class="card" data-cat="B4" data-text="앤트로픽 ai, 경찰 제보에 허위 정보 앤트로픽 모델이 필라델피아 경찰 미제사건 제보창구에 거짓 정보를 보냈다고 보도됐다. anthropic’s ai gave philadelphia police a fake tip about an unsolved homicide the verge">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B4 실패·사고 사례</span>
+    <span>The Verge</span>
+    <span>· 10-10 06:15</span>
+    
+  </div>
+  <h3><a href="https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip" target="_blank" rel="noopener">앤트로픽 AI, 경찰 제보에 허위 정보</a></h3>
+  <p class="one">앤트로픽 모델이 필라델피아 경찰 미제사건 제보창구에 거짓 정보를 보냈다고 보도됐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 출력이 외부 창구로 자동 전송될 때의 위험을 보여준다.</dd></div>
+    <div><dt>비유</dt><dd>잘 모르는 사람이 확신에 차서 경찰에 헛제보를 넣는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI가 외부(파트너·고객·기관)로 바로 내용을 보내는 경로에는 사람 확인 단계를 반드시 넣자.</dd></div>
+    <div><dt>개발자</dt><dd>경찰은 해당 제보를 AI 표시로 검토하지 않았다고 밝혔다 — 출처 표기가 안전장치로 작동한 사례다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip" target="_blank" rel="noopener">원제: Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C2" data-text="퓨: 세계인, ai가 일자리 줄인다고 본다 퓨 조사에서 다수가 ai가 일자리를 만드는 것보다 줄일 것으로 봤다고 소개됐다. social media and democracy around the world pew research · 인터넷·기술">
+  <div class="meta">
+    
+    <span class="chip cat-C">C2 규제·정책</span>
+    <span>Pew Research · 인터넷·기술</span>
+    <span>· 10-10 00:17</span>
+    
+  </div>
+  <h3><a href="https://www.pewresearch.org/newsletter/global/global-september-2026-newsletter/" target="_blank" rel="noopener">퓨: 세계인, AI가 일자리 줄인다고 본다</a></h3>
+  <p class="one">퓨 조사에서 다수가 AI가 일자리를 만드는 것보다 줄일 것으로 봤다고 소개됐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 기능에 대한 사용자 정서가 우호적이지 않을 수 있다.</dd></div>
+    <div><dt>비유</dt><dd>신기술이 편리하다면서도 내 일자리는 걱정하는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI 기능 문구를 &#39;사람 대체&#39;보다 &#39;상담 대기 단축&#39; 같은 사용자 이득 중심으로 쓰자.</dd></div>
+    <div><dt>개발자</dt><dd>소셜미디어가 민주주의에 해롭다는 응답도 함께 나와, AI 기능의 커뮤니티·리뷰 노출 설계도 신중할 필요가 있다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.pewresearch.org/newsletter/global/global-september-2026-newsletter/" target="_blank" rel="noopener">원제: Social media and democracy around the world ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+<section class="box weekly-link">
+  <div class="label">주간 요약 — 10/05 ~ 10/11</div>
+  <h3><a href="../weekly/2026-W41.html">에이전트가 결제까지 — 판단·비용·보안은 쪼개서 관리 →</a></h3>
+</section>
+
+
+</main>
+<footer class="wrap foot">
+  생성 2026-10-17 11:19 KST · 공식 RSS·API만 수집 · 원문 저작권은 각 출처에 있습니다
+</footer>
+<script src="../static/app.js?v=73b1c7e9b5"></script>
+</body>
+</html>

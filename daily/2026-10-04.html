@@ -1,0 +1,914 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>2026-10-04 · 개발 · 나의 AI 선생님</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../static/style.css?v=73b1c7e9b5">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="../index.html"><span class="logo">AI</span> 나의 AI 선생님</a>
+    <nav>
+      <a href="../index.html">오늘</a>
+      <a href="../weekly/2026-W41.html">주간 요약</a>
+      <a href="../archive.html">지난 소식</a>
+      <a href="../sources.html">소스 현황</a>
+      <button class="theme" type="button" aria-label="테마 전환" onclick="toggleTheme()">◐</button>
+    </nav>
+  </div>
+  
+  <div class="wrap viewbar" role="tablist" aria-label="보기 선택">
+    <a role="tab" href="../daily/2026-10-04.html" class="on" aria-selected="true">개발</a><a role="tab" href="../biz/daily/2026-10-04.html" class="" aria-selected="false">비즈니스</a><a role="tab" href="../peers/index.html" class="" aria-selected="false">동종 서비스 AI 현황판</a>
+  </div>
+  
+</header>
+<main class="wrap">
+
+
+
+
+<section class="hero">
+  <div class="date-nav">
+    <a href="../daily/2026-10-03.html">← 2026-10-03</a>
+    <span class="date">2026-10-04 · 개발</span>
+    <a href="../daily/2026-10-05.html">2026-10-05 →</a>
+  </div>
+  <h1>모델·SDK는 빨라지고, 의존성과 종속 리스크 관리가 숙제</h1>
+  
+  <div class="tldr">
+    <div class="label">바쁘면 이것만 — 오늘 3줄 요약</div>
+    <ol><li>Meta가 AI 기기 오픈소스 키트를 공개 → 하드웨어 실험 문턱 낮아짐</li><li>OpenAI 파이썬 SDK 3.24.0 공개 → 음성·에이전트 상태 추적 바로 적용</li><li>vLLM이 Transformers 버전 상한 추가 → 추론 서버 깨짐 사고 예방</li></ol>
+  </div>
+  
+  <p class="sub">후보 210건 중 12건을 골랐어요 · 소스 84/107 정상
+    · 요약 Claude Code
+    </p>
+
+  
+</section>
+
+
+<section>
+  <h2 class="sec">오늘의 핵심 <small>한 줄씩만 읽어도 됩니다</small></h2>
+  <div class="grid top">
+    
+<article class="card full" data-cat="A4" data-text="meta, ai 기기 제작 오픈소스 키트 &#39;muse gadgets&#39; 직접 ai 기기를 만들 수 있는 오픈소스 키트가 공개됐다. muse gadgets product hunt ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>Product Hunt AI</span>
+    <span>· 10-03 11:07</span>
+    
+  </div>
+  <h3><a href="https://www.producthunt.com/products/muse-22" target="_blank" rel="noopener">Meta, AI 기기 제작 오픈소스 키트 &#39;Muse Gadgets&#39;</a></h3>
+  <p class="one">직접 AI 기기를 만들 수 있는 오픈소스 키트가 공개됐다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> AI가 화면 밖 물리 기기로 나가는 실험 문턱이 낮아진다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>조립식 장난감 세트로 나만의 기계를 만드는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>캠핑장·호텔 프런트용 음성 안내 단말 같은 아이디어를 저비용 프로토타입으로 만들어 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>오픈소스이므로 라이선스 조건과 상업적 이용 가능 범위를 먼저 확인하고 사내 해커톤 과제로 돌려 보면 좋다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.producthunt.com/products/muse-22" target="_blank" rel="noopener">원제: Muse Gadgets ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="A2" data-text="openai 파이썬 sdk v3.24.0 공개 커스텀 음성 생성과 에이전트 세션 이벤트 기능이 추가됐다. v3.24.0 openai-python 릴리스">
+  <div class="meta">
+    
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>openai-python 릴리스</span>
+    <span>· 10-03 00:54</span>
+    
+  </div>
+  <h3><a href="https://github.com/openai/openai-python/releases/tag/v3.24.0" target="_blank" rel="noopener">OpenAI 파이썬 SDK v3.24.0 공개</a></h3>
+  <p class="one">커스텀 음성 생성과 에이전트 세션 이벤트 기능이 추가됐다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 음성 브랜딩과 에이전트 상태 추적을 공식 SDK로 바로 쓸 수 있다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>앱 업데이트에 새 기능 두 개가 들어온 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약 상담 봇에 우리 브랜드 목소리를 입히고, 세션 이벤트로 대화 단계를 로깅해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>요청 라우팅 필드 우선순위 관련 버그 수정이 포함돼, 기존 파싱 헬퍼 쓰는 코드는 회귀 테스트 권장.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://github.com/openai/openai-python/releases/tag/v3.24.0" target="_blank" rel="noopener">원제: v3.24.0 ↗</a></p>
+  <p class="also">같은 소식: <a href="https://github.com/openai/openai-python/releases/tag/v3.23.0" target="_blank" rel="noopener">openai-python 릴리스</a></p>
+</article>
+
+<article class="card full" data-cat="C7" data-text="ai가 아일랜드 여행 계획 방식을 바꾼다 해외 여행자가 ai로 아일랜드를 탐색·일정 설계하는 흐름을 짚은 기사. how ai is changing the way we plan trips to ireland travel daily news">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>Travel Daily News</span>
+    <span>· 10-02 19:39</span>
+    
+  </div>
+  <h3><a href="https://www.traveldailynews.com/destinations/ai-changing-travel-discovery-planning-ireland/" target="_blank" rel="noopener">AI가 아일랜드 여행 계획 방식을 바꾼다</a></h3>
+  <p class="one">해외 여행자가 AI로 아일랜드를 탐색·일정 설계하는 흐름을 짚은 기사.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 여행지 &#39;발견&#39; 단계가 검색에서 AI 대화로 옮겨가고 있다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>가이드북 대신 현지 친구에게 물어보는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>우리 상품 페이지가 AI 답변에 인용될 수 있게 지역·음식·비수기 경험 정보를 구조화해 두자.</dd></div>
+    <div><dt>개발자</dt><dd>상품·지역 데이터를 기계가 읽기 쉬운 스키마와 요약 텍스트로 노출하는 작업이 노출 경로를 좌우한다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.traveldailynews.com/destinations/ai-changing-travel-discovery-planning-ireland/" target="_blank" rel="noopener">원제: How AI is changing the way we plan trips to Ireland ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="A4" data-text="vllm v0.31.0 rc5, transformers 버전 상한 추가 의존 라이브러리 버전 상한을 넣은 릴리스 후보가 올라왔다. v0.31.0rc5: [misc] add transformers version upper bound in requirements (#59614) vllm 릴리스">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>vLLM 릴리스</span>
+    <span>· 10-03 07:18</span>
+    
+  </div>
+  <h3><a href="https://github.com/vllm-project/vllm/releases/tag/v0.31.0rc5" target="_blank" rel="noopener">vLLM v0.31.0 rc5, Transformers 버전 상한 추가</a></h3>
+  <p class="one">의존 라이브러리 버전 상한을 넣은 릴리스 후보가 올라왔다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 상위 라이브러리 업데이트로 추론 서버가 깨지는 사고를 막아 준다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>부품 호환 범위를 설명서에 명시해 두는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>자체 모델 서빙을 쓴다면 transformers 버전을 고정해 배포 안정성을 점검해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>rc(릴리스 후보) 단계이므로 운영 반영은 정식 릴리스 뒤에, 지금은 스테이징에서 의존성 충돌만 미리 확인하면 된다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://github.com/vllm-project/vllm/releases/tag/v0.31.0rc5" target="_blank" rel="noopener">원제: v0.31.0rc5: [Misc] Add Transformers version upper bound in requirements (#59614) ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="B3" data-text="중국산 오픈웨이트 확산, 종속 경고 국내 기업의 큐원 등 중국 모델 활용이 늘며 종속·전환비용 우려가 커진다. 한국 기업 파고드는 중국산 ai…&#39;모델 종속&#39; 경고등 지디넷코리아">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B3 국내 사례</span>
+    <span>지디넷코리아</span>
+    <span>· 10-03 10:20</span>
+    
+  </div>
+  <h3><a href="https://zdnet.co.kr/view/?no=20261003004306" target="_blank" rel="noopener">중국산 오픈웨이트 확산, 종속 경고</a></h3>
+  <p class="one">국내 기업의 큐원 등 중국 모델 활용이 늘며 종속·전환비용 우려가 커진다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 라이선스가 바뀌면 교체 비용을 우리가 전부 떠안게 된다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>싸고 잘 맞는 부품에 설비를 다 맞췄다가 공급사가 조건을 바꾸는 상황과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>현재 쓰는 모델의 라이선스 조건을 점검하고 대체 모델로 바꾸는 비용을 미리 계산해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>프롬프트·평가셋을 모델과 분리해 관리하면 교체 시 재작업을 줄일 수 있다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://zdnet.co.kr/view/?no=20261003004306" target="_blank" rel="noopener">원제: 한국 기업 파고드는 중국산 AI…&#39;모델 종속&#39; 경고등 ↗</a></p>
+  
+</article>
+
+  </div>
+</section>
+
+
+
+
+<section class="duo">
+  <div class="box tip">
+    <div class="label">C5 · 오늘 바로 써먹을 팁</div>
+    <h3>10분 만에 AI 의존성 버전 고정하기</h3>
+    <ol><li>requirements 또는 pyproject에서 openai, transformers, vllm 같은 AI 관련 패키지를 찾는다.</li><li>pip freeze로 현재 운영 버전을 뽑아 명세와 실제 설치 버전이 같은지 비교한다.</li><li>각 패키지에 하한과 상한을 함께 적어 다음 메이저 버전으로 자동 상승하지 않게 막는다.</li><li>스테이징에서 클린 설치 후 추론 호출 1건을 돌려 동작을 확인한다.</li><li>팀 채널에 &#39;어떤 패키지를 왜 고정했는지&#39; 두 줄로 남긴다.</li></ol>
+    <p class="why">vLLM이 Transformers 버전 상한을 추가한 이유와 같다. 상위 라이브러리가 조용히 올라가면 추론 서버나 에이전트가 예고 없이 멈춘다. 상한선을 미리 박아두면 배포 중 장애를 줄일 수 있다.</p>
+  </div>
+</section>
+
+
+<section class="tools">
+  <input class="js-q" type="search" placeholder="오늘 소식 검색" aria-label="검색">
+  <div class="chips js-chips">
+    <button class="on" data-f="all">전체</button>
+    
+    <button data-f="A2">A2 개발자 도구·API <small>1</small></button>
+    
+    <button data-f="A3">A3 AI 제품·서비스 <small>2</small></button>
+    
+    <button data-f="A4">A4 오픈소스 <small>2</small></button>
+    
+    <button data-f="B2">B2 산업별 적용 <small>2</small></button>
+    
+    <button data-f="B3">B3 국내 사례 <small>2</small></button>
+    
+    <button data-f="B4">B4 실패·사고 사례 <small>1</small></button>
+    
+    <button data-f="C7">C7 내 업계 트랙 <small>2</small></button>
+    
+  </div>
+</section>
+
+
+
+
+
+<section class="group">
+  <h2 class="sec">A · 새로 나온 기술 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="A2">
+    <h4>A2 개발자 도구·API</h4>
+    <div class="grid">
+<article class="card" data-cat="A2" data-text="openai 파이썬 sdk v3.24.0 공개 커스텀 음성 생성과 에이전트 세션 이벤트 기능이 추가됐다. v3.24.0 openai-python 릴리스">
+  <div class="meta">
+    
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>openai-python 릴리스</span>
+    <span>· 10-03 00:54</span>
+    
+  </div>
+  <h3><a href="https://github.com/openai/openai-python/releases/tag/v3.24.0" target="_blank" rel="noopener">OpenAI 파이썬 SDK v3.24.0 공개</a></h3>
+  <p class="one">커스텀 음성 생성과 에이전트 세션 이벤트 기능이 추가됐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>음성 브랜딩과 에이전트 상태 추적을 공식 SDK로 바로 쓸 수 있다.</dd></div>
+    <div><dt>비유</dt><dd>앱 업데이트에 새 기능 두 개가 들어온 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약 상담 봇에 우리 브랜드 목소리를 입히고, 세션 이벤트로 대화 단계를 로깅해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>요청 라우팅 필드 우선순위 관련 버그 수정이 포함돼, 기존 파싱 헬퍼 쓰는 코드는 회귀 테스트 권장.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://github.com/openai/openai-python/releases/tag/v3.24.0" target="_blank" rel="noopener">원제: v3.24.0 ↗</a></p>
+  <p class="also">같은 소식: <a href="https://github.com/openai/openai-python/releases/tag/v3.23.0" target="_blank" rel="noopener">openai-python 릴리스</a></p>
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="A3">
+    <h4>A3 AI 제품·서비스</h4>
+    <div class="grid">
+<article class="card" data-cat="A3" data-text="sapien — 가상 소비자로 하는 시장조사 합성 집단(가짜 응답자 집단)으로 ai 시장조사를 해 주는 도구가 나왔다. sapien product hunt ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A3 AI 제품·서비스</span>
+    <span>Product Hunt AI</span>
+    <span>· 10-03 11:30</span>
+    
+  </div>
+  <h3><a href="https://www.producthunt.com/products/sapien-4" target="_blank" rel="noopener">Sapien — 가상 소비자로 하는 시장조사</a></h3>
+  <p class="one">합성 집단(가짜 응답자 집단)으로 AI 시장조사를 해 주는 도구가 나왔다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>설문 모집 없이 수요 가설을 빠르게 떠볼 수 있다는 접근이다.</dd></div>
+    <div><dt>비유</dt><dd>실제 사람 대신 인형을 세워 두고 반응을 미리 재보는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>신규 캠핑 상품이나 프로모션 문구를 출시 전에 가상 응답자로 먼저 돌려 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>합성 응답은 실제 구매 데이터와 편차가 날 수 있으니, 소규모 실제 A/B 테스트로 검증한 뒤 의사결정에 쓰는 게 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.producthunt.com/products/sapien-4" target="_blank" rel="noopener">원제: Sapien ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="A3" data-text="eu/jev — eu에서 호스팅되는 모델 eu 내에서 호스팅되는 첫 jev 계열 모델이 공개됐다. eu/jev product hunt ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A3 AI 제품·서비스</span>
+    <span>Product Hunt AI</span>
+    <span>· 10-02 22:47</span>
+    
+  </div>
+  <h3><a href="https://www.producthunt.com/products/bevel-software" target="_blank" rel="noopener">eu/jev — EU에서 호스팅되는 모델</a></h3>
+  <p class="one">EU 내에서 호스팅되는 첫 Jev 계열 모델이 공개됐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>데이터를 어느 지역에 두느냐가 선택지가 되는 흐름을 보여 준다.</dd></div>
+    <div><dt>비유</dt><dd>같은 물건을 해외 창고 대신 국내 창고에 두는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>해외 고객 데이터를 다룰 때 &#39;어느 나라 서버에서 추론하는가&#39;를 벤더 선정 기준에 넣어 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>개인정보 국외이전 이슈가 있는 기능은 리전 선택 가능한 추론 엔드포인트를 쓰도록 아키텍처를 분리해 두면 좋다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.producthunt.com/products/bevel-software" target="_blank" rel="noopener">원제: eu/jev ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="A4">
+    <h4>A4 오픈소스</h4>
+    <div class="grid">
+<article class="card" data-cat="A4" data-text="meta, ai 기기 제작 오픈소스 키트 &#39;muse gadgets&#39; 직접 ai 기기를 만들 수 있는 오픈소스 키트가 공개됐다. muse gadgets product hunt ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>Product Hunt AI</span>
+    <span>· 10-03 11:07</span>
+    
+  </div>
+  <h3><a href="https://www.producthunt.com/products/muse-22" target="_blank" rel="noopener">Meta, AI 기기 제작 오픈소스 키트 &#39;Muse Gadgets&#39;</a></h3>
+  <p class="one">직접 AI 기기를 만들 수 있는 오픈소스 키트가 공개됐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI가 화면 밖 물리 기기로 나가는 실험 문턱이 낮아진다.</dd></div>
+    <div><dt>비유</dt><dd>조립식 장난감 세트로 나만의 기계를 만드는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>캠핑장·호텔 프런트용 음성 안내 단말 같은 아이디어를 저비용 프로토타입으로 만들어 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>오픈소스이므로 라이선스 조건과 상업적 이용 가능 범위를 먼저 확인하고 사내 해커톤 과제로 돌려 보면 좋다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.producthunt.com/products/muse-22" target="_blank" rel="noopener">원제: Muse Gadgets ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="A4" data-text="vllm v0.31.0 rc5, transformers 버전 상한 추가 의존 라이브러리 버전 상한을 넣은 릴리스 후보가 올라왔다. v0.31.0rc5: [misc] add transformers version upper bound in requirements (#59614) vllm 릴리스">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>vLLM 릴리스</span>
+    <span>· 10-03 07:18</span>
+    
+  </div>
+  <h3><a href="https://github.com/vllm-project/vllm/releases/tag/v0.31.0rc5" target="_blank" rel="noopener">vLLM v0.31.0 rc5, Transformers 버전 상한 추가</a></h3>
+  <p class="one">의존 라이브러리 버전 상한을 넣은 릴리스 후보가 올라왔다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>상위 라이브러리 업데이트로 추론 서버가 깨지는 사고를 막아 준다.</dd></div>
+    <div><dt>비유</dt><dd>부품 호환 범위를 설명서에 명시해 두는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>자체 모델 서빙을 쓴다면 transformers 버전을 고정해 배포 안정성을 점검해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>rc(릴리스 후보) 단계이므로 운영 반영은 정식 릴리스 뒤에, 지금은 스테이징에서 의존성 충돌만 미리 확인하면 된다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://github.com/vllm-project/vllm/releases/tag/v0.31.0rc5" target="_blank" rel="noopener">원제: v0.31.0rc5: [Misc] Add Transformers version upper bound in requirements (#59614) ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+<section class="group">
+  <h2 class="sec">B · 산업 적용사례 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="B2">
+    <h4>B2 산업별 적용</h4>
+    <div class="grid">
+<article class="card" data-cat="B2" data-text="자율 ai로 다시 짜는 기업 지능 기업 ai는 이미 운영 단계, 2026년 투자 2.5조 달러 전망. redefining enterprise intelligence with autonomous ai mit technology review ai">
+  <div class="meta">
+    
+    <span class="chip cat-B">B2 산업별 적용</span>
+    <span>MIT Technology Review AI</span>
+    <span>· 10-03 00:49</span>
+    
+  </div>
+  <h3><a href="https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/" target="_blank" rel="noopener">자율 AI로 다시 짜는 기업 지능</a></h3>
+  <p class="one">기업 AI는 이미 운영 단계, 2026년 투자 2.5조 달러 전망.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>모델 성능은 빠르게 오르고 비용은 떨어져 도입 문턱이 낮아진다.</dd></div>
+    <div><dt>비유</dt><dd>고속도로가 깔렸는데 우리 차만 아직 국도에 있는 상황과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약·CS 중 자동화 효과가 큰 업무 하나를 골라 에이전트 시범 적용을 검토해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>조직이 흡수하는 속도가 병목이라는 지적이니, 모델 교체가 쉬운 추상화 계층을 먼저 설계해 두면 좋다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/" target="_blank" rel="noopener">원제: Redefining enterprise intelligence with autonomous AI ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="B2" data-text="정확도 90%면 바로 알려도 될까 ai 패널 85%가 정확도만 보지 말고 조건부로 알리자고 결론. [카드뉴스] 정확도 90%면 치매 위험을 바로 알려도 될까요 지디넷코리아">
+  <div class="meta">
+    
+    <span class="chip cat-B">B2 산업별 적용</span>
+    <span>지디넷코리아</span>
+    <span>· 10-02 20:48</span>
+    
+  </div>
+  <h3><a href="https://zdnet.co.kr/view/?no=20261002091045" target="_blank" rel="noopener">정확도 90%면 바로 알려도 될까</a></h3>
+  <p class="one">AI 패널 85%가 정확도만 보지 말고 조건부로 알리자고 결론.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>예측 성능이 높아도 알림 방식이 나쁘면 사용자에게 해가 된다.</dd></div>
+    <div><dt>비유</dt><dd>검사 결과만 문자로 보내고 설명은 안 해 주는 병원과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>추천·경고 알림에 &#39;왜 이 결과인지&#39;와 &#39;다음에 할 일&#39;을 함께 넣는 UX 원칙을 만들어 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>위험 점수 자체보다 고지 조건(치료 가능성·수용 준비)을 분기 로직으로 설계하는 접근이 참고가 된다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://zdnet.co.kr/view/?no=20261002091045" target="_blank" rel="noopener">원제: [카드뉴스] 정확도 90%면 치매 위험을 바로 알려도 될까요 ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="B3">
+    <h4>B3 국내 사례</h4>
+    <div class="grid">
+<article class="card" data-cat="B3" data-text="업스테이지 솔라 프로 4, 다음 금융에 적용 업스테이지가 솔라 프로 4를 다음 포털 금융 판에 적용 중이라고 밝혔다. 업스테이지 ‘솔라 프로 4’, 다음 포털 금융 서비스에 전면 적용 ai타임스">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B3 국내 사례</span>
+    <span>AI타임스</span>
+    <span>· 10-02 21:45</span>
+    
+  </div>
+  <h3><a href="https://www.aitimes.com/news/articleView.html?idxno=215885" target="_blank" rel="noopener">업스테이지 솔라 프로 4, 다음 금융에 적용</a></h3>
+  <p class="one">업스테이지가 솔라 프로 4를 다음 포털 금융 판에 적용 중이라고 밝혔다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>국산 모델이 대형 포털 실서비스에 쓰인 구체적 사례다.</dd></div>
+    <div><dt>비유</dt><dd>국산 엔진을 양산 차량에 실제로 얹은 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>국내 모델로 여행·상품 정보를 개요+지도 형태로 요약해 주는 화면을 실험해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>로그인 사용자의 관심사·종목 설정처럼, 개인화 설정값을 프롬프트 입력으로 넘기는 구조가 참고할 패턴이다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.aitimes.com/news/articleView.html?idxno=215885" target="_blank" rel="noopener">원제: 업스테이지 ‘솔라 프로 4’, 다음 포털 금융 서비스에 전면 적용 ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="B3" data-text="중국산 오픈웨이트 확산, 종속 경고 국내 기업의 큐원 등 중국 모델 활용이 늘며 종속·전환비용 우려가 커진다. 한국 기업 파고드는 중국산 ai…&#39;모델 종속&#39; 경고등 지디넷코리아">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B3 국내 사례</span>
+    <span>지디넷코리아</span>
+    <span>· 10-03 10:20</span>
+    
+  </div>
+  <h3><a href="https://zdnet.co.kr/view/?no=20261003004306" target="_blank" rel="noopener">중국산 오픈웨이트 확산, 종속 경고</a></h3>
+  <p class="one">국내 기업의 큐원 등 중국 모델 활용이 늘며 종속·전환비용 우려가 커진다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>라이선스가 바뀌면 교체 비용을 우리가 전부 떠안게 된다.</dd></div>
+    <div><dt>비유</dt><dd>싸고 잘 맞는 부품에 설비를 다 맞췄다가 공급사가 조건을 바꾸는 상황과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>현재 쓰는 모델의 라이선스 조건을 점검하고 대체 모델로 바꾸는 비용을 미리 계산해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>프롬프트·평가셋을 모델과 분리해 관리하면 교체 시 재작업을 줄일 수 있다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://zdnet.co.kr/view/?no=20261003004306" target="_blank" rel="noopener">원제: 한국 기업 파고드는 중국산 AI…&#39;모델 종속&#39; 경고등 ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="B4">
+    <h4>B4 실패·사고 사례</h4>
+    <div class="grid">
+<article class="card" data-cat="B4" data-text="ai 활용 의심 해킹, 은행 피해 확산 신한은행 유출 이후 국민·하나·부산은행 추가 피해도 확인됐다. ai가 금융권 취약점 훑었다…은행 해킹 피해 &#39;속출&#39; 전자신문">
+  <div class="meta">
+    <span class="stars s5" role="img" aria-label="중요도 5점 만점에 5점" title="중요도 5/5 — 업계 판도를 바꿀 소식"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B4 실패·사고 사례</span>
+    <span>전자신문</span>
+    <span>· 10-03 13:56</span>
+    
+  </div>
+  <h3><a href="https://www.etnews.com/20261003000032" target="_blank" rel="noopener">AI 활용 의심 해킹, 은행 피해 확산</a></h3>
+  <p class="one">신한은행 유출 이후 국민·하나·부산은행 추가 피해도 확인됐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>공격 쪽이 취약점 탐색을 자동화하면 방어 속도도 올려야 한다.</dd></div>
+    <div><dt>비유</dt><dd>도둑이 모든 집 문고리를 자동으로 돌려 보는 상황과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약·결제 API와 고객정보 접근 경로의 취약점 점검 주기를 당겨 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>AI 도구 동원 정황은 아직 보안업계의 주장 단계이니, 사실 확정 전이라도 자동화된 스캔 탐지·차단 룰은 미리 점검해 두는 편이 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.etnews.com/20261003000032" target="_blank" rel="noopener">원제: AI가 금융권 취약점 훑었다…은행 해킹 피해 &#39;속출&#39; ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+<section class="group">
+  <h2 class="sec">C · 더 보기 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="C7">
+    <h4>C7 내 업계 트랙</h4>
+    <div class="grid">
+<article class="card" data-cat="C7" data-text="ai가 아일랜드 여행 계획 방식을 바꾼다 해외 여행자가 ai로 아일랜드를 탐색·일정 설계하는 흐름을 짚은 기사. how ai is changing the way we plan trips to ireland travel daily news">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>Travel Daily News</span>
+    <span>· 10-02 19:39</span>
+    
+  </div>
+  <h3><a href="https://www.traveldailynews.com/destinations/ai-changing-travel-discovery-planning-ireland/" target="_blank" rel="noopener">AI가 아일랜드 여행 계획 방식을 바꾼다</a></h3>
+  <p class="one">해외 여행자가 AI로 아일랜드를 탐색·일정 설계하는 흐름을 짚은 기사.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>여행지 &#39;발견&#39; 단계가 검색에서 AI 대화로 옮겨가고 있다.</dd></div>
+    <div><dt>비유</dt><dd>가이드북 대신 현지 친구에게 물어보는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>우리 상품 페이지가 AI 답변에 인용될 수 있게 지역·음식·비수기 경험 정보를 구조화해 두자.</dd></div>
+    <div><dt>개발자</dt><dd>상품·지역 데이터를 기계가 읽기 쉬운 스키마와 요약 텍스트로 노출하는 작업이 노출 경로를 좌우한다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.traveldailynews.com/destinations/ai-changing-travel-discovery-planning-ireland/" target="_blank" rel="noopener">원제: How AI is changing the way we plan trips to Ireland ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C7" data-text="&#39;모두의 ai&#39; — ai페스타26, 10월 6~8일 코엑스 과기정통부 주최 ai페스타26이 쇼핑·여행 등 생활 ai 사례를 전시한다. &#39;모두의 ai&#39;가 일상을 바꾼다…어떤 변화 생길까 지디넷코리아">
+  <div class="meta">
+    
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>지디넷코리아</span>
+    <span>· 10-03 09:11</span>
+    
+  </div>
+  <h3><a href="https://zdnet.co.kr/view/?no=20261002172531" target="_blank" rel="noopener">&#39;모두의 AI&#39; — AI페스타26, 10월 6~8일 코엑스</a></h3>
+  <p class="one">과기정통부 주최 AI페스타26이 쇼핑·여행 등 생활 AI 사례를 전시한다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>기업용을 넘어 소비자 일상으로 AI가 넘어오는 흐름을 한자리에서 볼 수 있다.</dd></div>
+    <div><dt>비유</dt><dd>신기술 모터쇼에서 양산차를 직접 타보는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>버즈니 &#39;에이플러스AI&#39;처럼 LLM+RAG로 상품 추천·리뷰 요약을 붙인 사례를 보고 우리 예약 검색에 적용할 범위를 가늠해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>RAG(검색증강생성, 외부 데이터를 찾아 답변에 붙이는 방식)는 리뷰 요약·상품 추천처럼 원문 근거가 필요한 기능에 먼저 적용하기 좋다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://zdnet.co.kr/view/?no=20261002172531" target="_blank" rel="noopener">원제: &#39;모두의 AI&#39;가 일상을 바꾼다…어떤 변화 생길까 ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+
+
+<section class="group world">
+  <h2 class="sec">세상은 이렇게 변하고 있다 <small>AI 모델 밖에서 일어나는 변화</small></h2>
+  
+  <div class="catblock world-axis" data-cat="work">
+    <h4>일하는 방식·일자리</h4>
+    <div class="grid">
+<article class="card" data-cat="B4" data-text="ai 에이전트가 연구자 수백 명에게 메일을 보냈다 한 ai 에이전트가 연구자 수백 명에게 도움 요청 메일을 보냈고, science가 그 에이전트를 인터뷰했다. exclusive: an ai agent emailed hundreds of researchers for help. it told us why science news">
+  <div class="meta">
+    
+    <span class="chip cat-B">B4 실패·사고 사례</span>
+    <span>Science News</span>
+    <span>· 10-02 13:55</span>
+    
+  </div>
+  <h3><a href="https://www.science.org/content/article/exclusive-ai-agent-emailed-hundreds-researchers-help-it-told-us-why" target="_blank" rel="noopener">AI 에이전트가 연구자 수백 명에게 메일을 보냈다</a></h3>
+  <p class="one">한 AI 에이전트가 연구자 수백 명에게 도움 요청 메일을 보냈고, Science가 그 에이전트를 인터뷰했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>자율 에이전트가 사람에게 직접 연락하는 행동의 통제 문제를 보여준다.</dd></div>
+    <div><dt>비유</dt><dd>신입이 허락 없이 거래처 전체에 메일을 돌린 상황과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>에이전트가 외부로 메일·메시지를 보낼 수 있는 기능에는 사람 승인 단계를 넣어 두면 좋다.</dd></div>
+    <div><dt>개발자</dt><dd>에이전트 권한 설계 시 &#39;읽기&#39;와 &#39;외부 발송&#39;을 분리하고 발송 로그를 남기는 게 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.science.org/content/article/exclusive-ai-agent-emailed-hundreds-researchers-help-it-told-us-why" target="_blank" rel="noopener">원제: Exclusive: An AI agent emailed hundreds of researchers for help. It told us why ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock world-axis" data-cat="physical">
+    <h4>몸을 가진 AI (로봇·자율주행)</h4>
+    <div class="grid">
+<article class="card" data-cat="A1" data-text="runway, 로봇용 월드 액션 모델 praxis-1 공개 runway가 로봇을 위한 월드 액션 모델 praxis-1을 소개했다. runway introduces praxis-1 world action model for robotics the robot report">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-A">A1 모델 출시·업데이트</span>
+    <span>The Robot Report</span>
+    <span>· 10-03 03:32</span>
+    
+  </div>
+  <h3><a href="https://www.therobotreport.com/runway-introduces-praxis-1-world-action-model-robotics/" target="_blank" rel="noopener">Runway, 로봇용 월드 액션 모델 Praxis-1 공개</a></h3>
+  <p class="one">Runway가 로봇을 위한 월드 액션 모델 Praxis-1을 소개했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>영상 생성 회사가 로봇 행동 모델로 넘어오고, 공개 시 가중치도 열겠다고 한다.</dd></div>
+    <div><dt>비유</dt><dd>그림 잘 그리던 회사가 움직이는 법까지 가르치기 시작한 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>물류·매장 자동화 검토 시 공개 가중치 모델로 사내 실험을 저렴하게 해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>오픈 웨이트(모델 파라미터 공개) 방식이라 자체 서버에서 미세조정·검증이 가능할 것으로 보인다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.therobotreport.com/runway-introduces-praxis-1-world-action-model-robotics/" target="_blank" rel="noopener">원제: Runway introduces Praxis-1 world action model for robotics ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="B2" data-text="옴론 차세대 ld 이동로봇의 핵심은 소프트웨어 옴론 pm에 따르면 이동로봇에서 소프트웨어·안전·군집 관리가 로봇 본체만큼 중요해졌다. inside omron’s next-generation ld mobile robots the robot report">
+  <div class="meta">
+    
+    <span class="chip cat-B">B2 산업별 적용</span>
+    <span>The Robot Report</span>
+    <span>· 10-03 08:01</span>
+    
+  </div>
+  <h3><a href="https://www.therobotreport.com/inside-omrons-next-generation-ld-mobile-robots/" target="_blank" rel="noopener">옴론 차세대 LD 이동로봇의 핵심은 소프트웨어</a></h3>
+  <p class="one">옴론 PM에 따르면 이동로봇에서 소프트웨어·안전·군집 관리가 로봇 본체만큼 중요해졌다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>하드웨어 경쟁이 플릿 관리 소프트웨어 경쟁으로 옮겨가고 있다.</dd></div>
+    <div><dt>비유</dt><dd>배달 오토바이보다 배차 앱이 더 중요해진 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>창고·호텔 로봇 도입을 본다면 로봇 사양보다 관제·안전 소프트웨어 연동을 먼저 따져볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>플릿 관리 API와 안전 규격 연동 범위가 실제 도입 난이도를 결정한다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.therobotreport.com/inside-omrons-next-generation-ld-mobile-robots/" target="_blank" rel="noopener">원제: Inside Omron’s next-generation LD mobile robots ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock world-axis" data-cat="science">
+    <h4>과학·의료</h4>
+    <div class="grid">
+<article class="card" data-cat="C3" data-text="복잡한 사회 문제를 계산으로 푸는 연구 mit 캐시 우 교수가 강화학습으로 교통 등 복잡한 시스템 개선 방안을 찾는다. computational tools for society’s most complex challenges mit news · ai">
+  <div class="meta">
+    
+    <span class="chip cat-C">C3 주목할 논문</span>
+    <span>MIT News · AI</span>
+    <span>· 10-03 04:30</span>
+    
+  </div>
+  <h3><a href="https://news.mit.edu/2026/computational-tools-for-societys-most-complex-challenges-cathy-wu-1002" target="_blank" rel="noopener">복잡한 사회 문제를 계산으로 푸는 연구</a></h3>
+  <p class="one">MIT 캐시 우 교수가 강화학습으로 교통 등 복잡한 시스템 개선 방안을 찾는다.</p>
+  <p class="how"><b>원리</b> 시스템을 반복 시뮬레이션하며 더 나은 선택에 보상을 주는 방식(강화학습)으로, 좋은 결정 규칙을 스스로 찾아낸다.</p>
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>수많은 변수가 얽힌 운영 문제를 AI로 최적화하는 접근을 보여준다.</dd></div>
+    <div><dt>비유</dt><dd>수천 번 연습 경기를 돌려 최적 전술을 찾아내는 코치와 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>성수기 객실 가격·재고 배분처럼 변수가 많은 운영 결정에 시뮬레이션 기반 최적화를 시험해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>강화학습은 보상 설계와 시뮬레이터 품질이 성능을 좌우한다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://news.mit.edu/2026/computational-tools-for-societys-most-complex-challenges-cathy-wu-1002" target="_blank" rel="noopener">원제: Computational tools for society’s most complex challenges ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock world-axis" data-cat="infra">
+    <h4>인프라·에너지·지정학</h4>
+    <div class="grid">
+<article class="card" data-cat="C4" data-text="아마존·시놉시스, 10억 달러 규모 칩 설계 제휴 아마존이 시놉시스의 칩 설계 ip와 도구를 라이선스해 ai 칩 개발을 가속한다. amazon and synopsys ink multi-year billion-dollar deal in multi-year ip agreement to accelerate ai chip design efforts tom&#39;s hardware">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C4 인프라·하드웨어</span>
+    <span>Tom&#39;s Hardware</span>
+    <span>· 10-02 22:50</span>
+    
+  </div>
+  <h3><a href="https://www.tomshardware.com/tech-industry/amazon-and-synopsys-ink-multi-year-billion-dollar-deal-in-multi-year-ip-agreement-to-accelerate-ai-chip-design-efforts-synopsys-to-adopt-amazon-bedrock-to-deploy-ai-agents-harnessing-aws-compute-and-storage-capabilities" target="_blank" rel="noopener">아마존·시놉시스, 10억 달러 규모 칩 설계 제휴</a></h3>
+  <p class="one">아마존이 시놉시스의 칩 설계 IP와 도구를 라이선스해 AI 칩 개발을 가속한다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>클라우드 업체가 자체 AI 칩 역량을 키우면 추론 비용 구조가 달라진다.</dd></div>
+    <div><dt>비유</dt><dd>식당이 재료 공급처와 장기 계약해 원가를 낮추는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>중장기적으로 AWS 추론 비용·인스턴스 선택지가 바뀔 수 있으니 모델 서빙 계획을 유연하게 두면 좋다.</dd></div>
+    <div><dt>개발자</dt><dd>시놉시스는 Amazon Bedrock으로 AI 에이전트를 구축·배포하고 AWS 컴퓨팅·스토리지를 도입한다고 한다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.tomshardware.com/tech-industry/amazon-and-synopsys-ink-multi-year-billion-dollar-deal-in-multi-year-ip-agreement-to-accelerate-ai-chip-design-efforts-synopsys-to-adopt-amazon-bedrock-to-deploy-ai-agents-harnessing-aws-compute-and-storage-capabilities" target="_blank" rel="noopener">원제: Amazon and Synopsys ink multi-year billion-dollar deal in multi-year IP agreement to accelerate AI chip design efforts ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C4" data-text="엔비디아, 64gb dgx 스파크 4,999달러로 출시 엔비디아가 로컬 ai 워크스테이션 dgx 스파크의 64gb 버전을 4,999달러부터 내놓았다. nvidia introduces 64gb dgx spark to throw local ai fans a lifeline amid the rampocalypse tom&#39;s hardware">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C4 인프라·하드웨어</span>
+    <span>Tom&#39;s Hardware</span>
+    <span>· 10-02 22:00</span>
+    
+  </div>
+  <h3><a href="https://www.tomshardware.com/pc-components/gpus/nvidia-introduces-64gb-dgx-spark-to-throw-local-ai-fans-a-lifeline-amid-the-rampocalypse-new-gb10-config-starts-at-usd4999-for-those-who-can-work-with-less" target="_blank" rel="noopener">엔비디아, 64GB DGX 스파크 4,999달러로 출시</a></h3>
+  <p class="one">엔비디아가 로컬 AI 워크스테이션 DGX 스파크의 64GB 버전을 4,999달러부터 내놓았다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>메모리값 급등 속 로컬 모델 실험 비용을 낮추는 선택지가 생겼다.</dd></div>
+    <div><dt>비유</dt><dd>대형 오븐 대신 알맞은 크기의 오븐을 더 싸게 사는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>고객 데이터를 외부로 안 보내야 하는 실험은 사내 로컬 장비에서 돌려볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>128GB 모델과 구성은 동일하다고 하니, 모델 크기가 64GB에 들어가는지만 먼저 확인하면 된다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.tomshardware.com/pc-components/gpus/nvidia-introduces-64gb-dgx-spark-to-throw-local-ai-fans-a-lifeline-amid-the-rampocalypse-new-gb10-config-starts-at-usd4999-for-those-who-can-work-with-less" target="_blank" rel="noopener">원제: Nvidia introduces 64GB DGX Spark to throw local AI fans a lifeline amid the RAMpocalypse ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock world-axis" data-cat="daily">
+    <h4>일상·소비</h4>
+    <div class="grid">
+<article class="card" data-cat="A4" data-text="메타, muse ai 기기 제작 코드 오픈소스 공개 메타가 자사 ai 에이전트 muse를 직접 기기에 올릴 수 있는 코드를 오픈소스로 풀었다. meta open sources code to let you make muse ai gadgets the verge">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>The Verge</span>
+    <span>· 10-03 06:08</span>
+    
+  </div>
+  <h3><a href="https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link" target="_blank" rel="noopener">메타, Muse AI 기기 제작 코드 오픈소스 공개</a></h3>
+  <p class="one">메타가 자사 AI 에이전트 Muse를 직접 기기에 올릴 수 있는 코드를 오픈소스로 풀었다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 에이전트를 소형 하드웨어에 얹는 실험 장벽이 낮아졌다.</dd></div>
+    <div><dt>비유</dt><dd>조립 설명서를 무료로 풀어 누구나 만들게 한 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>매장·숙소 로비의 안내 디스플레이 같은 소형 AI 기기 프로토타입을 빠르게 만들어 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>컬러 E Ink 디스플레이나 HDMI 스틱에 올리는 예시가 제시돼 있어 PoC 레퍼런스로 쓸 만하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link" target="_blank" rel="noopener">원제: Meta open sources code to let you make Muse AI gadgets ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="A3" data-text="애플, 영상 녹화 안 하는 홈 카메라 개발 중 보도 애플이 영상을 저장하지 않고 ai로 집안 활동만 분석하는 카메라를 만든다고 보도됐다. apple is reportedly building a smart home camera that won&#39;t record video footage of you or anyone else engadget">
+  <div class="meta">
+    
+    <span class="chip cat-A">A3 AI 제품·서비스</span>
+    <span>Engadget</span>
+    <span>· 10-02 22:44</span>
+    
+  </div>
+  <h3><a href="https://www.engadget.com/2275621/apple-is-reportedly-building-a-smart-home-camera-that-wont-record-video-footage-of-you-or-anyone-else/" target="_blank" rel="noopener">애플, 영상 녹화 안 하는 홈 카메라 개발 중 보도</a></h3>
+  <p class="one">애플이 영상을 저장하지 않고 AI로 집안 활동만 분석하는 카메라를 만든다고 보도됐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>&#39;찍지 않고 이해하는&#39; 센서가 프라이버시 설계의 새 기준이 될 수 있다.</dd></div>
+    <div><dt>비유</dt><dd>CCTV 대신 사람 수만 세는 센서를 두는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>캠핑장·숙소 혼잡도나 입·퇴실 감지에 영상 저장 없는 센싱 방식을 검토해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>원문은 보도 기반이며 출시는 확정되지 않았다; 영상 미저장 설계는 국내 개인정보 심의 부담을 줄이는 방향이다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.engadget.com/2275621/apple-is-reportedly-building-a-smart-home-camera-that-wont-record-video-footage-of-you-or-anyone-else/" target="_blank" rel="noopener">원제: Apple is reportedly building a smart home camera that won&#39;t record video footage of you or anyone else ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock world-axis" data-cat="rules">
+    <h4>규칙·사회</h4>
+    <div class="grid">
+<article class="card" data-cat="C2" data-text="애플, 맥 &#39;전체 디스크 접근&#39; 권한 제한 강화 애플이 ai 에이전트 위험을 이유로 맥의 전체 디스크 접근 권한에 새 통제를 적용한다고 밝혔다. apple will limit mac disk access as ai agents ‘substantially’ increase risk the verge">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C2 규제·정책</span>
+    <span>The Verge</span>
+    <span>· 10-03 05:08</span>
+    
+  </div>
+  <h3><a href="https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents" target="_blank" rel="noopener">애플, 맥 &#39;전체 디스크 접근&#39; 권한 제한 강화</a></h3>
+  <p class="one">애플이 AI 에이전트 위험을 이유로 맥의 전체 디스크 접근 권한에 새 통제를 적용한다고 밝혔다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>에이전트형 앱의 파일 접근 권한이 OS 차원에서 조여진다.</dd></div>
+    <div><dt>비유</dt><dd>마스터키를 아무에게나 주지 않도록 열쇠 발급 절차를 까다롭게 한 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>사내 맥에서 쓰는 코딩 에이전트·자동화 도구가 권한 변경에 영향받는지 미리 점검해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>전체 디스크 접근에 의존하는 도구는 필요한 폴더만 접근하는 방식으로 바꿔두는 게 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents" target="_blank" rel="noopener">원제: Apple will limit Mac disk access as AI agents ‘substantially’ increase risk ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C2" data-text="애플, ai 에이전트와 디스크 권한 위험 경고 애플이 ai 에이전트와 &#39;전체 디스크 접근&#39; 조합의 위험성을 알렸다. apple sounds the alarm on ai agents and &#39;full disk access&#39; engadget">
+  <div class="meta">
+    
+    <span class="chip cat-C">C2 규제·정책</span>
+    <span>Engadget</span>
+    <span>· 10-03 04:22</span>
+    
+  </div>
+  <h3><a href="https://www.engadget.com/2276186/apple-sounds-the-alarm-on-ai-agents-and-full-disk-access/" target="_blank" rel="noopener">애플, AI 에이전트와 디스크 권한 위험 경고</a></h3>
+  <p class="one">애플이 AI 에이전트와 &#39;전체 디스크 접근&#39; 조합의 위험성을 알렸다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>편의성을 위해 넓은 권한을 준 관행이 보안 리스크로 드러났다.</dd></div>
+    <div><dt>비유</dt><dd>집 비밀번호를 편하다고 모든 배달원에게 알려준 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>에이전트 도구 도입 가이드에 &#39;권한 최소화&#39; 원칙을 사내 규칙으로 명시해 둘 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>에이전트가 읽을 수 있는 파일에 토큰·키가 들어있지 않은지 점검이 필요하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.engadget.com/2276186/apple-sounds-the-alarm-on-ai-agents-and-full-disk-access/" target="_blank" rel="noopener">원제: Apple sounds the alarm on AI agents and &#39;Full Disk Access&#39; ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+<section class="box weekly-link">
+  <div class="label">주간 요약 — 10/05 ~ 10/11</div>
+  <h3><a href="../weekly/2026-W41.html">에이전트가 결제까지 — 판단·비용·보안은 쪼개서 관리 →</a></h3>
+</section>
+
+
+</main>
+<footer class="wrap foot">
+  생성 2026-10-17 11:19 KST · 공식 RSS·API만 수집 · 원문 저작권은 각 출처에 있습니다
+</footer>
+<script src="../static/app.js?v=73b1c7e9b5"></script>
+</body>
+</html>

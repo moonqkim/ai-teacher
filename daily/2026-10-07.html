@@ -1,0 +1,1053 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>2026-10-07 · 개발 · 나의 AI 선생님</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../static/style.css?v=73b1c7e9b5">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="../index.html"><span class="logo">AI</span> 나의 AI 선생님</a>
+    <nav>
+      <a href="../index.html">오늘</a>
+      <a href="../weekly/2026-W41.html">주간 요약</a>
+      <a href="../archive.html">지난 소식</a>
+      <a href="../sources.html">소스 현황</a>
+      <button class="theme" type="button" aria-label="테마 전환" onclick="toggleTheme()">◐</button>
+    </nav>
+  </div>
+  
+  <div class="wrap viewbar" role="tablist" aria-label="보기 선택">
+    <a role="tab" href="../daily/2026-10-07.html" class="on" aria-selected="true">개발</a><a role="tab" href="../biz/daily/2026-10-07.html" class="" aria-selected="false">비즈니스</a><a role="tab" href="../peers/index.html" class="" aria-selected="false">동종 서비스 AI 현황판</a>
+  </div>
+  
+</header>
+<main class="wrap">
+
+
+
+
+<section class="hero">
+  <div class="date-nav">
+    <a href="../daily/2026-10-06.html">← 2026-10-06</a>
+    <span class="date">2026-10-07 · 개발</span>
+    <a href="../daily/2026-10-08.html">2026-10-08 →</a>
+  </div>
+  <h1>모델은 클라우드로, 무료 등급은 아래로 — 비용·검증이 변수</h1>
+  
+  <div class="tldr">
+    <div class="label">바쁘면 이것만 — 오늘 3줄 요약</div>
+    <ol><li>앤트로픽 코워크가 작업을 클라우드로 옮긴다 → PC 꺼도 작업 유지</li><li>제미나이 무료는 플래시 라이트만 남는다 → 팀 도구 비용 재점검</li><li>오픈AI가 생성 텍스트에 워터마크 → AI 산출물 판별이 요건으로</li></ol>
+  </div>
+  
+  <p class="sub">후보 258건 중 16건을 골랐어요 · 소스 83/107 정상
+    · 요약 Claude Code
+    </p>
+
+  
+</section>
+
+
+<section>
+  <h2 class="sec">오늘의 핵심 <small>한 줄씩만 읽어도 됩니다</small></h2>
+  <div class="grid top">
+    
+<article class="card full" data-cat="A2" data-text="앤트로픽 코워크, 내 pc 대신 클라우드로 코워크가 로컬 가상머신 방식에서 클라우드 실행 방식으로 바뀐다고 한다. quoting felix rieseberg simon willison">
+  <div class="meta">
+    
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>Simon Willison</span>
+    <span>· 10-06 08:56</span>
+    
+  </div>
+  <h3><a href="https://simonwillison.net/2026/Oct/5/felix-rieseberg/" target="_blank" rel="noopener">앤트로픽 코워크, 내 PC 대신 클라우드로</a></h3>
+  <p class="one">코워크가 로컬 가상머신 방식에서 클라우드 실행 방식으로 바뀐다고 한다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 노트북을 닫아도 작업이 끊기지 않는 구조로 간다는 신호다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>집 서버에 돌리던 작업을 사무실 서버로 옮긴 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI 보조 작업을 &#39;세션이 끊기면 멈추는 것&#39;으로 설계하지 말고, 길게 도는 비동기 작업 전제로 플로우를 그려 보자.</dd></div>
+    <div><dt>개발자</dt><dd>기존 방식은 세션에 명시적으로 넣은 데이터만 VM(가상머신)에 매핑했다는 설명이 있다 — 클라우드 전환 시 데이터 경계가 어떻게 바뀌는지 보안 검토 항목으로 잡아 두자.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://simonwillison.net/2026/Oct/5/felix-rieseberg/" target="_blank" rel="noopener">원제: Quoting Felix Rieseberg ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="A3" data-text="제미나이 무료 사용, 플래시 라이트만 남는다 10월 9일부터 무료 이용자는 플래시 라이트만 쓸 수 있고 플래시는 유료로 간다. google is about to remove free access to gemini flash and pro the verge ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A3 AI 제품·서비스</span>
+    <span>The Verge AI</span>
+    <span>· 10-06 22:19</span>
+    
+  </div>
+  <h3><a href="https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only" target="_blank" rel="noopener">제미나이 무료 사용, 플래시 라이트만 남는다</a></h3>
+  <p class="one">10월 9일부터 무료 이용자는 플래시 라이트만 쓸 수 있고 플래시는 유료로 간다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 무료로 쓰던 모델 등급이 내려가면 팀 도구 비용과 품질 기준이 흔들린다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>무료 요금제에서 쓰던 고속 데이터가 저속으로 내려간 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>팀원들이 무료 계정으로 쓰던 AI 작업을 점검하고, 유료 전환할 것과 다른 모델로 옮길 것을 나눠 보자.</dd></div>
+    <div><dt>개발자</dt><dd>월 4.99달러 Google AI Plus 구독이 필요해진다 — 사내 무료 계정 의존 워크플로가 있으면 9일 전에 대체 경로를 준비해 두자.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only" target="_blank" rel="noopener">원제: Google is about to remove free access to Gemini Flash and Pro ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="C2" data-text="오픈ai, chatgpt·코덱스 텍스트에 워터마크 ai가 쓴 글에 눈에 안 보이는 표식을 넣기 시작했다. openai is adding text watermarking in chatgpt and codex the verge ai">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C2 규제·정책</span>
+    <span>The Verge AI</span>
+    <span>· 10-06 03:08</span>
+    
+  </div>
+  <h3><a href="https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act" target="_blank" rel="noopener">오픈AI, ChatGPT·코덱스 텍스트에 워터마크</a></h3>
+  <p class="one">AI가 쓴 글에 눈에 안 보이는 표식을 넣기 시작했다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> AI 생성 텍스트 판별이 제품·규제 요건으로 들어온다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>지폐에 숨겨진 위조 방지 무늬를 넣는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI로 만든 상품 설명·리뷰 요약 콘텐츠에 표식이 남을 수 있으니 외부 노출 정책을 미리 점검해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>우선 EU 사용자부터 적용이라 하니, 리전별로 결과물이 달라질 가능성을 고려해 테스트하면 좋다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act" target="_blank" rel="noopener">원제: OpenAI is adding text watermarking in ChatGPT and Codex ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="A1" data-text="미스트랄 라지 4 공개 프랑스 미스트랄의 새 대형 모델 &#39;라지 4&#39;가 화제에 올랐다. mistral large 4 hacker news (ai, 100점+)">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-A">A1 모델 출시·업데이트</span>
+    <span>Hacker News (AI, 100점+)</span>
+    <span>· 10-06 22:15</span>
+    <a class="hn" href="https://news.ycombinator.com/item?id=49977979" target="_blank" rel="noopener">HN 1169점</a>
+  </div>
+  <h3><a href="https://mistral.ai/news/mistral-large-4/\" target="_blank" rel="noopener">미스트랄 라지 4 공개</a></h3>
+  <p class="one">프랑스 미스트랄의 새 대형 모델 &#39;라지 4&#39;가 화제에 올랐다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 오픈 가중치 계열 선택지가 늘면 모델 교체 협상력이 생긴다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>주력 공급사 외에 대체 거래처가 하나 더 생긴 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>상품 설명 생성·문의 분류 같은 반복 작업에 기존 모델과 성능·단가를 나란히 재보자.</dd></div>
+    <div><dt>개발자</dt><dd>HN에서 1169점·댓글 752개로 반응이 큰 만큼, 실사용 후기부터 훑어 벤치마크 수치와 체감 품질 차이를 확인하는 게 빠르다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://mistral.ai/news/mistral-large-4/\" target="_blank" rel="noopener">원제: Mistral Large 4 ↗</a></p>
+  <p class="also">같은 소식: <a href="https://docs.mistral.ai/models/mistral-large-4-0" target="_blank" rel="noopener">Hacker News (AI, 100점+)</a></p>
+</article>
+
+<article class="card full" data-cat="A4" data-text="이미지를 읽는 27b 모델이 트렌딩 그림·사진을 보고 글로 답하는 jev-27b-vl이 허깅페이스 인기 모델에 올랐다. autotrust/jev-27b-vl (hf 트렌딩) hf 트렌딩 모델">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>HF 트렌딩 모델</span>
+    <span>· 10-06 06:47</span>
+    
+  </div>
+  <h3><a href="https://huggingface.co/autotrust/JEV-27B-VL" target="_blank" rel="noopener">이미지를 읽는 27B 모델이 트렌딩</a></h3>
+  <p class="one">그림·사진을 보고 글로 답하는 JEV-27B-VL이 허깅페이스 인기 모델에 올랐다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 이미지 이해 모델을 직접 띄워 쓰는 수요가 커지고 있다는 신호다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>사진을 보고 설명해 주는 직원을 사내에 두는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>숙소·캠핑장 사진에서 시설 태그를 자동으로 뽑거나, 부적절한 업로드 이미지를 1차 걸러내는 데 시험해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>다운로드 127만 건 규모라 예제·이슈가 쌓여 있을 가능성이 높다. 다만 27B는 GPU 메모리 부담이 크니 PoC는 호스팅 API로 먼저 해 보고 자체 서빙 비용을 따로 계산하자.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://huggingface.co/autotrust/JEV-27B-VL" target="_blank" rel="noopener">원제: autotrust/JEV-27B-VL (HF 트렌딩) ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="B3" data-text="kt 요금제, 챗gpt가 비교해 준다 kt가 챗gpt 플러그인으로 최신 공식 상품정보를 연동해 출시했다. kt 요금제 챗gpt가 골라준다 지디넷코리아">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B3 국내 사례</span>
+    <span>지디넷코리아</span>
+    <span>· 10-06 09:20</span>
+    
+  </div>
+  <h3><a href="https://zdnet.co.kr/view/?no=20261006092031" target="_blank" rel="noopener">KT 요금제, 챗GPT가 비교해 준다</a></h3>
+  <p class="one">KT가 챗GPT 플러그인으로 최신 공식 상품정보를 연동해 출시했다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 고객이 우리 앱에 오기 전에 챗GPT에서 비교를 끝내는 시대가 왔다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>상점에 들어오기 전 대화형 안내원이 상품을 비교해 주는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>객실·캠핑장 재고와 요금 정보를 외부 AI가 읽을 수 있는 API/플러그인 형태로 노출할지 검토해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>핵심은 모델 학습이 아니라 &#39;실시간 공식 데이터 연동&#39;—가격·재고 정합성과 호출 제한 설계가 관건이다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://zdnet.co.kr/view/?no=20261006092031" target="_blank" rel="noopener">원제: KT 요금제 챗GPT가 골라준다 ↗</a></p>
+  
+</article>
+
+  </div>
+</section>
+
+
+
+
+<section class="duo">
+  <div class="box tip">
+    <div class="label">C5 · 오늘 바로 써먹을 팁</div>
+    <h3>10분 모델 비용·대체 점검표 만들기</h3>
+    <ol><li>우리 제품에서 LLM(대규모 언어모델)을 쓰는 기능 3~5개를 적는다.</li><li>각 기능 옆에 지금 쓰는 모델·등급과 월 호출량을 적는다.</li><li>무료·저가 등급에 의존하는 기능을 표시하고, 등급이 내려갈 때 품질이 버틸지 &#39;가능/위험&#39;으로 나눈다.</li><li>&#39;위험&#39; 기능마다 대체 후보를 하나씩 적는다 (미스트랄 라지 4 같은 오픈 가중치 계열, 또는 이미지 이해·분류 전용 소형 모델).</li><li>대체 후보로 같은 프롬프트를 10건만 돌려 결과를 비교하고 표에 메모한다.</li></ol>
+    <p class="why">제미나이 무료 사용 범위가 플래시 라이트만 남는다는 소식처럼 외부 가격·정책은 예고 없이 바뀐다. 기능 단위로 대체안을 미리 적어 두면 교체 비용과 품질 리스크를 하루 안에 판단할 수 있다.</p>
+  </div>
+</section>
+
+
+<section class="tools">
+  <input class="js-q" type="search" placeholder="오늘 소식 검색" aria-label="검색">
+  <div class="chips js-chips">
+    <button class="on" data-f="all">전체</button>
+    
+    <button data-f="A1">A1 모델 출시·업데이트 <small>1</small></button>
+    
+    <button data-f="A2">A2 개발자 도구·API <small>2</small></button>
+    
+    <button data-f="A3">A3 AI 제품·서비스 <small>2</small></button>
+    
+    <button data-f="A4">A4 오픈소스 <small>2</small></button>
+    
+    <button data-f="B2">B2 산업별 적용 <small>2</small></button>
+    
+    <button data-f="B3">B3 국내 사례 <small>2</small></button>
+    
+    <button data-f="B4">B4 실패·사고 사례 <small>1</small></button>
+    
+    <button data-f="C2">C2 규제·정책 <small>1</small></button>
+    
+    <button data-f="C7">C7 내 업계 트랙 <small>3</small></button>
+    
+  </div>
+</section>
+
+
+
+
+
+<section class="group">
+  <h2 class="sec">A · 새로 나온 기술 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="A1">
+    <h4>A1 모델 출시·업데이트</h4>
+    <div class="grid">
+<article class="card" data-cat="A1" data-text="미스트랄 라지 4 공개 프랑스 미스트랄의 새 대형 모델 &#39;라지 4&#39;가 화제에 올랐다. mistral large 4 hacker news (ai, 100점+)">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-A">A1 모델 출시·업데이트</span>
+    <span>Hacker News (AI, 100점+)</span>
+    <span>· 10-06 22:15</span>
+    <a class="hn" href="https://news.ycombinator.com/item?id=49977979" target="_blank" rel="noopener">HN 1169점</a>
+  </div>
+  <h3><a href="https://mistral.ai/news/mistral-large-4/\" target="_blank" rel="noopener">미스트랄 라지 4 공개</a></h3>
+  <p class="one">프랑스 미스트랄의 새 대형 모델 &#39;라지 4&#39;가 화제에 올랐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>오픈 가중치 계열 선택지가 늘면 모델 교체 협상력이 생긴다.</dd></div>
+    <div><dt>비유</dt><dd>주력 공급사 외에 대체 거래처가 하나 더 생긴 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>상품 설명 생성·문의 분류 같은 반복 작업에 기존 모델과 성능·단가를 나란히 재보자.</dd></div>
+    <div><dt>개발자</dt><dd>HN에서 1169점·댓글 752개로 반응이 큰 만큼, 실사용 후기부터 훑어 벤치마크 수치와 체감 품질 차이를 확인하는 게 빠르다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://mistral.ai/news/mistral-large-4/\" target="_blank" rel="noopener">원제: Mistral Large 4 ↗</a></p>
+  <p class="also">같은 소식: <a href="https://docs.mistral.ai/models/mistral-large-4-0" target="_blank" rel="noopener">Hacker News (AI, 100점+)</a></p>
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="A2">
+    <h4>A2 개발자 도구·API</h4>
+    <div class="grid">
+<article class="card" data-cat="A2" data-text="앤트로픽 코워크, 내 pc 대신 클라우드로 코워크가 로컬 가상머신 방식에서 클라우드 실행 방식으로 바뀐다고 한다. quoting felix rieseberg simon willison">
+  <div class="meta">
+    
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>Simon Willison</span>
+    <span>· 10-06 08:56</span>
+    
+  </div>
+  <h3><a href="https://simonwillison.net/2026/Oct/5/felix-rieseberg/" target="_blank" rel="noopener">앤트로픽 코워크, 내 PC 대신 클라우드로</a></h3>
+  <p class="one">코워크가 로컬 가상머신 방식에서 클라우드 실행 방식으로 바뀐다고 한다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>노트북을 닫아도 작업이 끊기지 않는 구조로 간다는 신호다.</dd></div>
+    <div><dt>비유</dt><dd>집 서버에 돌리던 작업을 사무실 서버로 옮긴 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI 보조 작업을 &#39;세션이 끊기면 멈추는 것&#39;으로 설계하지 말고, 길게 도는 비동기 작업 전제로 플로우를 그려 보자.</dd></div>
+    <div><dt>개발자</dt><dd>기존 방식은 세션에 명시적으로 넣은 데이터만 VM(가상머신)에 매핑했다는 설명이 있다 — 클라우드 전환 시 데이터 경계가 어떻게 바뀌는지 보안 검토 항목으로 잡아 두자.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://simonwillison.net/2026/Oct/5/felix-rieseberg/" target="_blank" rel="noopener">원제: Quoting Felix Rieseberg ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="A2" data-text="클로드가 게임 음악을 작곡했다 &#39;음악 포맷을 직접 설계하고 재생기까지 만들어라&#39; 한 번의 지시로 게임풍 bgm이 나왔다. scrimshaw jukebox simon willison">
+  <div class="meta">
+    
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>Simon Willison</span>
+    <span>· 10-07 00:17</span>
+    
+  </div>
+  <h3><a href="https://simonwillison.net/2026/Oct/6/scrimshaw-jukebox/" target="_blank" rel="noopener">클로드가 게임 음악을 작곡했다</a></h3>
+  <p class="one">&#39;음악 포맷을 직접 설계하고 재생기까지 만들어라&#39; 한 번의 지시로 게임풍 BGM이 나왔다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>프롬프트 하나로 포맷 설계+도구+콘텐츠를 묶어 받는 작업 방식을 보여준다.</dd></div>
+    <div><dt>비유</dt><dd>악보 기호를 직접 만들고 그걸 연주하는 오르골까지 깎아 준 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>캠핑장 소개나 프로모션 페이지의 간단한 효과음·분위기 음악을 시안 단계에서 직접 뽑아 보자.</dd></div>
+    <div><dt>개발자</dt><dd>&#39;데이터 포맷을 먼저 정의하게 하고 그걸 돌리는 플레이어를 같이 만들게 하는&#39; 패턴은 차트·애니메이션·지도 같은 사내 도구 프로토타이핑에도 그대로 쓸 수 있다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://simonwillison.net/2026/Oct/6/scrimshaw-jukebox/" target="_blank" rel="noopener">원제: Scrimshaw Jukebox ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="A3">
+    <h4>A3 AI 제품·서비스</h4>
+    <div class="grid">
+<article class="card" data-cat="A3" data-text="제미나이가 엄마에게 &#39;늦는다&#39; 전화할지도 구글 &#39;콜 포 미&#39; 기능이 지인 전화까지 확장될 조짐이 앱 분석에서 발견됐다. gemini call for me might tell your mom you’re running late the verge ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A3 AI 제품·서비스</span>
+    <span>The Verge AI</span>
+    <span>· 10-06 08:09</span>
+    
+  </div>
+  <h3><a href="https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors" target="_blank" rel="noopener">제미나이가 엄마에게 &#39;늦는다&#39; 전화할지도</a></h3>
+  <p class="one">구글 &#39;콜 포 미&#39; 기능이 지인 전화까지 확장될 조짐이 앱 분석에서 발견됐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI가 사람 대신 전화를 거는 범위가 넓어지는 흐름이다.</dd></div>
+    <div><dt>비유</dt><dd>비서에게 &#39;엄마한테 늦는다고 전해 줘&#39; 시키는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약 확인·노쇼 안내 전화를 AI가 거는 시나리오를 검토하되, 반대로 우리 콜센터에 AI가 전화하는 상황도 가정해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>APK 티어다운(앱 파일 분석)에서 발견된 단계이므로 미출시·미확정이다. 다만 예약 전화를 AI가 대신 거는 사례가 늘면, 전화 예약 응대 로직에 &#39;상대가 사람이 아닐 수 있다&#39;는 전제를 넣을 시점이 온다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors" target="_blank" rel="noopener">원제: Gemini Call for Me might tell your mom you’re running late ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="A3" data-text="제미나이 무료 사용, 플래시 라이트만 남는다 10월 9일부터 무료 이용자는 플래시 라이트만 쓸 수 있고 플래시는 유료로 간다. google is about to remove free access to gemini flash and pro the verge ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A3 AI 제품·서비스</span>
+    <span>The Verge AI</span>
+    <span>· 10-06 22:19</span>
+    
+  </div>
+  <h3><a href="https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only" target="_blank" rel="noopener">제미나이 무료 사용, 플래시 라이트만 남는다</a></h3>
+  <p class="one">10월 9일부터 무료 이용자는 플래시 라이트만 쓸 수 있고 플래시는 유료로 간다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>무료로 쓰던 모델 등급이 내려가면 팀 도구 비용과 품질 기준이 흔들린다.</dd></div>
+    <div><dt>비유</dt><dd>무료 요금제에서 쓰던 고속 데이터가 저속으로 내려간 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>팀원들이 무료 계정으로 쓰던 AI 작업을 점검하고, 유료 전환할 것과 다른 모델로 옮길 것을 나눠 보자.</dd></div>
+    <div><dt>개발자</dt><dd>월 4.99달러 Google AI Plus 구독이 필요해진다 — 사내 무료 계정 의존 워크플로가 있으면 9일 전에 대체 경로를 준비해 두자.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only" target="_blank" rel="noopener">원제: Google is about to remove free access to Gemini Flash and Pro ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="A4">
+    <h4>A4 오픈소스</h4>
+    <div class="grid">
+<article class="card" data-cat="A4" data-text="이미지를 읽는 27b 모델이 트렌딩 그림·사진을 보고 글로 답하는 jev-27b-vl이 허깅페이스 인기 모델에 올랐다. autotrust/jev-27b-vl (hf 트렌딩) hf 트렌딩 모델">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>HF 트렌딩 모델</span>
+    <span>· 10-06 06:47</span>
+    
+  </div>
+  <h3><a href="https://huggingface.co/autotrust/JEV-27B-VL" target="_blank" rel="noopener">이미지를 읽는 27B 모델이 트렌딩</a></h3>
+  <p class="one">그림·사진을 보고 글로 답하는 JEV-27B-VL이 허깅페이스 인기 모델에 올랐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>이미지 이해 모델을 직접 띄워 쓰는 수요가 커지고 있다는 신호다.</dd></div>
+    <div><dt>비유</dt><dd>사진을 보고 설명해 주는 직원을 사내에 두는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>숙소·캠핑장 사진에서 시설 태그를 자동으로 뽑거나, 부적절한 업로드 이미지를 1차 걸러내는 데 시험해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>다운로드 127만 건 규모라 예제·이슈가 쌓여 있을 가능성이 높다. 다만 27B는 GPU 메모리 부담이 크니 PoC는 호스팅 API로 먼저 해 보고 자체 서빙 비용을 따로 계산하자.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://huggingface.co/autotrust/JEV-27B-VL" target="_blank" rel="noopener">원제: autotrust/JEV-27B-VL (HF 트렌딩) ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="A4" data-text="분류 전용 26b 모델도 인기 텍스트를 범주로 나누는 gev-26b-decide가 허깅페이스 트렌딩에 올랐다. autotrust/gev-26b-decide (hf 트렌딩) hf 트렌딩 모델">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>HF 트렌딩 모델</span>
+    <span>· 10-06 06:47</span>
+    
+  </div>
+  <h3><a href="https://huggingface.co/autotrust/GEV-26B-Decide" target="_blank" rel="noopener">분류 전용 26B 모델도 인기</a></h3>
+  <p class="one">텍스트를 범주로 나누는 GEV-26B-Decide가 허깅페이스 트렌딩에 올랐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>생성이 아닌 &#39;판정·분류&#39; 전용 모델이 따로 수요를 얻고 있다.</dd></div>
+    <div><dt>비유</dt><dd>글을 쓰는 직원과 서류를 분류하는 직원을 따로 두는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>고객 문의를 환불·변경·시설문의로 자동 분류해 상담 라우팅에 붙이는 실험을 해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>분류 작업은 출력이 라벨 하나라 평가가 쉽다 — 사내 문의 데이터 수백 건으로 정확도를 재서 지금 쓰는 규칙 기반 분류와 바로 비교할 수 있다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://huggingface.co/autotrust/GEV-26B-Decide" target="_blank" rel="noopener">원제: autotrust/GEV-26B-Decide (HF 트렌딩) ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+<section class="group">
+  <h2 class="sec">B · 산업 적용사례 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="B2">
+    <h4>B2 산업별 적용</h4>
+    <div class="grid">
+<article class="card" data-cat="B2" data-text="ai가 유방암 검진·치료 공백 메운다 엔비디아가 검진부터 치료계획까지 ai 적용 사례를 소개했다. from scan to treatment plan, ai helps close breast cancer’s deadliest gaps nvidia blog">
+  <div class="meta">
+    
+    <span class="chip cat-B">B2 산업별 적용</span>
+    <span>NVIDIA Blog</span>
+    <span>· 10-05 22:00</span>
+    
+  </div>
+  <h3><a href="https://blogs.nvidia.com/blog/ai-breast-cancer-startups/" target="_blank" rel="noopener">AI가 유방암 검진·치료 공백 메운다</a></h3>
+  <p class="one">엔비디아가 검진부터 치료계획까지 AI 적용 사례를 소개했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>검진 미수검·판독 인력 부족 같은 &#39;공백&#39;을 AI가 메우는 전형 사례다.</dd></div>
+    <div><dt>비유</dt><dd>대기 줄이 긴 병원에 숙련 보조 인력을 붙여 주는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>우리도 &#39;사람이 부족해 느려지는 구간&#39;(CS 응답, 리뷰 검수)을 먼저 AI로 메울 후보로 꼽아 보자.</dd></div>
+    <div><dt>개발자</dt><dd>AI 도입 효과는 모델 성능보다 &#39;병목 구간에 붙였는지&#39;로 갈린다는 점을 기획 근거로 쓸 수 있다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://blogs.nvidia.com/blog/ai-breast-cancer-startups/" target="_blank" rel="noopener">원제: From Scan to Treatment Plan, AI Helps Close Breast Cancer’s Deadliest Gaps ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="B2" data-text="sk인텔릭스, ai로봇 중국 위탁생산 추진 웰니스 로봇 &#39;나무엑스&#39;를 중국 oem 생산으로 전환하는 방안을 추진 중이다. sk인텔릭스, &#39;나무엑스&#39; 中 위탁생산 추진…원가 경쟁력 확보 &#39;승부수&#39; 전자신문">
+  <div class="meta">
+    
+    <span class="chip cat-B">B2 산업별 적용</span>
+    <span>전자신문</span>
+    <span>· 10-06 17:00</span>
+    
+  </div>
+  <h3><a href="https://www.etnews.com/20261006000060" target="_blank" rel="noopener">SK인텔릭스, AI로봇 중국 위탁생산 추진</a></h3>
+  <p class="one">웰니스 로봇 &#39;나무엑스&#39;를 중국 OEM 생산으로 전환하는 방안을 추진 중이다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 하드웨어도 결국 원가 구조가 사업성을 가른다는 신호다.</dd></div>
+    <div><dt>비유</dt><dd>직접 공장을 돌리던 브랜드가 외부 공장에 맡겨 단가를 낮추는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>키오스크·레저 디바이스 같은 하드웨어 연계 기획 시 제조 원가와 공급처를 초기부터 변수로 두자.</dd></div>
+    <div><dt>개발자</dt><dd>추진 단계일 뿐 확정이 아니므로, 공급망 전제로 로드맵을 고정하진 말 것.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.etnews.com/20261006000060" target="_blank" rel="noopener">원제: SK인텔릭스, &#39;나무엑스&#39; 中 위탁생산 추진…원가 경쟁력 확보 &#39;승부수&#39; ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="B3">
+    <h4>B3 국내 사례</h4>
+    <div class="grid">
+<article class="card" data-cat="B3" data-text="kt 요금제, 챗gpt가 비교해 준다 kt가 챗gpt 플러그인으로 최신 공식 상품정보를 연동해 출시했다. kt 요금제 챗gpt가 골라준다 지디넷코리아">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B3 국내 사례</span>
+    <span>지디넷코리아</span>
+    <span>· 10-06 09:20</span>
+    
+  </div>
+  <h3><a href="https://zdnet.co.kr/view/?no=20261006092031" target="_blank" rel="noopener">KT 요금제, 챗GPT가 비교해 준다</a></h3>
+  <p class="one">KT가 챗GPT 플러그인으로 최신 공식 상품정보를 연동해 출시했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>고객이 우리 앱에 오기 전에 챗GPT에서 비교를 끝내는 시대가 왔다.</dd></div>
+    <div><dt>비유</dt><dd>상점에 들어오기 전 대화형 안내원이 상품을 비교해 주는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>객실·캠핑장 재고와 요금 정보를 외부 AI가 읽을 수 있는 API/플러그인 형태로 노출할지 검토해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>핵심은 모델 학습이 아니라 &#39;실시간 공식 데이터 연동&#39;—가격·재고 정합성과 호출 제한 설계가 관건이다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://zdnet.co.kr/view/?no=20261006092031" target="_blank" rel="noopener">원제: KT 요금제 챗GPT가 골라준다 ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="B3" data-text="블럭스, 캠페인 기획 7시간→1시간 ai가 월요일 아침 알아서 추천 액션과 캠페인 초안을 먼저 내놓는 기능을 냈다. &#34;캠페인 기획 시간 7시간서 1시간으로”…블럭스, &#39;반자동 모드&#39; 추가 지디넷코리아">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B3 국내 사례</span>
+    <span>지디넷코리아</span>
+    <span>· 10-06 22:01</span>
+    
+  </div>
+  <h3><a href="https://zdnet.co.kr/view/?no=20261006220142" target="_blank" rel="noopener">블럭스, 캠페인 기획 7시간→1시간</a></h3>
+  <p class="one">AI가 월요일 아침 알아서 추천 액션과 캠페인 초안을 먼저 내놓는 기능을 냈다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI가 &#39;요청 대기&#39;에서 &#39;먼저 제안&#39;으로 넘어간 실측 사례다.</dd></div>
+    <div><dt>비유</dt><dd>비서가 시키기 전에 주간 할 일 목록을 책상에 올려 두는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약 비수기·장바구니 이탈 같은 반복 캠페인을 &#39;초안 자동 생성 + 사람 승인&#39; 구조로 바꿔 보자.</dd></div>
+    <div><dt>개발자</dt><dd>집행 데이터 1만1천건으로 만든 83종 레시피가 기반—사내 과거 캠페인 로그를 정리해 두는 게 선행 과제다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://zdnet.co.kr/view/?no=20261006220142" target="_blank" rel="noopener">원제: &#34;캠페인 기획 시간 7시간서 1시간으로”…블럭스, &#39;반자동 모드&#39; 추가 ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="B4">
+    <h4>B4 실패·사고 사례</h4>
+    <div class="grid">
+<article class="card" data-cat="B4" data-text="ai 에이전트 악용 해킹, 금융권 긴급점검 금융 7개사 침해에 ai 도구 자동화 공격이 쓰였고 전 금융권이 점검에 들어갔다. &#34;해킹 비상 한국, 이제 시작&#34;...보안전문가들 csf 구축 등 해법 제시 지디넷코리아">
+  <div class="meta">
+    <span class="stars s5" role="img" aria-label="중요도 5점 만점에 5점" title="중요도 5/5 — 업계 판도를 바꿀 소식"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B4 실패·사고 사례</span>
+    <span>지디넷코리아</span>
+    <span>· 10-05 20:17</span>
+    
+  </div>
+  <h3><a href="https://zdnet.co.kr/view/?no=20261005201759" target="_blank" rel="noopener">AI 에이전트 악용 해킹, 금융권 긴급점검</a></h3>
+  <p class="one">금융 7개사 침해에 AI 도구 자동화 공격이 쓰였고 전 금융권이 점검에 들어갔다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>공격 쪽이 먼저 AI 자동화를 쓰고 있다는 현실 경고다.</dd></div>
+    <div><dt>비유</dt><dd>도둑이 집집마다 문고리를 자동으로 돌려 보는 기계를 들고 다니는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>외부에 노출된 우리 API·관리자 페이지·테스트 서버 목록을 먼저 뽑아 점검표를 만들어 보자.</dd></div>
+    <div><dt>개발자</dt><dd>금감원 체크리스트 12개 항목 중 &#39;외부 노출 IT 자산 식별&#39;은 어느 조직에나 그대로 적용할 수 있다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://zdnet.co.kr/view/?no=20261005201759" target="_blank" rel="noopener">원제: &#34;해킹 비상 한국, 이제 시작&#34;...보안전문가들 CSF 구축 등 해법 제시 ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+<section class="group">
+  <h2 class="sec">C · 더 보기 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="C2">
+    <h4>C2 규제·정책</h4>
+    <div class="grid">
+<article class="card" data-cat="C2" data-text="오픈ai, chatgpt·코덱스 텍스트에 워터마크 ai가 쓴 글에 눈에 안 보이는 표식을 넣기 시작했다. openai is adding text watermarking in chatgpt and codex the verge ai">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C2 규제·정책</span>
+    <span>The Verge AI</span>
+    <span>· 10-06 03:08</span>
+    
+  </div>
+  <h3><a href="https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act" target="_blank" rel="noopener">오픈AI, ChatGPT·코덱스 텍스트에 워터마크</a></h3>
+  <p class="one">AI가 쓴 글에 눈에 안 보이는 표식을 넣기 시작했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 생성 텍스트 판별이 제품·규제 요건으로 들어온다.</dd></div>
+    <div><dt>비유</dt><dd>지폐에 숨겨진 위조 방지 무늬를 넣는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI로 만든 상품 설명·리뷰 요약 콘텐츠에 표식이 남을 수 있으니 외부 노출 정책을 미리 점검해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>우선 EU 사용자부터 적용이라 하니, 리전별로 결과물이 달라질 가능성을 고려해 테스트하면 좋다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act" target="_blank" rel="noopener">원제: OpenAI is adding text watermarking in ChatGPT and Codex ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="C7">
+    <h4>C7 내 업계 트랙</h4>
+    <div class="grid">
+<article class="card" data-cat="C7" data-text="야놀자넥스트, ai 비용·보안 통합관리 &#39;amux&#39; 출시 사내 ai 사용량·과금·정보유출을 한곳에서 관리하는 솔루션이 나왔다. 야놀자넥스트, 기업용 ai 비용·보안 통합 관리 솔루션 &#39;amux&#39; 선보여 지디넷코리아">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>지디넷코리아</span>
+    <span>· 10-06 09:55</span>
+    
+  </div>
+  <h3><a href="https://zdnet.co.kr/view/?no=20261006095145" target="_blank" rel="noopener">야놀자넥스트, AI 비용·보안 통합관리 &#39;Amux&#39; 출시</a></h3>
+  <p class="one">사내 AI 사용량·과금·정보유출을 한곳에서 관리하는 솔루션이 나왔다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 도입의 두 장벽인 비용과 보안을 관리 영역으로 옮긴다.</dd></div>
+    <div><dt>비유</dt><dd>회사 법인카드 사용 내역을 부서별로 들여다보는 관리 시스템과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>부서별 AI 비용과 프롬프트 내 대외비 유출을 어떻게 통제할지 우리 내부 기준부터 정리해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>첫 달 무료 프리뷰 신청 기업에 컨설팅·기술 지원을 준다고 하니 PoC(사전 검증) 부담 없이 비교해 볼 만하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://zdnet.co.kr/view/?no=20261006095145" target="_blank" rel="noopener">원제: 야놀자넥스트, 기업용 AI 비용·보안 통합 관리 솔루션 &#39;Amux&#39; 선보여 ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C7" data-text="버즈니, 소상공인용 ai 7종 공개 검색·추천부터 숏폼 자동 생성까지 ai 서비스 7종을 선보였다. &#34;숏폼도 ai가 뚝딱&#34;…버즈니, ai 7종으로 소상공인 공략 지디넷코리아">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>지디넷코리아</span>
+    <span>· 10-06 17:56</span>
+    
+  </div>
+  <h3><a href="https://zdnet.co.kr/view/?no=20261006175259" target="_blank" rel="noopener">버즈니, 소상공인용 AI 7종 공개</a></h3>
+  <p class="one">검색·추천부터 숏폼 자동 생성까지 AI 서비스 7종을 선보였다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>커머스 핵심 기능이 이미 패키지 상품으로 공급되고 있다.</dd></div>
+    <div><dt>비유</dt><dd>필요한 도구를 하나씩 사지 않고 공구 세트로 묶어 파는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>자연어·이미지 검색을 결합한 상품 검색과 URL만 넣어 만드는 숏폼을 우리 상품 페이지에 붙여 효과를 비교해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>숏폼은 30초~1분, 미들폼은 최대 5분까지 생성된다고 하니 광고 소재 규격과 맞는지 먼저 확인하면 좋다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://zdnet.co.kr/view/?no=20261006175259" target="_blank" rel="noopener">원제: &#34;숏폼도 AI가 뚝딱&#34;…버즈니, AI 7종으로 소상공인 공략 ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C7" data-text="배민, 전북 외식업주 4주 무료 교육 로컬 마케팅과 푸드테크 활용을 다루는 교육 참가자를 모집한다. 배민, 전북 외식업주 대상 4주 교육…로컬마케팅·푸드테크 다룬다 지디넷코리아">
+  <div class="meta">
+    
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>지디넷코리아</span>
+    <span>· 10-06 18:18</span>
+    
+  </div>
+  <h3><a href="https://zdnet.co.kr/view/?no=20261006175833" target="_blank" rel="noopener">배민, 전북 외식업주 4주 무료 교육</a></h3>
+  <p class="one">로컬 마케팅과 푸드테크 활용을 다루는 교육 참가자를 모집한다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>플랫폼이 교육으로 공급자를 붙잡는 방식을 보여 준다.</dd></div>
+    <div><dt>비유</dt><dd>프랜차이즈 본사가 점주 교육을 직접 열어 주는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>숙박·캠핑 호스트 대상 AI 활용 교육을 파트너 유지 수단으로 검토해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>지자체·대학과의 협약을 기반으로 설계된 과정이라, 지역 파트너 확장 시 제휴 구조를 참고할 만하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://zdnet.co.kr/view/?no=20261006175833" target="_blank" rel="noopener">원제: 배민, 전북 외식업주 대상 4주 교육…로컬마케팅·푸드테크 다룬다 ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+
+
+<section class="group world">
+  <h2 class="sec">세상은 이렇게 변하고 있다 <small>AI 모델 밖에서 일어나는 변화</small></h2>
+  
+  <div class="catblock world-axis" data-cat="physical">
+    <h4>몸을 가진 AI (로봇·자율주행)</h4>
+    <div class="grid">
+<article class="card" data-cat="C4" data-text="피지컬 ai 경쟁, 집주인은 여전히 엔비디아 로봇용 ai 대안은 늘지만 엔비디아가 &#39;소버린 ai&#39; 전략으로 자리를 지킨다는 분석. sovereign ai, same landlord — thoughts on the physical ai race the robot report">
+  <div class="meta">
+    
+    <span class="chip cat-C">C4 인프라·하드웨어</span>
+    <span>The Robot Report</span>
+    <span>· 10-07 02:47</span>
+    
+  </div>
+  <h3><a href="https://www.therobotreport.com/sovereign-ai-same-landlord-thoughts-physical-ai-race/" target="_blank" rel="noopener">피지컬 AI 경쟁, 집주인은 여전히 엔비디아</a></h3>
+  <p class="one">로봇용 AI 대안은 늘지만 엔비디아가 &#39;소버린 AI&#39; 전략으로 자리를 지킨다는 분석.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>하드웨어 선택지가 늘어도 실제 종속 구조는 그대로일 수 있다.</dd></div>
+    <div><dt>비유</dt><dd>집은 여러 곳 알아봐도 결국 같은 건물주에게 월세를 내는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>로봇·키오스크 등 현장 기기 AI 도입 시 특정 벤더 종속 비용을 미리 계산해 두면 좋다.</dd></div>
+    <div><dt>개발자</dt><dd>추론 스택(모델 실행 환경)을 바꿀 수 있게 추상화 계층을 두는 설계가 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.therobotreport.com/sovereign-ai-same-landlord-thoughts-physical-ai-race/" target="_blank" rel="noopener">원제: Sovereign AI, same landlord — thoughts on the physical AI race ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="B2" data-text="산불을 먼저 때리는 자율 &#39;대포&#39; 로봇 firedome이 소방대 도착 전 산불을 막는 자율 방어 시스템을 만든다. firedome builds autonomous ‘artillery’ for wildfire defense the robot report">
+  <div class="meta">
+    
+    <span class="chip cat-B">B2 산업별 적용</span>
+    <span>The Robot Report</span>
+    <span>· 10-07 01:00</span>
+    
+  </div>
+  <h3><a href="https://www.therobotreport.com/firedome-builds-autonomous-artillery-for-wildfire-defense/" target="_blank" rel="noopener">산불을 먼저 때리는 자율 &#39;대포&#39; 로봇</a></h3>
+  <p class="one">FireDome이 소방대 도착 전 산불을 막는 자율 방어 시스템을 만든다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 로봇이 재난 대응이라는 새 시장으로 들어가고 있다.</dd></div>
+    <div><dt>비유</dt><dd>스프링클러가 사람 오기 전에 스스로 물을 뿌리는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>캠핑장·리조트처럼 산림 인접 시설의 재난 리스크 안내·알림 기능을 상품 기획에 넣어 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>야외 시설 서비스라면 기상·재난 공공 API 연동을 백로그에 올려 둘 만하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.therobotreport.com/firedome-builds-autonomous-artillery-for-wildfire-defense/" target="_blank" rel="noopener">원제: FireDome builds autonomous ‘artillery’ for wildfire defense ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock world-axis" data-cat="science">
+    <h4>과학·의료</h4>
+    <div class="grid">
+<article class="card" data-cat="C2" data-text="유타주, ai가 처방까지 쓰는 시범사업 추진 유타주가 사람 사전 검토 없이 ai가 환자 평가·신규 처방을 하도록 허용할 계획이다. stat+: utah plows ahead with more health ai pilots for prescriptions, women’s health stat news">
+  <div class="meta">
+    
+    <span class="chip cat-C">C2 규제·정책</span>
+    <span>STAT News</span>
+    <span>· 10-06 01:00</span>
+    
+  </div>
+  <h3><a href="https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors/?utm_campaign=rss" target="_blank" rel="noopener">유타주, AI가 처방까지 쓰는 시범사업 추진</a></h3>
+  <p class="one">유타주가 사람 사전 검토 없이 AI가 환자 평가·신규 처방을 하도록 허용할 계획이다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>규제 당국이 &#39;AI 단독 판단&#39;을 어디까지 허용하는지 보여주는 사례다.</dd></div>
+    <div><dt>비유</dt><dd>무인 매장에서 계산원 없이 결제까지 끝내는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>우리 서비스에서 AI가 사람 확인 없이 확정할 수 있는 단계(예약 변경·환불)를 어디까지로 정할지 기준을 만들어 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>&#39;사람 승인 생략&#39; 구간은 로그·롤백·책임 추적을 설계 단계에서 함께 묶어야 한다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors/?utm_campaign=rss" target="_blank" rel="noopener">원제: STAT+: Utah plows ahead with more health AI pilots for prescriptions, women’s health ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="B2" data-text="의사의 경고: ai 기록이 병원비를 올린다 한 의사가 정직하게 기록해도 ai 도구 탓에 청구액이 부풀 수 있다고 지적했다. opinion: i’m a doctor. here’s what i want the public to know about ai tools and health care costs stat news">
+  <div class="meta">
+    
+    <span class="chip cat-B">B2 산업별 적용</span>
+    <span>STAT News</span>
+    <span>· 10-06 17:30</span>
+    
+  </div>
+  <h3><a href="https://www.statnews.com/2026/10/06/ai-tools-health-care-costs-bcbs-research/?utm_campaign=rss" target="_blank" rel="noopener">의사의 경고: AI 기록이 병원비를 올린다</a></h3>
+  <p class="one">한 의사가 정직하게 기록해도 AI 도구 탓에 청구액이 부풀 수 있다고 지적했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 자동 기록이 요금·정산 구조를 의도치 않게 바꿀 수 있다.</dd></div>
+    <div><dt>비유</dt><dd>영수증을 자동으로 꼼꼼히 적다 보니 총액이 커지는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI가 자동 생성하는 부가요금·옵션 추천이 고객 결제액을 과하게 늘리지 않는지 점검해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>자동 생성 항목은 &#39;왜 붙었는지&#39; 근거를 함께 저장해 분쟁 시 설명 가능하게 하자.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.statnews.com/2026/10/06/ai-tools-health-care-costs-bcbs-research/?utm_campaign=rss" target="_blank" rel="noopener">원제: Opinion: I’m a doctor. Here’s what I want the public to know about AI tools and health care costs ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock world-axis" data-cat="infra">
+    <h4>인프라·에너지·지정학</h4>
+    <div class="grid">
+<article class="card" data-cat="C4" data-text="미국 데이터센터 공사비, 연 850억 달러 최고치 8월 기준 미국 데이터센터 건설 지출이 연 850억 달러 속도로 1년 만에 73% 늘었다. data center construction spending hits record $85 billion annual pace tom&#39;s hardware">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C4 인프라·하드웨어</span>
+    <span>Tom&#39;s Hardware</span>
+    <span>· 10-06 21:00</span>
+    
+  </div>
+  <h3><a href="https://www.tomshardware.com/tech-industry/data-centers/spending-on-u-s-data-center-buildings-hits-record-usd85-billion-annual-pace-up-73-percent-in-a-year-and-census-doesnt-count-the-servers-and-racks-inside" target="_blank" rel="noopener">미국 데이터센터 공사비, 연 850억 달러 최고치</a></h3>
+  <p class="one">8월 기준 미국 데이터센터 건설 지출이 연 850억 달러 속도로 1년 만에 73% 늘었다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 인프라 투자 과열은 결국 클라우드 가격과 공급에 영향을 준다.</dd></div>
+    <div><dt>비유</dt><dd>이사철에 창고 신축이 폭증하는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>내년 클라우드·GPU 비용 변동을 가정한 예산 시나리오를 두 가지로 준비해 둘 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>GPU 리전 품귀를 대비해 모델 호출의 리전·공급사 이중화를 검토할 시점이다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.tomshardware.com/tech-industry/data-centers/spending-on-u-s-data-center-buildings-hits-record-usd85-billion-annual-pace-up-73-percent-in-a-year-and-census-doesnt-count-the-servers-and-racks-inside" target="_blank" rel="noopener">원제: Data center construction spending hits record $85 billion annual pace ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C4" data-text="openai·시놉시스, 칩 설계 ai &#39;gpt-synopsys&#39; 개발 두 회사가 반도체 설계 전용 모델을 만들어 eda 설계 도구를 직접 조작하게 한다. openai and synopsys partner to build &#34;gpt-synopsys&#34; for autonomous chip design tom&#39;s hardware">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C4 인프라·하드웨어</span>
+    <span>Tom&#39;s Hardware</span>
+    <span>· 10-06 20:00</span>
+    
+  </div>
+  <h3><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-and-synopsys-partner-to-build-gpt-synopsys-for-autonomous-chip-design-specialized-ai-model-will-operate-eda-tools-allowing-engineers-to-deliver-more-sophisticated-chips-faster" target="_blank" rel="noopener">OpenAI·시놉시스, 칩 설계 AI &#39;GPT-Synopsys&#39; 개발</a></h3>
+  <p class="one">두 회사가 반도체 설계 전용 모델을 만들어 EDA 설계 도구를 직접 조작하게 한다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI가 &#39;대화&#39;를 넘어 전문 도구를 직접 다루는 방향을 보여준다.</dd></div>
+    <div><dt>비유</dt><dd>조수가 말로 조언하는 대신 직접 공구를 잡고 작업하는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>우리 내부 도구(예약 어드민, 디자인 툴)를 AI가 직접 조작하는 자동화 과제를 후보로 올려 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>도구 조작형 에이전트는 권한 범위와 되돌리기(undo) 설계가 성능보다 중요하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-and-synopsys-partner-to-build-gpt-synopsys-for-autonomous-chip-design-specialized-ai-model-will-operate-eda-tools-allowing-engineers-to-deliver-more-sophisticated-chips-faster" target="_blank" rel="noopener">원제: OpenAI and Synopsys partner to build &#34;GPT-Synopsys&#34; for autonomous chip design ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock world-axis" data-cat="daily">
+    <h4>일상·소비</h4>
+    <div class="grid">
+<article class="card" data-cat="B4" data-text="ai로 ps5 독점작을 pc에 이식한 1인 개발 2023년 소스코드 유출을 이용해 한 개발자가 울버린을 pc에서 돌렸다. wolverine ps5 exclusive ported to pc in buggy solo project using ai tom&#39;s hardware">
+  <div class="meta">
+    
+    <span class="chip cat-B">B4 실패·사고 사례</span>
+    <span>Tom&#39;s Hardware</span>
+    <span>· 10-05 20:46</span>
+    
+  </div>
+  <h3><a href="https://www.tomshardware.com/video-games/pc-gaming/wolverine-ps5-exclusive-ported-to-pc-in-buggy-solo-project-using-ai-source-code-was-taken-from-sony-2023-ransomware-attack" target="_blank" rel="noopener">AI로 PS5 독점작을 PC에 이식한 1인 개발</a></h3>
+  <p class="one">2023년 소스코드 유출을 이용해 한 개발자가 울버린을 PC에서 돌렸다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI가 1인 개발의 가능 범위를 넓히는 동시에 법적 위험도 키운다.</dd></div>
+    <div><dt>비유</dt><dd>남의 설계도를 주워 혼자 집을 흉내 내 지은 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI 코딩 도구가 출처 불명 코드를 끌어오지 않는지 사내 가이드로 명시해 둘 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>AI 생성 코드의 라이선스·유출 코드 혼입 점검을 CI 단계에 넣어두면 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.tomshardware.com/video-games/pc-gaming/wolverine-ps5-exclusive-ported-to-pc-in-buggy-solo-project-using-ai-source-code-was-taken-from-sony-2023-ransomware-attack" target="_blank" rel="noopener">원제: Wolverine PS5 exclusive ported to PC in buggy solo project using AI ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="B2" data-text="사람들은 ai를 싫어하면서도 계속 쓴다 ai 반감과 폭발적 사용이 동시에 커지는 모순을 짚은 글. people really hate ai, so why can’t they get enough? mit technology review ai">
+  <div class="meta">
+    
+    <span class="chip cat-B">B2 산업별 적용</span>
+    <span>MIT Technology Review AI</span>
+    <span>· 10-05 17:00</span>
+    
+  </div>
+  <h3><a href="https://www.technologyreview.com/2026/10/05/1145682/people-really-hate-ai-so-why-cant-they-get-enough/" target="_blank" rel="noopener">사람들은 AI를 싫어하면서도 계속 쓴다</a></h3>
+  <p class="one">AI 반감과 폭발적 사용이 동시에 커지는 모순을 짚은 글.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>사용자는 AI를 쓰면서도 &#39;AI 같다&#39;는 느낌은 싫어한다.</dd></div>
+    <div><dt>비유</dt><dd>패스트푸드를 욕하면서 매주 먹는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI 기능을 전면에 내세우기보다 &#39;빠른 추천&#39;처럼 효용으로 표현하는 UX 문구를 A/B 테스트해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>AI 라벨 노출 여부를 설정값으로 분리해 두면 반응을 데이터로 비교하기 쉽다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.technologyreview.com/2026/10/05/1145682/people-really-hate-ai-so-why-cant-they-get-enough/" target="_blank" rel="noopener">원제: People really hate AI, so why can’t they get enough? ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock world-axis" data-cat="rules">
+    <h4>규칙·사회</h4>
+    <div class="grid">
+<article class="card" data-cat="B4" data-text="한국 은행 해킹에 ai 에이전트 의심 이재명 대통령이 은행 공격에 ai가 쓰인 정황이 있다고 국무회의에서 말했으며, 약 2만5천 명 정보가 노출됐다. hackers suspected of using ai agents for cyberattacks on south korean banks, exposing data from about 25,000 customers tom&#39;s hardware">
+  <div class="meta">
+    <span class="stars s5" role="img" aria-label="중요도 5점 만점에 5점" title="중요도 5/5 — 업계 판도를 바꿀 소식"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B4 실패·사고 사례</span>
+    <span>Tom&#39;s Hardware</span>
+    <span>· 10-06 21:15</span>
+    
+  </div>
+  <h3><a href="https://www.tomshardware.com/tech-industry/cyber-security/hackers-suspected-of-using-ai-agents-for-cyberattacks-on-south-korean-banks-exposing-data-from-about-25-000-customers-officials-believe-ai-models-enable-actors-to-hack-with-ease-even-without-specialized-skills" target="_blank" rel="noopener">한국 은행 해킹에 AI 에이전트 의심</a></h3>
+  <p class="one">이재명 대통령이 은행 공격에 AI가 쓰인 정황이 있다고 국무회의에서 말했으며, 약 2만5천 명 정보가 노출됐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 에이전트를 이용한 공격이 국내 금융권까지 거론되는 단계다.</dd></div>
+    <div><dt>비유</dt><dd>도둑이 자동 열쇠 복사기를 들고 온 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약·결제 API의 비정상 자동 요청 탐지와 속도 제한 정책을 다시 점검해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>봇 탐지는 IP 차단만으로 부족하니 행동 패턴·세션 단위 이상치 탐지를 보강하자.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.tomshardware.com/tech-industry/cyber-security/hackers-suspected-of-using-ai-agents-for-cyberattacks-on-south-korean-banks-exposing-data-from-about-25-000-customers-officials-believe-ai-models-enable-actors-to-hack-with-ease-even-without-specialized-skills" target="_blank" rel="noopener">원제: Hackers suspected of using AI agents for cyberattacks on South Korean banks, exposing data from about 25,000 customers ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C2" data-text="생성·에이전트 ai가 바꾸는 여론 공작 생성 ai가 악성 외국 영향력 공작의 양과 질을 키울 수 있다고 분석했다. production, persuasion, and power: how generative and agentic ai are transforming influence operations lawfare">
+  <div class="meta">
+    
+    <span class="chip cat-C">C2 규제·정책</span>
+    <span>Lawfare</span>
+    <span>· 10-05 23:51</span>
+    
+  </div>
+  <h3><a href="https://www.lawfaremedia.org/article/production--persuasion--and-power--how-generative-and-agentic-ai-are-transforming-influence-operations" target="_blank" rel="noopener">생성·에이전트 AI가 바꾸는 여론 공작</a></h3>
+  <p class="one">생성 AI가 악성 외국 영향력 공작의 양과 질을 키울 수 있다고 분석했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>가짜 콘텐츠 대량 생산은 리뷰·여론 신뢰에도 번질 수 있다.</dd></div>
+    <div><dt>비유</dt><dd>전단지를 손으로 쓰다가 복사기를 들인 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>리뷰·후기에서 AI 대량 생성 의심 글을 걸러내는 탐지 규칙을 검토해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>실제 여론 변화 효과는 아직 불확실하다고 본 글이 밝힌 만큼, 과잉 대응보다 모니터링 지표부터 세우자.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.lawfaremedia.org/article/production--persuasion--and-power--how-generative-and-agentic-ai-are-transforming-influence-operations" target="_blank" rel="noopener">원제: Production, Persuasion, and Power: How Generative and Agentic AI Are Transforming Influence Operations ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+<section class="box weekly-link">
+  <div class="label">주간 요약 — 10/05 ~ 10/11</div>
+  <h3><a href="../weekly/2026-W41.html">에이전트가 결제까지 — 판단·비용·보안은 쪼개서 관리 →</a></h3>
+</section>
+
+
+</main>
+<footer class="wrap foot">
+  생성 2026-10-17 11:19 KST · 공식 RSS·API만 수집 · 원문 저작권은 각 출처에 있습니다
+</footer>
+<script src="../static/app.js?v=73b1c7e9b5"></script>
+</body>
+</html>

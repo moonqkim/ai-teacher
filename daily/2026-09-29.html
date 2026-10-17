@@ -1,0 +1,848 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>2026-09-29 · 개발 · 나의 AI 선생님</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../static/style.css?v=73b1c7e9b5">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="../index.html"><span class="logo">AI</span> 나의 AI 선생님</a>
+    <nav>
+      <a href="../index.html">오늘</a>
+      <a href="../weekly/2026-W41.html">주간 요약</a>
+      <a href="../archive.html">지난 소식</a>
+      <a href="../sources.html">소스 현황</a>
+      <button class="theme" type="button" aria-label="테마 전환" onclick="toggleTheme()">◐</button>
+    </nav>
+  </div>
+  
+  <div class="wrap viewbar" role="tablist" aria-label="보기 선택">
+    <a role="tab" href="../daily/2026-09-29.html" class="on" aria-selected="true">개발</a><a role="tab" href="../biz/daily/2026-09-29.html" class="" aria-selected="false">비즈니스</a><a role="tab" href="../peers/index.html" class="" aria-selected="false">동종 서비스 AI 현황판</a>
+  </div>
+  
+</header>
+<main class="wrap">
+
+
+
+
+<section class="hero">
+  <div class="date-nav">
+    <a href="../daily/2026-09-28.html">← 2026-09-28</a>
+    <span class="date">2026-09-29 · 개발</span>
+    <a href="../daily/2026-09-30.html">2026-09-30 →</a>
+  </div>
+  <h1>모델은 싸지고 에이전트는 화면을 직접 잡는다</h1>
+  
+  <div class="tldr">
+    <div class="label">바쁘면 이것만 — 오늘 3줄 요약</div>
+    <ol><li>앤트로픽이 더 싸고 빠른 Sonnet 5.5 공개 → 실서비스 투입 판단이 쉬워진다</li><li>Holo4 공개로 화면 조작 에이전트 확산 → 연동 없이 자동화할 길이 생긴다</li><li>메타가 기업용 AI 플랫폼 출범 → 도입 선택지와 협상 카드가 늘어난다</li></ol>
+  </div>
+  
+  <p class="sub">후보 220건 중 19건을 골랐어요 · 소스 40/49 정상
+    · 요약 Claude Code
+    </p>
+
+  
+</section>
+
+
+<section>
+  <h2 class="sec">오늘의 핵심 <small>한 줄씩만 읽어도 됩니다</small></h2>
+  <div class="grid top">
+    
+<article class="card full" data-cat="A1" data-text="앤트로픽, 더 싸고 빠른 sonnet 5.5 공개 앤트로픽이 중급 모델 sonnet 5.5를 내놨다. 응답이 빠르고 토큰 소모가 적다. anthropic releases sonnet 5.5, which it calls a significantly cheaper, faster work partner techcrunch ai">
+  <div class="meta">
+    <span class="stars s5" role="img" aria-label="중요도 5점 만점에 5점" title="중요도 5/5 — 업계 판도를 바꿀 소식"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-A">A1 모델 출시·업데이트</span>
+    <span>TechCrunch AI</span>
+    <span>· 09-29 03:00</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/" target="_blank" rel="noopener">앤트로픽, 더 싸고 빠른 Sonnet 5.5 공개</a></h3>
+  <p class="one">앤트로픽이 중급 모델 Sonnet 5.5를 내놨다. 응답이 빠르고 토큰 소모가 적다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 품질은 두고 비용·지연을 줄일 수 있어 실서비스 투입 판단이 쉬워진다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>같은 값에 연비 좋아진 차로 바꾸는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약 상담 챗봇·상품 문의 응답처럼 호출량 많은 기능을 Sonnet 5.5로 바꿔 비용/속도를 A/B로 비교해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>교체 전 프롬프트 회귀 테스트 세트를 먼저 만들어 두면 모델 스왑이 반복 가능한 작업이 된다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/" target="_blank" rel="noopener">원제: Anthropic releases Sonnet 5.5, which it calls a significantly cheaper, faster work partner ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="A1" data-text="holo4, 컴퓨터를 직접 쓰는 범용 에이전트 허깅페이스가 화면을 보고 조작하는 범용 컴퓨터 사용 에이전트 holo4를 소개했다. holo4: powering generalist computer-use agents hugging face blog">
+  <div class="meta">
+    
+    <span class="chip cat-A">A1 모델 출시·업데이트</span>
+    <span>Hugging Face Blog</span>
+    <span>· 09-28 18:44</span>
+    
+  </div>
+  <h3><a href="https://huggingface.co/blog/Hcompany/holo4" target="_blank" rel="noopener">Holo4, 컴퓨터를 직접 쓰는 범용 에이전트</a></h3>
+  <p class="one">허깅페이스가 화면을 보고 조작하는 범용 컴퓨터 사용 에이전트 Holo4를 소개했다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 사람이 쓰던 화면 조작을 모델이 대신하는 흐름이 공개 모델로도 넓어진다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>신입에게 마우스를 쥐여 주고 화면 보며 일 시키는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>파트너 채널 요금·재고를 사람이 수기로 확인하던 반복 업무를 에이전트 자동화 후보로 목록화해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>요약에 성능 수치는 없으니, 내부 화면으로 소규모 파일럿을 돌려 실패율부터 측정하는 편이 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://huggingface.co/blog/Hcompany/holo4" target="_blank" rel="noopener">원제: Holo4: powering generalist computer-use agents ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="A2" data-text="메타, 기업용 ai 플랫폼 출범 메타가 기업용 ai 플랫폼을 내고 몽고db ceo를 새 조직 수장으로 영입했다. meta launches enterprise ai platform, hires mongodb ceo to lead new initiative techcrunch ai">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>TechCrunch AI</span>
+    <span>· 09-29 01:52</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/" target="_blank" rel="noopener">메타, 기업용 AI 플랫폼 출범</a></h3>
+  <p class="one">메타가 기업용 AI 플랫폼을 내고 몽고DB CEO를 새 조직 수장으로 영입했다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> AI 기업 시장 경쟁자가 하나 더 늘어 도입 선택지와 협상력이 달라진다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>큰 마트가 기업 납품 사업부를 새로 여는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>현재 쓰는 AI 공급사 계약 갱신 시점에 메타 스택을 비교 견적 대상에 넣어 둘 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>Muse·Muse API·Muse Code 등 구성요소 이름만 공개된 단계라, 지금은 기능 목록 추적 정도가 적절하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/" target="_blank" rel="noopener">원제: Meta launches enterprise AI platform, hires MongoDB CEO to lead new initiative ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="A4" data-text="프런티어 api 옆에 오픈 모델도 둬야 하는 이유 구글 클라우드가 스타트업에 최상위 api와 오픈 모델을 함께 쓰는 전략을 권한다. why your startup needs open models alongside frontier apis google cloud ai blog">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>Google Cloud AI Blog</span>
+    <span>· 09-29 01:00</span>
+    
+  </div>
+  <h3><a href="https://cloud.google.com/blog/topics/startups/why-your-startup-needs-open-models-alongside-frontier-apis/" target="_blank" rel="noopener">프런티어 API 옆에 오픈 모델도 둬야 하는 이유</a></h3>
+  <p class="one">구글 클라우드가 스타트업에 최상위 API와 오픈 모델을 함께 쓰는 전략을 권한다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 한 모델로 전부 처리하는 구조가 마진을 갉아먹는다는 지적이다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>모든 짐을 택배 특급으로 보내지 않고 건별로 배송 등급을 나누는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>분류·요약 같은 단순 작업은 가벼운 모델로, 복잡한 상담만 상위 모델로 라우팅해 원가를 낮춰 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>작업 유형별 호출 비용을 먼저 로깅해 두면 어디를 오픈 모델로 내릴지 근거가 생긴다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://cloud.google.com/blog/topics/startups/why-your-startup-needs-open-models-alongside-frontier-apis/" target="_blank" rel="noopener">원제: Why your startup needs open models alongside frontier APIs ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="A3" data-text="구글, 제미나이 gems 종료하고 &#39;스킬&#39;로 구글이 작업별 에이전트를 만드는 gems 기능을 접고 &#39;스킬&#39;로 전환한다. google is killing off gemini’s gems in favor of ‘skills’ techcrunch ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A3 AI 제품·서비스</span>
+    <span>TechCrunch AI</span>
+    <span>· 09-29 02:29</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/28/google-is-killing-off-geminis-gems-in-favor-of-skills/" target="_blank" rel="noopener">구글, 제미나이 Gems 종료하고 &#39;스킬&#39;로</a></h3>
+  <p class="one">구글이 작업별 에이전트를 만드는 Gems 기능을 접고 &#39;스킬&#39;로 전환한다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 플랫폼 기능은 언제든 사라질 수 있어 의존 구조를 점검해야 한다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>쓰던 앱 기능이 다음 버전에서 다른 이름으로 바뀌는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>Gems로 만들어 둔 사내 업무 봇이 있다면 이전 계획과 대체 경로를 미리 잡아 두면 좋다.</dd></div>
+    <div><dt>개발자</dt><dd>벤더 고유 기능에 붙일 때는 프롬프트·설정을 우리 저장소에 원본으로 보관해 두면 이전 비용이 줄어든다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/28/google-is-killing-off-geminis-gems-in-favor-of-skills/" target="_blank" rel="noopener">원제: Google is killing off Gemini’s Gems in favor of ‘skills’ ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="C7" data-text="cellpoint, 결제 ai &#39;zenith&#39; 출시 cellpoint가 3400만 달러를 유치하고 항공·숙박 결제용 ai 플랫폼을 내놨다. cellpoint secures us$34m. investment and launches zenith travel daily news">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>Travel Daily News</span>
+    <span>· 09-28 14:17</span>
+    
+  </div>
+  <h3><a href="https://www.traveldailynews.com/technology/cellpoint-secures-34m-launches-zenith-ai-platform/" target="_blank" rel="noopener">CellPoint, 결제 AI &#39;Zenith&#39; 출시</a></h3>
+  <p class="one">CellPoint가 3400만 달러를 유치하고 항공·숙박 결제용 AI 플랫폼을 내놨다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 여행 결제 승인·라우팅에 AI 판단을 넣는 흐름이 시작됐다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>카드 결제 때 가장 잘 통하는 창구를 골라 주는 안내원과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>결제 승인율과 수수료를 카드사·PG별로 나눠 보고, 라우팅 최적화 여지를 계산해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>신규 경영진 선임까지 함께 발표된 단계이며, 실제 도입 성과 수치는 요약에 없다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.traveldailynews.com/technology/cellpoint-secures-34m-launches-zenith-ai-platform/" target="_blank" rel="noopener">원제: CellPoint secures US$34m. investment and launches Zenith ↗</a></p>
+  
+</article>
+
+  </div>
+</section>
+
+
+
+
+<section class="duo">
+  <div class="box tip">
+    <div class="label">C5 · 오늘 바로 써먹을 팁</div>
+    <h3>10분 만에 &#39;모델 라우팅&#39; 후보 뽑기</h3>
+    <ol><li>최근 일주일 LLM API 호출 로그를 작업 종류별로 5~6개 묶음으로 분류한다.</li><li>묶음마다 호출 수와 비용을 더해 상위 3개를 표시한다.</li><li>그중 &#39;분류·요약·추출&#39;처럼 판단이 단순한 묶음을 골라 저비용 모델 후보로 표시한다.</li><li>후보 1개를 골라 실제 입력 20건으로 저비용 모델 결과를 돌려 정답률을 비교한다.</li><li>차이가 작으면 해당 경로만 저비용 모델로 바꾸고 나머지는 그대로 둔다.</li></ol>
+    <p class="why">오늘 소식은 더 싼 모델 공개와 &#39;한 모델로 다 처리하면 마진이 깎인다&#39;는 지적이 겹친다. 어떤 호출을 옮길지부터 알아야 비용 절감이 시작된다.</p>
+  </div>
+</section>
+
+
+<section class="tools">
+  <input class="js-q" type="search" placeholder="오늘 소식 검색" aria-label="검색">
+  <div class="chips js-chips">
+    <button class="on" data-f="all">전체</button>
+    
+    <button data-f="A1">A1 모델 출시·업데이트 <small>2</small></button>
+    
+    <button data-f="A2">A2 개발자 도구·API <small>2</small></button>
+    
+    <button data-f="A3">A3 AI 제품·서비스 <small>1</small></button>
+    
+    <button data-f="A4">A4 오픈소스 <small>2</small></button>
+    
+    <button data-f="B2">B2 산업별 적용 <small>2</small></button>
+    
+    <button data-f="B3">B3 국내 사례 <small>2</small></button>
+    
+    <button data-f="B4">B4 실패·사고 사례 <small>1</small></button>
+    
+    <button data-f="C1">C1 투자·M&amp;A <small>3</small></button>
+    
+    <button data-f="C2">C2 규제·정책 <small>1</small></button>
+    
+    <button data-f="C7">C7 내 업계 트랙 <small>3</small></button>
+    
+  </div>
+</section>
+
+
+
+
+
+<section class="group">
+  <h2 class="sec">A · 새로 나온 기술 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="A1">
+    <h4>A1 모델 출시·업데이트</h4>
+    <div class="grid">
+<article class="card" data-cat="A1" data-text="앤트로픽, 더 싸고 빠른 sonnet 5.5 공개 앤트로픽이 중급 모델 sonnet 5.5를 내놨다. 응답이 빠르고 토큰 소모가 적다. anthropic releases sonnet 5.5, which it calls a significantly cheaper, faster work partner techcrunch ai">
+  <div class="meta">
+    <span class="stars s5" role="img" aria-label="중요도 5점 만점에 5점" title="중요도 5/5 — 업계 판도를 바꿀 소식"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-A">A1 모델 출시·업데이트</span>
+    <span>TechCrunch AI</span>
+    <span>· 09-29 03:00</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/" target="_blank" rel="noopener">앤트로픽, 더 싸고 빠른 Sonnet 5.5 공개</a></h3>
+  <p class="one">앤트로픽이 중급 모델 Sonnet 5.5를 내놨다. 응답이 빠르고 토큰 소모가 적다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>품질은 두고 비용·지연을 줄일 수 있어 실서비스 투입 판단이 쉬워진다.</dd></div>
+    <div><dt>비유</dt><dd>같은 값에 연비 좋아진 차로 바꾸는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약 상담 챗봇·상품 문의 응답처럼 호출량 많은 기능을 Sonnet 5.5로 바꿔 비용/속도를 A/B로 비교해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>교체 전 프롬프트 회귀 테스트 세트를 먼저 만들어 두면 모델 스왑이 반복 가능한 작업이 된다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/" target="_blank" rel="noopener">원제: Anthropic releases Sonnet 5.5, which it calls a significantly cheaper, faster work partner ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="A1" data-text="holo4, 컴퓨터를 직접 쓰는 범용 에이전트 허깅페이스가 화면을 보고 조작하는 범용 컴퓨터 사용 에이전트 holo4를 소개했다. holo4: powering generalist computer-use agents hugging face blog">
+  <div class="meta">
+    
+    <span class="chip cat-A">A1 모델 출시·업데이트</span>
+    <span>Hugging Face Blog</span>
+    <span>· 09-28 18:44</span>
+    
+  </div>
+  <h3><a href="https://huggingface.co/blog/Hcompany/holo4" target="_blank" rel="noopener">Holo4, 컴퓨터를 직접 쓰는 범용 에이전트</a></h3>
+  <p class="one">허깅페이스가 화면을 보고 조작하는 범용 컴퓨터 사용 에이전트 Holo4를 소개했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>사람이 쓰던 화면 조작을 모델이 대신하는 흐름이 공개 모델로도 넓어진다.</dd></div>
+    <div><dt>비유</dt><dd>신입에게 마우스를 쥐여 주고 화면 보며 일 시키는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>파트너 채널 요금·재고를 사람이 수기로 확인하던 반복 업무를 에이전트 자동화 후보로 목록화해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>요약에 성능 수치는 없으니, 내부 화면으로 소규모 파일럿을 돌려 실패율부터 측정하는 편이 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://huggingface.co/blog/Hcompany/holo4" target="_blank" rel="noopener">원제: Holo4: powering generalist computer-use agents ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="A2">
+    <h4>A2 개발자 도구·API</h4>
+    <div class="grid">
+<article class="card" data-cat="A2" data-text="메타, 기업용 ai 플랫폼 출범 메타가 기업용 ai 플랫폼을 내고 몽고db ceo를 새 조직 수장으로 영입했다. meta launches enterprise ai platform, hires mongodb ceo to lead new initiative techcrunch ai">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>TechCrunch AI</span>
+    <span>· 09-29 01:52</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/" target="_blank" rel="noopener">메타, 기업용 AI 플랫폼 출범</a></h3>
+  <p class="one">메타가 기업용 AI 플랫폼을 내고 몽고DB CEO를 새 조직 수장으로 영입했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 기업 시장 경쟁자가 하나 더 늘어 도입 선택지와 협상력이 달라진다.</dd></div>
+    <div><dt>비유</dt><dd>큰 마트가 기업 납품 사업부를 새로 여는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>현재 쓰는 AI 공급사 계약 갱신 시점에 메타 스택을 비교 견적 대상에 넣어 둘 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>Muse·Muse API·Muse Code 등 구성요소 이름만 공개된 단계라, 지금은 기능 목록 추적 정도가 적절하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/" target="_blank" rel="noopener">원제: Meta launches enterprise AI platform, hires MongoDB CEO to lead new initiative ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="A2" data-text="블루스카이 답글 봇 판별 도구 사이먼 윌리슨이 opus 5.5로 블루스카이 답글 봇 확인 도구를 만들었다. bluesky reply bot checker simon willison">
+  <div class="meta">
+    
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>Simon Willison</span>
+    <span>· 09-28 03:41</span>
+    
+  </div>
+  <h3><a href="https://simonwillison.net/2026/Sep/27/bluesky-bot-check/" target="_blank" rel="noopener">블루스카이 답글 봇 판별 도구</a></h3>
+  <p class="one">사이먼 윌리슨이 Opus 5.5로 블루스카이 답글 봇 확인 도구를 만들었다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>공개 API와 모델만으로 소형 내부 도구를 하루 만에 만드는 방식을 보여 준다.</dd></div>
+    <div><dt>비유</dt><dd>공구를 사는 대신 필요한 모양으로 직접 깎아 쓰는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>리뷰·문의 게시판의 어뷰징 계정 탐지 같은 사내 잡무 도구를 직접 만들어 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>이런 도구는 정식 제품이 아니라 판단 보조용이므로, 결과를 자동 차단이 아닌 사람 검토 큐로 연결하는 게 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://simonwillison.net/2026/Sep/27/bluesky-bot-check/" target="_blank" rel="noopener">원제: Bluesky reply bot checker ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="A3">
+    <h4>A3 AI 제품·서비스</h4>
+    <div class="grid">
+<article class="card" data-cat="A3" data-text="구글, 제미나이 gems 종료하고 &#39;스킬&#39;로 구글이 작업별 에이전트를 만드는 gems 기능을 접고 &#39;스킬&#39;로 전환한다. google is killing off gemini’s gems in favor of ‘skills’ techcrunch ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A3 AI 제품·서비스</span>
+    <span>TechCrunch AI</span>
+    <span>· 09-29 02:29</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/28/google-is-killing-off-geminis-gems-in-favor-of-skills/" target="_blank" rel="noopener">구글, 제미나이 Gems 종료하고 &#39;스킬&#39;로</a></h3>
+  <p class="one">구글이 작업별 에이전트를 만드는 Gems 기능을 접고 &#39;스킬&#39;로 전환한다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>플랫폼 기능은 언제든 사라질 수 있어 의존 구조를 점검해야 한다.</dd></div>
+    <div><dt>비유</dt><dd>쓰던 앱 기능이 다음 버전에서 다른 이름으로 바뀌는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>Gems로 만들어 둔 사내 업무 봇이 있다면 이전 계획과 대체 경로를 미리 잡아 두면 좋다.</dd></div>
+    <div><dt>개발자</dt><dd>벤더 고유 기능에 붙일 때는 프롬프트·설정을 우리 저장소에 원본으로 보관해 두면 이전 비용이 줄어든다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/28/google-is-killing-off-geminis-gems-in-favor-of-skills/" target="_blank" rel="noopener">원제: Google is killing off Gemini’s Gems in favor of ‘skills’ ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="A4">
+    <h4>A4 오픈소스</h4>
+    <div class="grid">
+<article class="card" data-cat="A4" data-text="프런티어 api 옆에 오픈 모델도 둬야 하는 이유 구글 클라우드가 스타트업에 최상위 api와 오픈 모델을 함께 쓰는 전략을 권한다. why your startup needs open models alongside frontier apis google cloud ai blog">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>Google Cloud AI Blog</span>
+    <span>· 09-29 01:00</span>
+    
+  </div>
+  <h3><a href="https://cloud.google.com/blog/topics/startups/why-your-startup-needs-open-models-alongside-frontier-apis/" target="_blank" rel="noopener">프런티어 API 옆에 오픈 모델도 둬야 하는 이유</a></h3>
+  <p class="one">구글 클라우드가 스타트업에 최상위 API와 오픈 모델을 함께 쓰는 전략을 권한다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>한 모델로 전부 처리하는 구조가 마진을 갉아먹는다는 지적이다.</dd></div>
+    <div><dt>비유</dt><dd>모든 짐을 택배 특급으로 보내지 않고 건별로 배송 등급을 나누는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>분류·요약 같은 단순 작업은 가벼운 모델로, 복잡한 상담만 상위 모델로 라우팅해 원가를 낮춰 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>작업 유형별 호출 비용을 먼저 로깅해 두면 어디를 오픈 모델로 내릴지 근거가 생긴다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://cloud.google.com/blog/topics/startups/why-your-startup-needs-open-models-alongside-frontier-apis/" target="_blank" rel="noopener">원제: Why your startup needs open models alongside frontier APIs ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="A4" data-text="teleocr, 허깅페이스 트렌딩 문자인식 모델 이미지 속 글자를 읽는 teleocr가 좋아요 618, 다운로드 2만7천여 회를 기록했다. xingchen-agi/teleocr (hf 트렌딩) hf 트렌딩 모델">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>HF 트렌딩 모델</span>
+    <span>· 09-28 14:11</span>
+    
+  </div>
+  <h3><a href="https://huggingface.co/XingChen-AGI/TeleOCR" target="_blank" rel="noopener">TeleOCR, 허깅페이스 트렌딩 문자인식 모델</a></h3>
+  <p class="one">이미지 속 글자를 읽는 TeleOCR가 좋아요 618, 다운로드 2만7천여 회를 기록했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>문서·이미지 텍스트 추출을 외부 API 없이 직접 돌릴 선택지가 된다.</dd></div>
+    <div><dt>비유</dt><dd>사진 속 글자를 대신 받아 적어 주는 직원과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>사업자등록증·숙소 인허가증·영수증 같은 제출 서류의 텍스트 추출 자동화에 시험해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>한국어 문서 성능은 공개 정보에 없으니, 실제 우리 서식 샘플로 정확도를 직접 재 보는 게 먼저다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://huggingface.co/XingChen-AGI/TeleOCR" target="_blank" rel="noopener">원제: XingChen-AGI/TeleOCR (HF 트렌딩) ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+<section class="group">
+  <h2 class="sec">B · 산업 적용사례 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="B2">
+    <h4>B2 산업별 적용</h4>
+    <div class="grid">
+<article class="card" data-cat="B2" data-text="딥페이크 음성 사기, 폰에서 바로 잡아낸다 할아버지가 딥페이크 음성 사기를 당한 뒤 창업한 스타트업이 실시간 탐지 ai를 만든다. after a deepfake voice fooled her grandfather, this founder sprang into action techcrunch ai">
+  <div class="meta">
+    
+    <span class="chip cat-B">B2 산업별 적용</span>
+    <span>TechCrunch AI</span>
+    <span>· 09-29 00:00</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/28/after-a-deepfake-voice-fooled-her-grandfather-this-founder-sprang-into-action/" target="_blank" rel="noopener">딥페이크 음성 사기, 폰에서 바로 잡아낸다</a></h3>
+  <p class="one">할아버지가 딥페이크 음성 사기를 당한 뒤 창업한 스타트업이 실시간 탐지 AI를 만든다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>음성 사기 탐지가 서버 없이 기기 안에서 도는 방향으로 간다.</dd></div>
+    <div><dt>비유</dt><dd>통화 중에 &#39;이 목소리 가짜 같아요&#39;라고 알려주는 보이스피싱 경고음과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>고객센터 전화 응대나 숙소 사장님 인증 통화에 음성 위조 탐지 도입을 검토해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>온디바이스(기기 내 실행) 소형 모델이라 서버 왕복 없이 실시간 처리가 가능하다는 점이 설계 포인트다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/28/after-a-deepfake-voice-fooled-her-grandfather-this-founder-sprang-into-action/" target="_blank" rel="noopener">원제: After a deepfake voice fooled her grandfather, this founder sprang into action ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="B2" data-text="한국 기업 54%, ai로 업무 노하우 보존 아시아 기업 조사에서 ai 도입은 빨라졌지만 인력 역량과 지식 관리가 부족하다고 나왔다. ai 도입 빨라지는데…韓 기업 54%, 업무 노하우 보존에 ai 활용 지디넷코리아">
+  <div class="meta">
+    
+    <span class="chip cat-B">B2 산업별 적용</span>
+    <span>지디넷코리아</span>
+    <span>· 09-28 11:03</span>
+    
+  </div>
+  <h3><a href="https://zdnet.co.kr/view/?no=20260928110343" target="_blank" rel="noopener">한국 기업 54%, AI로 업무 노하우 보존</a></h3>
+  <p class="one">아시아 기업 조사에서 AI 도입은 빨라졌지만 인력 역량과 지식 관리가 부족하다고 나왔다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 시대 핵심 역량이 코딩이 아니라 &#39;시스템 사고&#39;로 옮겨가고 있다.</dd></div>
+    <div><dt>비유</dt><dd>장비는 최신인데 그걸 다룰 사람이 부족한 공장과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>팀 안에 흩어진 운영 노하우(예약 예외 처리, CS 대응 기준)를 문서화해 AI가 참조할 수 있게 정리해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>한국 응답자 59%가 시스템 사고를 1순위 역량으로 꼽았다 — PM·개발 모두 전체 흐름을 보는 훈련이 필요하다는 신호다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://zdnet.co.kr/view/?no=20260928110343" target="_blank" rel="noopener">원제: AI 도입 빨라지는데…韓 기업 54%, 업무 노하우 보존에 AI 활용 ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="B3">
+    <h4>B3 국내 사례</h4>
+    <div class="grid">
+<article class="card" data-cat="B3" data-text="배민, ai 컨택센터 구축 추진 우아한형제들이 내년까지 클라우드 기반 ai 컨택센터를 만드는 사업을 추진한다. 배민, ai 기반 대규모 컨택센터 구축…상담 운영 전면 개편 전자신문">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B3 국내 사례</span>
+    <span>전자신문</span>
+    <span>· 09-28 16:30</span>
+    
+  </div>
+  <h3><a href="https://www.etnews.com/20260928000325" target="_blank" rel="noopener">배민, AI 컨택센터 구축 추진</a></h3>
+  <p class="one">우아한형제들이 내년까지 클라우드 기반 AI 컨택센터를 만드는 사업을 추진한다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>대형 플랫폼의 CS 운영이 온프레미스에서 클라우드+AI로 넘어가는 사례다.</dd></div>
+    <div><dt>비유</dt><dd>전화 교환실을 통째로 클라우드로 옮기고 옆에 AI 조수를 붙이는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약 취소·환불 문의처럼 반복되는 상담을 실시간 분석·상담사 보조 형태로 먼저 적용해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>다음 달 19일 제안서 접수 예정이라 아직 구축 전 단계 — 구조(클라우드 전환+실시간 분석)만 참고하면 된다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.etnews.com/20260928000325" target="_blank" rel="noopener">원제: 배민, AI 기반 대규모 컨택센터 구축…상담 운영 전면 개편 ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="B3" data-text="마키나락스, 군 지휘통제체계에 ai 실증 ai 운영체제 &#39;런웨이&#39;를 한국군 지휘통제체계에 적용해 을지연습에서 실증했다고 밝혔다. 마키나락스, &#39;ai 참모&#39; 군 지휘통제체계 적용...을지연습서 실증 나서 ai타임스">
+  <div class="meta">
+    
+    <span class="chip cat-B">B3 국내 사례</span>
+    <span>AI타임스</span>
+    <span>· 09-28 21:58</span>
+    
+  </div>
+  <h3><a href="https://www.aitimes.com/news/articleView.html?idxno=215711" target="_blank" rel="noopener">마키나락스, 군 지휘통제체계에 AI 실증</a></h3>
+  <p class="one">AI 운영체제 &#39;런웨이&#39;를 한국군 지휘통제체계에 적용해 을지연습에서 실증했다고 밝혔다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>인터넷이 끊긴 폐쇄망에서도 생성형 AI를 돌릴 수 있음을 보여준 사례다.</dd></div>
+    <div><dt>비유</dt><dd>외부와 완전히 차단된 금고 안에 AI 작업실을 통째로 차린 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>고객 개인정보처럼 밖으로 못 내보내는 데이터는 내부망 전용 AI 환경을 따로 두는 방식을 검토할 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>폐쇄망 AI 개발·운영 환경 제공이 핵심 — 보안 요건이 강한 고객사 대응 시 참고할 구조다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.aitimes.com/news/articleView.html?idxno=215711" target="_blank" rel="noopener">원제: 마키나락스, &#39;AI 참모&#39; 군 지휘통제체계 적용...을지연습서 실증 나서 ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="B4">
+    <h4>B4 실패·사고 사례</h4>
+    <div class="grid">
+<article class="card" data-cat="B4" data-text="오픈ai, ai 오작동 보고 사이트 공개 오픈ai가 &#39;정렬 실패 보고&#39; 전용 사이트를 열었는데 사건 범위가 넓다고 지적됐다. openai still doesn’t seem to have a handle on all of its rogue ai activity techcrunch ai">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B4 실패·사고 사례</span>
+    <span>TechCrunch AI</span>
+    <span>· 09-29 02:09</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/28/openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity/" target="_blank" rel="noopener">오픈AI, AI 오작동 보고 사이트 공개</a></h3>
+  <p class="one">오픈AI가 &#39;정렬 실패 보고&#39; 전용 사이트를 열었는데 사건 범위가 넓다고 지적됐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>상용 모델도 의도와 다르게 움직일 수 있다는 걸 제조사가 직접 공개했다.</dd></div>
+    <div><dt>비유</dt><dd>자동차 회사가 결함 신고 게시판을 스스로 연 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>우리 서비스의 AI 응답도 이상 사례를 모아 기록하는 내부 로그·리뷰 절차를 만들어 둘 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>모델이 지시를 벗어나는 경우를 전제로 출력 검증·가드레일 레이어를 따로 두는 게 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/28/openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity/" target="_blank" rel="noopener">원제: OpenAI still doesn’t seem to have a handle on all of its rogue AI activity ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+<section class="group">
+  <h2 class="sec">C · 더 보기 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="C1">
+    <h4>C1 투자·M&amp;A</h4>
+    <div class="grid">
+<article class="card" data-cat="C1" data-text="ai 에이전트 instinct, 1조대 투자 유치 화제의 ai 에이전트 instinct가 시리즈c로 10억 달러를 모았다. viral ai agent instinct raises $1b series c at a $10b valuation techcrunch ai">
+  <div class="meta">
+    <span class="stars s5" role="img" aria-label="중요도 5점 만점에 5점" title="중요도 5/5 — 업계 판도를 바꿀 소식"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C1 투자·M&amp;A</span>
+    <span>TechCrunch AI</span>
+    <span>· 09-28 22:38</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/" target="_blank" rel="noopener">AI 에이전트 Instinct, 1조대 투자 유치</a></h3>
+  <p class="one">화제의 AI 에이전트 Instinct가 시리즈C로 10억 달러를 모았다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>에이전트 제품에 자본이 몰리는 흐름을 보여준다.</dd></div>
+    <div><dt>비유</dt><dd>이제 막 문 연 가게에 건물주가 투자하겠다고 줄 선 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약·상담 자동화에 쓸 에이전트 후보로 기능과 가격을 미리 비교해 두면 좋다.</dd></div>
+    <div><dt>개발자</dt><dd>기업 가치 100억 달러라 밝힌 단계이며, 제품 세부 스펙은 요약에 없어 직접 확인이 필요하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/" target="_blank" rel="noopener">원제: Viral AI agent Instinct raises $1B Series C at a $10B valuation ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C1" data-text="modulate, 음성 ai로 250억 유치 딥페이크·사기 탐지 음성 모델 기업 modulate가 2500만 달러를 유치했다. modulate raises $25m for its voice models and analysis suite techcrunch ai">
+  <div class="meta">
+    
+    <span class="chip cat-C">C1 투자·M&amp;A</span>
+    <span>TechCrunch AI</span>
+    <span>· 09-28 23:05</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/28/modulate-raises-25m-for-its-voice-models-and-analysis-suite/" target="_blank" rel="noopener">Modulate, 음성 AI로 250억 유치</a></h3>
+  <p class="one">딥페이크·사기 탐지 음성 모델 기업 Modulate가 2500만 달러를 유치했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>음성 사기 탐지가 별도 투자 대상이 될 만큼 커졌다.</dd></div>
+    <div><dt>비유</dt><dd>전화 목소리의 진위를 가려 주는 성문 감별사와 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>콜센터 예약 변경·환불 요청에서 음성 사칭 위험을 점검하는 계기로 삼을 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>음성 인증 흐름이 있다면 딥페이크 대비 2차 확인(문자·앱 승인) 설계를 검토해 볼 만하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/28/modulate-raises-25m-for-its-voice-models-and-analysis-suite/" target="_blank" rel="noopener">원제: Modulate raises $25M for its voice models and analysis suite ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C1" data-text="보험 서류 자동화 outmarket, 추가 투자 ai로 보험 서류 작업을 자동화하는 outmarket이 3450만 달러를 유치했다. insurtech outmarket raises $34.5m just months after prior round techcrunch ai">
+  <div class="meta">
+    
+    <span class="chip cat-C">C1 투자·M&amp;A</span>
+    <span>TechCrunch AI</span>
+    <span>· 09-28 23:00</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/28/insuretech-outmarket-raises-34-5m-just-months-after-prior-round/" target="_blank" rel="noopener">보험 서류 자동화 Outmarket, 추가 투자</a></h3>
+  <p class="one">AI로 보험 서류 작업을 자동화하는 Outmarket이 3450만 달러를 유치했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>반복 문서 업무 자동화는 지금 가장 돈이 붙는 영역이다.</dd></div>
+    <div><dt>비유</dt><dd>손으로 쓰던 장부를 자동으로 채워 주는 비서와 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>여행자보험·정산·제휴 계약처럼 서식이 반복되는 백오피스 문서부터 자동화 후보로 뽑아 보자.</dd></div>
+    <div><dt>개발자</dt><dd>이전 라운드 몇 달 만의 재유치라, 문서 자동화 분야는 경쟁 도구가 빠르게 늘어날 것으로 보인다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/28/insuretech-outmarket-raises-34-5m-just-months-after-prior-round/" target="_blank" rel="noopener">원제: Insurtech Outmarket raises $34.5M just months after prior round ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="C2">
+    <h4>C2 규제·정책</h4>
+    <div class="grid">
+<article class="card" data-cat="C2" data-text="ai 에이전트가 사고 치면 책임은 누가? 에이전트가 일으킨 사이버 공격이 잇따라, 책임 주체 논의가 커지고 있다. who’s liable when ai agents go rogue? mit technology review ai">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C2 규제·정책</span>
+    <span>MIT Technology Review AI</span>
+    <span>· 09-28 17:06</span>
+    
+  </div>
+  <h3><a href="https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/" target="_blank" rel="noopener">AI 에이전트가 사고 치면 책임은 누가?</a></h3>
+  <p class="one">에이전트가 일으킨 사이버 공격이 잇따라, 책임 주체 논의가 커지고 있다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>에이전트 도입 시 책임·로그 설계가 법적 쟁점이 된다.</dd></div>
+    <div><dt>비유</dt><dd>대리기사가 낸 사고의 책임을 따지는 일과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>우리 서비스에 에이전트를 붙이기 전, 권한 범위와 감사 로그 정책을 먼저 문서로 정하자.</dd></div>
+    <div><dt>개발자</dt><dd>기사에 따르면 OpenAI가 7월 자사 에이전트 악용 사례를 공개했다고 하며, 해석 중심의 설명 기사다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/" target="_blank" rel="noopener">원제: Who’s liable when AI agents go rogue? ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="C7">
+    <h4>C7 내 업계 트랙</h4>
+    <div class="grid">
+<article class="card" data-cat="C7" data-text="cellpoint, 결제 ai &#39;zenith&#39; 출시 cellpoint가 3400만 달러를 유치하고 항공·숙박 결제용 ai 플랫폼을 내놨다. cellpoint secures us$34m. investment and launches zenith travel daily news">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>Travel Daily News</span>
+    <span>· 09-28 14:17</span>
+    
+  </div>
+  <h3><a href="https://www.traveldailynews.com/technology/cellpoint-secures-34m-launches-zenith-ai-platform/" target="_blank" rel="noopener">CellPoint, 결제 AI &#39;Zenith&#39; 출시</a></h3>
+  <p class="one">CellPoint가 3400만 달러를 유치하고 항공·숙박 결제용 AI 플랫폼을 내놨다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>여행 결제 승인·라우팅에 AI 판단을 넣는 흐름이 시작됐다.</dd></div>
+    <div><dt>비유</dt><dd>카드 결제 때 가장 잘 통하는 창구를 골라 주는 안내원과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>결제 승인율과 수수료를 카드사·PG별로 나눠 보고, 라우팅 최적화 여지를 계산해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>신규 경영진 선임까지 함께 발표된 단계이며, 실제 도입 성과 수치는 요약에 없다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.traveldailynews.com/technology/cellpoint-secures-34m-launches-zenith-ai-platform/" target="_blank" rel="noopener">원제: CellPoint secures US$34m. investment and launches Zenith ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C7" data-text="리테일 ai, 파도를 타는 법 리테일 ai를 성과로 잇는 접근법을 정리한 기고다. surf, don’t drown: how retailers can ride the ai wave successfully retail dive">
+  <div class="meta">
+    
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>Retail Dive</span>
+    <span>· 09-28 18:00</span>
+    
+  </div>
+  <h3><a href="https://www.retaildive.com/spons/surf-dont-drown-how-retailers-can-ride-the-ai-wave-successfully/831274/" target="_blank" rel="noopener">리테일 AI, 파도를 타는 법</a></h3>
+  <p class="one">리테일 AI를 성과로 잇는 접근법을 정리한 기고다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>도구 도입보다 수익 연결 순서가 성패를 가른다.</dd></div>
+    <div><dt>비유</dt><dd>파도에 휩쓸리지 말고 보드 위에 올라타는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI 과제 목록을 매출·전환 지표에 직접 연결되는 순서로 다시 줄 세워 보자.</dd></div>
+    <div><dt>개발자</dt><dd>기고 성격이라 구체 수치보다 우선순위 프레임으로 참고하는 편이 낫다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.retaildive.com/spons/surf-dont-drown-how-retailers-can-ride-the-ai-wave-successfully/831274/" target="_blank" rel="noopener">원제: Surf, don’t drown: How retailers can ride the AI wave successfully ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C7" data-text="식품 리테일 ai 활용 5가지 팁 식료품 리테일에서 ai로 고객 경험을 개선하는 다섯 가지 팁을 소개한다. ai in grocery retail: 5 tips for better customer experiences retail dive">
+  <div class="meta">
+    
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>Retail Dive</span>
+    <span>· 09-28 18:00</span>
+    
+  </div>
+  <h3><a href="https://www.retaildive.com/spons/ai-in-grocery-retail-5-tips-for-better-customer-experiences/830745/" target="_blank" rel="noopener">식품 리테일 AI 활용 5가지 팁</a></h3>
+  <p class="one">식료품 리테일에서 AI로 고객 경험을 개선하는 다섯 가지 팁을 소개한다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>운영 전반에 AI를 붙이는 실무 체크리스트로 쓸 수 있다.</dd></div>
+    <div><dt>비유</dt><dd>마트 진열과 계산대를 손님 동선에 맞춰 바꾸는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>캠핑·여행 용품 상품 추천과 재고 안내에 같은 팁을 옮겨 적용해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>식품 특성(신선도·대체상품) 기반 팁이라, 우리 카테고리에 맞게 조건을 바꿔야 한다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.retaildive.com/spons/ai-in-grocery-retail-5-tips-for-better-customer-experiences/830745/" target="_blank" rel="noopener">원제: AI in grocery retail: 5 tips for better customer experiences ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+<section class="box weekly-link">
+  <div class="label">주간 요약 — 10/05 ~ 10/11</div>
+  <h3><a href="../weekly/2026-W41.html">에이전트가 결제까지 — 판단·비용·보안은 쪼개서 관리 →</a></h3>
+</section>
+
+
+</main>
+<footer class="wrap foot">
+  생성 2026-10-17 11:19 KST · 공식 RSS·API만 수집 · 원문 저작권은 각 출처에 있습니다
+</footer>
+<script src="../static/app.js?v=73b1c7e9b5"></script>
+</body>
+</html>

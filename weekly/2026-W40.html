@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>2026-W40 주간 요약 · 개발 · 나의 AI 선생님</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../static/style.css?v=73b1c7e9b5">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="../index.html"><span class="logo">AI</span> 나의 AI 선생님</a>
+    <nav>
+      <a href="../index.html">오늘</a>
+      <a href="../weekly/2026-W41.html">주간 요약</a>
+      <a href="../archive.html">지난 소식</a>
+      <a href="../sources.html">소스 현황</a>
+      <button class="theme" type="button" aria-label="테마 전환" onclick="toggleTheme()">◐</button>
+    </nav>
+  </div>
+  
+  <div class="wrap viewbar" role="tablist" aria-label="보기 선택">
+    <a role="tab" href="../weekly/2026-W40.html" class="on" aria-selected="true">개발</a><a role="tab" href="../biz/weekly/2026-W40.html" class="" aria-selected="false">비즈니스</a><a role="tab" href="../peers/index.html" class="" aria-selected="false">동종 서비스 AI 현황판</a>
+  </div>
+  
+</header>
+<main class="wrap">
+
+<section class="hero">
+  <div class="date-nav">
+    <a href="../weekly/2026-W39.html">← 그 전 주</a>
+    <span class="date">09/28 ~ 10/04 주간 요약 · 개발</span>
+    <a href="../weekly/2026-W41.html">다음 주 →</a>
+  </div>
+  <h1>모델은 싸고 빨라졌고, 예약·주문은 대화창으로 옮겨갔다</h1>
+  
+  <div class="tldr">
+    <div class="label">월요일 5분 — 지난주 3줄 요약</div>
+    <ol><li>주요 모델이 한 주에 세대교체 → 주력 모델 교체 검토 시점</li><li>클로드가 서울 리전 인리전 추론 지원 → 국내 데이터 요건 해결</li><li>에어비앤비·도어대시가 AI 대화형 진입점 추가 → 예약 유입 경로 변화</li></ol>
+  </div>
+  
+  <p class="sub">지난주 7일 동안 116건을 소개했어요
+    
+    </p>
+
+  
+</section>
+
+
+<section class="box">
+  <div class="label">지난주 흐름</div>
+  <ol class="trend"><li>Sonnet 5.5, GPT-6.1 Sol, Gemini 4 Argon이 며칠 사이 줄줄이 나오며 비용·속도 기준선이 다시 내려갔다.</li><li>판단만 전담하는 &#39;결정 모델&#39;과 가벼운 추출·분류 모델이 쏟아져, 한 모델로 다 돌리던 구조를 쪼개는 흐름이 뚜렷하다.</li><li>서울·인도 리전 인리전 추론과 베드록 모델 추가로, 규제 때문에 미뤘던 도입을 다시 꺼낼 조건이 생겼다.</li><li>에어비앤비·도어대시·지그재그·MS까지 검색창 대신 대화창에서 발견·주문이 끝나는 쪽으로 움직였다.</li><li>레딧 API 종료와 중국산 오픈웨이트 종속 경고처럼, 데이터·모델 공급원 리스크 관리가 새 숙제로 올라왔다.</li><li>앤트로픽 레드팀 경고와 오픈AI 해킹 후속, AI 의심 은행 공격이 겹쳐 에이전트 권한·로그 설계가 급해졌다.</li></ol>
+</section>
+
+
+
+<section>
+  <h2 class="sec">지난주 꼭 다시 볼 7건 <small>이번 주 시작 전에</small></h2>
+  <div class="grid top">
+<article class="card full" data-cat="A1" data-text="claude sonnet 5.5 공개, 더 빠르고 더 싸다 anthropic이 sonnet 5.5를 내놨고 30% 이상 빠르고 최대 30% 저렴하다고 밝혔다. claude sonnet 5.5 simon willison">
+  <div class="meta">
+    <span class="stars s5" role="img" aria-label="중요도 5점 만점에 5점" title="중요도 5/5 — 업계 판도를 바꿀 소식"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-A">A1 모델 출시·업데이트</span>
+    <span>Simon Willison</span>
+    <span>· 09-29 07:07</span>
+    
+  </div>
+  <h3><a href="https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/" target="_blank" rel="noopener">Claude Sonnet 5.5 공개, 더 빠르고 더 싸다</a></h3>
+  <p class="one">Anthropic이 Sonnet 5.5를 내놨고 30% 이상 빠르고 최대 30% 저렴하다고 밝혔다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 가격은 그대로인데 성능·속도가 올라 주력 모델 교체를 검토할 만하다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>같은 요금제인데 데이터 속도만 빨라진 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약 문의 챗봇·상품 설명 생성 파이프라인을 Sonnet 5.5로 바꿔 응답속도와 비용을 A/B로 비교해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>&#39;최대(max)&#39; 추론 강도에서 12.8만 토큰을 쓰고 결과물 없이 실패한 버그가 보고됐으니, thinking 토큰 상한과 실패 처리 로직을 먼저 넣어라.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/" target="_blank" rel="noopener">원제: Claude Sonnet 5.5 ↗</a></p>
+  <p class="also">같은 소식: <a href="https://aws.amazon.com/blogs/machine-learning/introducing-claude-sonnet-5-5-on-aws/" target="_blank" rel="noopener">AWS Machine Learning Blog</a>, <a href="https://www.producthunt.com/products/claude" target="_blank" rel="noopener">Product Hunt AI</a></p>
+</article>
+
+<article class="card full" data-cat="A2" data-text="openai devday 2026: 신제품 대거 공개 dots·6.1 sol·ultrafast·decisions/agents api·spaces·마켓플레이스 발표, chatgpt 주간 사용자 12억 명. [ainews] openai devday 2026: dots, 6.1 sol, ultrafast, decisions api, agents api, spaces, marketplace, and 1.2 billion chatgpt wau latent space">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>Latent Space</span>
+    <span>· 09-30 14:53</span>
+    
+  </div>
+  <h3><a href="https://www.latent.space/p/ainews-openai-devday-2026-dots-61" target="_blank" rel="noopener">OpenAI DevDay 2026: 신제품 대거 공개</a></h3>
+  <p class="one">Dots·6.1 Sol·Ultrafast·Decisions/Agents API·Spaces·마켓플레이스 발표, ChatGPT 주간 사용자 12억 명.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 플랫폼이 에이전트와 유통(마켓플레이스)까지 품으면 제품 전략이 달라진다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>앱스토어가 처음 열린 날과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>마켓플레이스에 &#39;캠핑장·숙소 예약&#39; 앱 노출을 검토하고, Agents API로 예약 흐름 자동화 PoC를 잡아 보자.</dd></div>
+    <div><dt>개발자</dt><dd>제품명만 나열된 발표 요약이라 각 API의 기능 범위·요금은 공식 문서에서 따로 확인해야 한다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.latent.space/p/ainews-openai-devday-2026-dots-61" target="_blank" rel="noopener">원제: [AINews] OpenAI DevDay 2026: Dots, 6.1 Sol, Ultrafast, Decisions API, Agents API, Spaces, Marketplace, and 1.2 Billion ChatGPT WAU ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="B1" data-text="서울 리전에서 클로드 인리전 추론 지원 bedrock이 서울에서 opus 5·sonnet 5, 싱가포르에서 sonnet 5를 리전 내 처리한다. introducing anthropic models on amazon bedrock for in-region inference in seoul and singapore aws machine learning blog">
+  <div class="meta">
+    
+    <span class="chip cat-B">B1 기업 도입 사례</span>
+    <span>AWS Machine Learning Blog</span>
+    <span>· 09-30 10:13</span>
+    
+  </div>
+  <h3><a href="https://aws.amazon.com/blogs/machine-learning/introducing-anthropic-models-on-amazon-bedrock-for-in-region-inference-in-seoul-and-singapore/" target="_blank" rel="noopener">서울 리전에서 클로드 인리전 추론 지원</a></h3>
+  <p class="one">Bedrock이 서울에서 Opus 5·Sonnet 5, 싱가포르에서 Sonnet 5를 리전 내 처리한다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 국내 데이터 처리 요건 때문에 미뤘던 LLM 도입을 다시 검토할 수 있다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>고객 정보를 해외 창고로 안 보내고 국내 창고에서만 다루는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약·회원 데이터가 얽힌 상담 봇이나 리뷰 요약 기능을 서울 리전 기준으로 재설계해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>인리전(호출한 리전 안에서만 추론 처리)이므로 크로스리전 대비 지연시간과 쿼터를 따로 측정해 보는 게 좋다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://aws.amazon.com/blogs/machine-learning/introducing-anthropic-models-on-amazon-bedrock-for-in-region-inference-in-seoul-and-singapore/" target="_blank" rel="noopener">원제: Introducing Anthropic models on Amazon Bedrock for in-region inference in Seoul and Singapore ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="A2" data-text="openai &#39;디시전 api&#39;, 에이전트 폭주를 잡는 카드 openai가 jev를 닮은 &#39;decisions api&#39;를 내놨다고 보도됐다. openai’s jev clone could help the frontier lab stop its swarming agents techcrunch ai">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>TechCrunch AI</span>
+    <span>· 10-01 04:00</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/30/openais-jev-clone-could-help-the-frontier-lab-stop-its-swarming-agents/" target="_blank" rel="noopener">OpenAI &#39;디시전 API&#39;, 에이전트 폭주를 잡는 카드</a></h3>
+  <p class="one">OpenAI가 Jev를 닮은 &#39;Decisions API&#39;를 내놨다고 보도됐다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 빠르고 값싼 판단 모델이 에이전트 비용·지연의 병목을 푼다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>모든 결정을 사장이 하지 않고, 단순 판단은 현장 매니저가 즉시 처리하는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약 변경 요청 분류, 리뷰 스팸 판정처럼 &#39;짧은 판단&#39;을 작은 API로 내려 비용을 줄여 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>에이전트(스스로 여러 단계를 실행하는 AI) 구조에서 라우팅 계층을 분리해 두면, 이런 저가 판단 모델로 갈아끼우기가 쉬워진다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/30/openais-jev-clone-could-help-the-frontier-lab-stop-its-swarming-agents/" target="_blank" rel="noopener">원제: OpenAI’s Jev clone could help the frontier lab stop its swarming agents ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="A1" data-text="구글 딥마인드, &#39;gemini 4 argon&#39; 공개 딥마인드가 차세대 최상위 모델 gemini 4 argon을 발표했다. gemini 4 argon: our next era of frontier intelligence google deepmind">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-A">A1 모델 출시·업데이트</span>
+    <span>Google DeepMind</span>
+    <span>· 10-01 05:01</span>
+    
+  </div>
+  <h3><a href="https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/" target="_blank" rel="noopener">구글 딥마인드, &#39;Gemini 4 Argon&#39; 공개</a></h3>
+  <p class="one">딥마인드가 차세대 최상위 모델 Gemini 4 Argon을 발표했다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 주력 모델 세대가 바뀌면 우리 서비스의 품질·비용 기준선도 바뀐다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>스마트폰 신형 칩셋이 나오면 앱 성능 기준이 올라가는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약 상담 챗봇·상품 설명 생성에 기존 모델과 A/B로 붙여 품질과 응답 속도를 비교해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>요약에 스펙·가격·출시 시점이 없으니, 공식 모델 카드와 API 가용성·토큰 단가를 먼저 확인한 뒤 교체 판단하자.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/" target="_blank" rel="noopener">원제: Gemini 4 Argon: our next era of frontier intelligence ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="A2" data-text="에어비앤비, 안에서 밖까지 ai로 재설계 메타 llama를 이끌던 ahmad al-dahle이 에어비앤비를 ai로 바꾸고 있다. inside-out ai: rebuilding airbnb behind the scenes and across the guest experience latent space">
+  <div class="meta">
+    
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>Latent Space</span>
+    <span>· 10-02 23:04</span>
+    
+  </div>
+  <h3><a href="https://www.latent.space/p/airbnb" target="_blank" rel="noopener">에어비앤비, 안에서 밖까지 AI로 재설계</a></h3>
+  <p class="one">메타 Llama를 이끌던 Ahmad Al-Dahle이 에어비앤비를 AI로 바꾸고 있다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 숙박 예약 업계의 AI 전환을 개발 방식까지 포함해 보여주는 사례다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>주방 설비부터 손님 응대까지 식당 전체를 한 번에 손보는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>우리 예약 서비스도 &#39;고객 경험&#39;과 &#39;내부 개발 방식&#39; 두 축으로 AI 적용 지도를 그려 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>경쟁사 사례라 게스트 응대·검색 품질 지표를 어떻게 잡는지 벤치마킹 포인트로 삼을 만하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.latent.space/p/airbnb" target="_blank" rel="noopener">원제: Inside-Out AI: Rebuilding Airbnb Behind the Scenes and Across the Guest Experience ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="A2" data-text="레딧, rss 중단·공개 api 접근 종료 레딧이 ai 봇 때문에 rss 지원을 끝내고 공개 데이터 접근을 조인다. reddit is killing rss feeds and ending public api access because of ai bots techcrunch ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>TechCrunch AI</span>
+    <span>· 10-01 02:45</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/" target="_blank" rel="noopener">레딧, RSS 중단·공개 API 접근 종료</a></h3>
+  <p class="one">레딧이 AI 봇 때문에 RSS 지원을 끝내고 공개 데이터 접근을 조인다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 공개 웹 데이터를 공짜로 긁어 쓰던 시대가 닫히고 있다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>누구나 드나들던 공원에 입장권 게이트가 생긴 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>여행·숙박 후기 수집이나 트렌드 모니터링에 외부 공개 피드를 쓰고 있다면 대체 경로와 계약형 데이터로 점검해 두자.</dd></div>
+    <div><dt>개발자</dt><dd>RSS·비공식 API에 의존하는 수집 파이프라인은 장애 알림과 폴백을 미리 걸어 두는 게 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/" target="_blank" rel="noopener">원제: Reddit is killing RSS feeds and ending public API access because of AI bots ↗</a></p>
+  
+</article>
+</div>
+</section>
+
+
+
+<section class="group">
+  <h2 class="sec">C2 · 규제·정책 <small>주간 전용</small></h2>
+  <div class="grid">
+<article class="card" data-cat="C2" data-text="트럼프, &#39;슈퍼인텔리전스 포스&#39; 담당자 임명 미국이 새로 만든 ai 조직의 책임자(ai 차르)를 발표했다. trump announces an ai czar for his newly created &#39;super intelligence force&#39; engadget">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C2 규제·정책</span>
+    <span>Engadget</span>
+    <span>· 10-05 01:29</span>
+    
+  </div>
+  <h3><a href="https://www.engadget.com/2276762/trump-announces-an-ai-czar-for-his-newly-created-super-intelligence-force/" target="_blank" rel="noopener">트럼프, &#39;슈퍼인텔리전스 포스&#39; 담당자 임명</a></h3>
+  <p class="one">미국이 새로 만든 AI 조직의 책임자(AI 차르)를 발표했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>미국 AI 정책의 지휘 라인이 한 사람으로 모인다는 신호다.</dd></div>
+    <div><dt>비유</dt><dd>흩어진 팀을 묶어 총괄 PM을 한 명 세우는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>미국향 서비스·광고 문구에 영향 줄 AI 규제 변화를 분기별로 체크 항목에 넣어 두자.</dd></div>
+    <div><dt>개발자</dt><dd>조직 신설·인사 단계일 뿐 구체 규칙은 아직 없으니, 지금은 모니터링만 하면 된다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.engadget.com/2276762/trump-announces-an-ai-czar-for-his-newly-created-super-intelligence-force/" target="_blank" rel="noopener">원제: Trump announces an AI czar for his newly created &#39;Super Intelligence Force&#39; ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C2" data-text="캘리포니아, ai만으로 해고 금지법 제정 캘리포니아가 ai에 의존한 해고·직원 감시를 제한하는 법을 통과시켰다. california&#39;s new law bans companies from relying on ai to fire workers engadget">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C2 규제·정책</span>
+    <span>Engadget</span>
+    <span>· 10-01 16:36</span>
+    
+  </div>
+  <h3><a href="https://www.engadget.com/2274224/california-law-bans-companies-from-relying-on-ai-to-fire-workers/" target="_blank" rel="noopener">캘리포니아, AI만으로 해고 금지법 제정</a></h3>
+  <p class="one">캘리포니아가 AI에 의존한 해고·직원 감시를 제한하는 법을 통과시켰다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>인사·HR에 AI를 쓰는 기업에 &#39;사람 검토 의무&#39;가 생긴다.</dd></div>
+    <div><dt>비유</dt><dd>자동 채점 결과를 교사가 반드시 한 번 더 확인하게 하는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>HR·근태·성과 관련 자동화 기능이 있다면 &#39;사람이 최종 결정&#39;하는 단계를 설계에 명시해 두자.</dd></div>
+    <div><dt>개발자</dt><dd>판단 근거 로그와 사람 승인 기록을 남기는 구조가 향후 유사 규제에도 통한다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.engadget.com/2274224/california-law-bans-companies-from-relying-on-ai-to-fire-workers/" target="_blank" rel="noopener">원제: California&#39;s new law bans companies from relying on AI to fire workers ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C2" data-text="애플, 맥 &#39;전체 디스크 접근&#39; 제한 강화 ai 에이전트 위험이 커졌다며 맥의 전체 디스크 접근 권한에 새 통제를 넣는다. apple will limit mac disk access as ai agents ‘substantially’ increase risk the verge">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C2 규제·정책</span>
+    <span>The Verge</span>
+    <span>· 10-03 05:08</span>
+    
+  </div>
+  <h3><a href="https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents" target="_blank" rel="noopener">애플, 맥 &#39;전체 디스크 접근&#39; 제한 강화</a></h3>
+  <p class="one">AI 에이전트 위험이 커졌다며 맥의 전체 디스크 접근 권한에 새 통제를 넣는다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>에이전트형 앱의 파일 접근 권한 설계를 다시 짜야 한다.</dd></div>
+    <div><dt>비유</dt><dd>마스터키를 아무나 못 받게 발급 절차를 까다롭게 바꾸는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>맥용 사내 도구나 에이전트가 파일을 훑는 구조라면 최소 권한으로 바꿀 준비를 하자.</dd></div>
+    <div><dt>개발자</dt><dd>애플은 &#39;정말 원하는 사용자만&#39; 권한을 줄 수 있게 한다고 밝혔으니, 권한 요청 UX와 대체 경로를 미리 검토하자.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents" target="_blank" rel="noopener">원제: Apple will limit Mac disk access as AI agents ‘substantially’ increase risk ↗</a></p>
+  
+</article>
+</div>
+</section>
+
+<section class="group">
+  <h2 class="sec">C3 · 주목할 논문 <small>주간 전용</small></h2>
+  <div class="grid">
+<article class="card" data-cat="C3" data-text="딥마인드, ai 생성 단백질에 워터마크 ai가 설계한 단백질에 표식을 심는 synthid bio 개념 검증을 공개했다. introducing synthid bio google deepmind">
+  <div class="meta">
+    
+    <span class="chip cat-C">C3 주목할 논문</span>
+    <span>Google DeepMind</span>
+    <span>· 10-01 00:03</span>
+    
+  </div>
+  <h3><a href="https://deepmind.google/blog/introducing-synthid-bio/" target="_blank" rel="noopener">딥마인드, AI 생성 단백질에 워터마크</a></h3>
+  <p class="one">AI가 설계한 단백질에 표식을 심는 SynthID Bio 개념 검증을 공개했다.</p>
+  <p class="how"><b>원리</b> 단백질의 생물학적 기능은 그대로 유지하면서, AI가 만든 것임을 나중에 알아볼 수 있는 표식을 설계 단계에 함께 넣는다.</p>
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 생성물 출처 추적이 이미지·텍스트를 넘어 생물 영역까지 확장된다.</dd></div>
+    <div><dt>비유</dt><dd>그림의 색감은 그대로 둔 채 보이지 않는 서명을 넣는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>우리가 만드는 AI 생성 이미지·문구에도 출처 표식을 넣는 정책을 미리 정해 두자.</dd></div>
+    <div><dt>개발자</dt><dd>개념 검증(proof of concept) 단계라 제품화는 아니지만, &#39;기능 보존형 워터마크&#39;라는 설계 패턴은 참고할 만하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://deepmind.google/blog/introducing-synthid-bio/" target="_blank" rel="noopener">원제: Introducing SynthID Bio ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C3" data-text="onestreamer: 실시간 영상 보며 먼저 답하는 ai 스트리밍 영상을 보며 기억을 쌓고 때맞춰 답하는 4b 모델을 공개했다. onestreamer: unifying perception, memory, and proactive response in streaming video interaction hf daily papers">
+  <div class="meta">
+    
+    <span class="chip cat-C">C3 주목할 논문</span>
+    <span>HF Daily Papers</span>
+    <span>· 10-01 05:00</span>
+    
+  </div>
+  <h3><a href="https://huggingface.co/papers/2610.01762" target="_blank" rel="noopener">OneStreamer: 실시간 영상 보며 먼저 답하는 AI</a></h3>
+  <p class="one">스트리밍 영상을 보며 기억을 쌓고 때맞춰 답하는 4B 모델을 공개했다.</p>
+  <p class="how"><b>원리</b> 영상을 보는 동안 장면마다 시간표 붙은 설명과 요약을 미리 써서 &#39;메모장&#39;을 만들고, 질문이 오면 옛 영상을 다시 보지 않고 그 메모와 최근 화면만으로 답한다.</p>
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>긴 영상을 다시 돌려보지 않고도 실시간 질의응답이 가능해진다.</dd></div>
+    <div><dt>비유</dt><dd>회의 중 요점을 계속 메모해 두고, 질문받으면 녹취 대신 메모를 보는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>캠핑장·숙소 실시간 영상이나 라이브 커머스 방송에 &#39;지금 뭐가 보이나&#39; 질의응답을 붙여 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>4B 크기로 8개 벤치마크에서 비교 대상 중 최고 성적이라 밝혔고, 100만 건 규모 데이터셋(OneStreamer-1M)도 함께 공개했다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://huggingface.co/papers/2610.01762" target="_blank" rel="noopener">원제: OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C3" data-text="unievo-vl: 스스로 가르치며 좋아지는 모델 한 모델이 선생과 학생을 겸해 이미지 생성 실력을 스스로 올렸다. unievo-vl: an on-policy self-distillation training recipe for multimodal model self-improvement hf daily papers">
+  <div class="meta">
+    
+    <span class="chip cat-C">C3 주목할 논문</span>
+    <span>HF Daily Papers</span>
+    <span>· 09-30 05:00</span>
+    
+  </div>
+  <h3><a href="https://huggingface.co/papers/2609.38721" target="_blank" rel="noopener">UniEvo-VL: 스스로 가르치며 좋아지는 모델</a></h3>
+  <p class="one">한 모델이 선생과 학생을 겸해 이미지 생성 실력을 스스로 올렸다.</p>
+  <p class="how"><b>원리</b> 같은 모델에 두 역할을 준다. 선생 역은 자기 비평을 미리 보고 답하고, 학생 역은 질문만 본다. 둘의 답이 같아지도록 학습해 비평 없이도 잘하게 만든다.</p>
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>더 큰 교사 모델 없이도 성능을 올리는 길을 보여준다.</dd></div>
+    <div><dt>비유</dt><dd>내 답안에 스스로 빨간펜을 그은 뒤, 다음엔 빨간펜 없이 그렇게 쓰도록 연습하는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>사내 이미지 생성 품질 개선 시 &#39;모델 자체 비평 → 재학습&#39; 루프를 작은 규모로 실험해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>오픈소스 Qwen-image 기반에서 GenEval 0.747→0.808로 올랐지만, 텍스트 렌더링 등 과제별 효과는 고르지 않았다고 논문이 밝혔다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://huggingface.co/papers/2609.38721" target="_blank" rel="noopener">원제: UniEvo-VL: An On-policy Self-Distillation Training Recipe for Multimodal Model Self-improvement ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C3" data-text="&#34;llm은 추론하지 않는다&#34; 알파고 개발 참여자가 llm의 &#39;추론&#39;은 추론이 아니라고 주장했다. don’t be fooled—llms don’t reason mit technology review ai">
+  <div class="meta">
+    
+    <span class="chip cat-C">C3 주목할 논문</span>
+    <span>MIT Technology Review AI</span>
+    <span>· 10-02 17:00</span>
+    
+  </div>
+  <h3><a href="https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/" target="_blank" rel="noopener">&#34;LLM은 추론하지 않는다&#34;</a></h3>
+  <p class="one">알파고 개발 참여자가 LLM의 &#39;추론&#39;은 추론이 아니라고 주장했다.</p>
+  <p class="how"><b>원리</b> 2016년 알파고 2국의 &#39;37수&#39;처럼 기계가 낸 놀라운 수를 사례로 들어, 겉보기 똑똑함과 실제 추론을 구분해 설명한다.</p>
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>모델 능력을 과대평가한 제품 설계를 경계하게 한다.</dd></div>
+    <div><dt>비유</dt><dd>답을 잘 맞히는 학생이 꼭 원리를 이해한 건 아닌 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>LLM에 최종 판단(요금·환불·재고 결정)을 맡기지 말고 사람 확인 단계를 남기는 원칙을 세우자.</dd></div>
+    <div><dt>개발자</dt><dd>기고·논평 성격의 글이라 실험 결과가 아닌 주장으로 읽는 게 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/" target="_blank" rel="noopener">원제: Don’t be fooled—LLMs don’t reason ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C3" data-text="모두 같은 알고리즘, 꼭 나쁘진 않다 mit 연구진이 여러 기업의 동일 알고리즘 사용이 구직자에게 유리할 수도 있다고 밝혔다. the effects of an “algorithmic monoculture” depend on the details mit news · ai">
+  <div class="meta">
+    
+    <span class="chip cat-C">C3 주목할 논문</span>
+    <span>MIT News · AI</span>
+    <span>· 09-29 13:00</span>
+    
+  </div>
+  <h3><a href="https://news.mit.edu/2026/algorithmic-monoculture-effects-depend-on-details-0929" target="_blank" rel="noopener">모두 같은 알고리즘, 꼭 나쁘진 않다</a></h3>
+  <p class="one">MIT 연구진이 여러 기업의 동일 알고리즘 사용이 구직자에게 유리할 수도 있다고 밝혔다.</p>
+  <p class="how"><b>원리</b> 채용 결정을 사례로, 여러 회사가 같은 알고리즘을 쓰는 상황과 그렇지 않은 상황의 결과를 비교해 조건에 따라 득실이 갈리는지를 살폈다.</p>
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>&#39;알고리즘 획일화는 무조건 나쁘다&#39;는 통념이 조건부임을 보여준다.</dd></div>
+    <div><dt>비유</dt><dd>모든 식당이 같은 맛집 앱을 쓰면 손님 쏠림이 생기지만, 상황에 따라 예약이 더 쉬워질 수도 있는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>추천·랭킹 알고리즘이 업계 표준과 비슷해질 때 생기는 쏠림을 A/B로 점검해 보자.</dd></div>
+    <div><dt>개발자</dt><dd>&#39;특정 상황에서는 유리하다&#39;는 조건부 결과이므로 우리 데이터로 재검증이 필요하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://news.mit.edu/2026/algorithmic-monoculture-effects-depend-on-details-0929" target="_blank" rel="noopener">원제: The effects of an “algorithmic monoculture” depend on the details ↗</a></p>
+  
+</article>
+</div>
+</section>
+
+<section class="group">
+  <h2 class="sec">C4 · 인프라·하드웨어 <small>주간 전용</small></h2>
+  <div class="grid">
+<article class="card" data-cat="C4" data-text="엔비디아, 폭주 ai 에이전트 통제 플랫폼 젠슨 황이 ai 에이전트 주위에 보안 계층을 두르는 sw·hw 묶음을 소개했다. nvidia launches new platform for reining in rogue ai agents techcrunch ai">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-C">C4 인프라·하드웨어</span>
+    <span>TechCrunch AI</span>
+    <span>· 09-29 03:31</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/" target="_blank" rel="noopener">엔비디아, 폭주 AI 에이전트 통제 플랫폼</a></h3>
+  <p class="one">젠슨 황이 AI 에이전트 주위에 보안 계층을 두르는 SW·HW 묶음을 소개했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>에이전트 운영의 안전장치가 인프라 제품으로 상품화되기 시작했다.</dd></div>
+    <div><dt>비유</dt><dd>신입에게 권한을 주되 결재선과 CCTV를 함께 두는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약·결제처럼 돈이 움직이는 에이전트 기능은 별도 승인·격리 계층을 전제로 설계하자.</dd></div>
+    <div><dt>개발자</dt><dd>에이전트와 독립된 보안 계층이라는 점이 핵심이니, 자체 구축 시에도 &#39;모델 밖 가드레일&#39; 구조를 참고하자.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/" target="_blank" rel="noopener">원제: Nvidia launches new platform for reining in rogue AI agents ↗</a></p>
+  <p class="also">같은 소식: <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-launches-open-agent-safety-platform-to-restrain-rogue-ai-agents-new-hardware-and-software-security-stack-can-quarantine-agents-in-milliseconds" target="_blank" rel="noopener">Tom&#39;s Hardware</a></p>
+</article>
+
+<article class="card" data-cat="C4" data-text="김렛 클라우드, 세레브라스와 100mw 구축 ai 클라우드 스타트업이 세레브라스 웨이퍼급 칩으로 100mw 규모를 배치한다. gimlet cloud partners with cerebras to deploy 100mw of wafer-scale compute data center dynamics">
+  <div class="meta">
+    
+    <span class="chip cat-C">C4 인프라·하드웨어</span>
+    <span>Data Center Dynamics</span>
+    <span>· 09-30 19:53</span>
+    
+  </div>
+  <h3><a href="https://www.datacenterdynamics.com/en/news/gimlet-cloud-partners-with-cerebras-to-deploy-100mw-of-wafer-scale-compute/" target="_blank" rel="noopener">김렛 클라우드, 세레브라스와 100MW 구축</a></h3>
+  <p class="one">AI 클라우드 스타트업이 세레브라스 웨이퍼급 칩으로 100MW 규모를 배치한다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>엔비디아 밖 대안 연산 공급이 실제 규모로 늘고 있다.</dd></div>
+    <div><dt>비유</dt><dd>한 통신사만 쓰던 시장에 다른 회선이 깔리는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>추론 비용이 부담되면 비엔비디아 추론 클라우드를 견적 비교 대상에 넣어 보자.</dd></div>
+    <div><dt>개발자</dt><dd>기사에 따르면 이 스타트업은 최근 시리즈B로 3억 달러를 확보했다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.datacenterdynamics.com/en/news/gimlet-cloud-partners-with-cerebras-to-deploy-100mw-of-wafer-scale-compute/" target="_blank" rel="noopener">원제: Gimlet Cloud partners with Cerebras to deploy 100MW of wafer-scale compute ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="C4" data-text="세미파이브, 미국 ai 기업과 520억 규모 계약 맞춤형 칩 기업 세미파이브가 익명 미국 ai 기업과 5200만 달러 계약을 맺었다. custom chip firm semifive signs $52m deal with unnamed us ai company data center dynamics">
+  <div class="meta">
+    
+    <span class="chip cat-C">C4 인프라·하드웨어</span>
+    <span>Data Center Dynamics</span>
+    <span>· 10-01 00:37</span>
+    
+  </div>
+  <h3><a href="https://www.datacenterdynamics.com/en/news/custom-chip-firm-semifive-signs-52m-deal-with-unnamed-us-ai-company/" target="_blank" rel="noopener">세미파이브, 미국 AI 기업과 520억 규모 계약</a></h3>
+  <p class="one">맞춤형 칩 기업 세미파이브가 익명 미국 AI 기업과 5200만 달러 계약을 맺었다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 전용 맞춤 칩 수요가 설계 수탁 단계까지 번지고 있다.</dd></div>
+    <div><dt>비유</dt><dd>기성복 대신 맞춤 양복 주문이 늘어나는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>당장 제품 영향은 없으니, 2~3년 뒤 추론 단가 하락 가능성 정도로만 참고하자.</dd></div>
+    <div><dt>개발자</dt><dd>양산은 2028년 시작 예정이고 하이퍼스케일러·클라우드 사업자를 겨냥한다고 밝혔다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.datacenterdynamics.com/en/news/custom-chip-firm-semifive-signs-52m-deal-with-unnamed-us-ai-company/" target="_blank" rel="noopener">원제: Custom chip firm Semifive signs $52m deal with unnamed US AI company ↗</a></p>
+  
+</article>
+</div>
+</section>
+
+
+
+<section class="group">
+  <h2 class="sec">동종 서비스 AI 움직임 <small>지난주 · 캠핑·숙박·여행 서비스</small></h2>
+  <div class="moves">
+  
+    <article class="move">
+      <div class="move-head"><span class="move-date">10/03</span> <b class="move-co">Airbnb</b>
+        <span class="stage stage-출시">출시</span> <span class="aud">고객</span></div>
+      <h3>AI 여행 계획 지원 + 소셜 여행 기능</h3>
+      <p>에어비앤비가 여행 계획을 더 개인화하기 위해 소셜 여행 도구와 AI 기능을 내놨다.</p>
+      <p class="impl"><b>우리에게</b> 숙소·할 일·준비물까지 묶어 계획을 돕는 흐름이니, 우리도 캠핑장 예약에 그치지 말고 일정·준비물 추천과 동행자 공유 기능을 검토할 만하다.</p>
+      <p class="orig"><a href="https://manilastandard.net/lifestyle/travel-features/314801221/airbnb-makes-trip-planning-more-personal-with-social-travel-tools-and-ai.html" target="_blank" rel="noopener">원문 ↗</a></p>
+    </article>
+  
+    <article class="move">
+      <div class="move-head"><span class="move-date">10/03</span> <b class="move-co">Airbnb</b>
+        <span class="stage stage-출시">출시</span> <span class="aud">고객</span></div>
+      <h3>AI 숙소 검색</h3>
+      <p>에어비앤비가 앱 검색 기능에 AI를 결합해 원하는 숙소를 더 잘 찾도록 개선했다고 전해졌다.</p>
+      <p class="impl"><b>우리에게</b> 검색창에 조건을 문장으로 입력하면 맞는 캠핑장을 찾아주는 AI 검색이 기본 경쟁 요소가 되고 있다.</p>
+      <p class="orig"><a href="https://telecomtalk.info/airbnb-adds-ai-search-to-its-app/1012366/" target="_blank" rel="noopener">원문 ↗</a></p>
+    </article>
+  
+    <article class="move">
+      <div class="move-head"><span class="move-date">10/02</span> <b class="move-co">Airbnb</b>
+        <span class="stage stage-운영중">운영 중</span> <span class="aud">내부 운영</span></div>
+      <h3>사내 AI 개발 도구로 앱 기능 개발 속도 향상</h3>
+      <p>에어비앤비가 사내 AI 도구로 앱 기능을 더 빨리 만들어 내놓으며 방문자의 예약 전환을 늘리고 있다고 전해졌고, 이에 주가가 올랐다.</p>
+      <p class="impl"><b>우리에게</b> AI를 상품 기능보다 먼저 &#39;개발 속도&#39;에 써서 예약 전환 실험을 빠르게 돌리는 방식을 검토할 만하다.</p>
+      <p class="orig"><a href="https://www.msn.com/en-us/news/other/airbnb-stock-rises-after-analyst-calls-it-an-ai-boom-winner/ar-AA2drnHa" target="_blank" rel="noopener">원문 ↗</a></p>
+    </article>
+  
+    <article class="move">
+      <div class="move-head"><span class="move-date">10/02</span> <b class="move-co">Mews</b>
+        <span class="stage stage-출시">출시</span> <span class="aud">호스트·파트너</span></div>
+      <h3>AI 기반 고객 메시지 응대·업무 자동화</h3>
+      <p>Mews가 호텔의 행정 업무를 줄여 주는 게스트 메시징과 자동화 기능 두 가지를 출시했다.</p>
+      <p class="impl"><b>우리에게</b> 캠핑장 운영자용 문의 응대·반복 업무 자동화 도구는 우리도 우선순위로 검토할 영역이다.</p>
+      <p class="orig"><a href="https://www.travolution.com/news/travel-sectors/accommodation/mews-launches-ai-powered-guest-messaging-and-hotel-automation-tools/" target="_blank" rel="noopener">원문 ↗</a></p>
+    </article>
+  
+    <article class="move">
+      <div class="move-head"><span class="move-date">10/02</span> <b class="move-co">Airbnb</b>
+        <span class="stage stage-출시">출시</span> <span class="aud">고객</span></div>
+      <h3>AI 여행 일정 계획·검색</h3>
+      <p>에어비앤비가 미국에서 AI 여행 일정 계획 기능을 선보였고, 인도 등 다른 지역 적용 시점은 아직 불확실하다고 보도됐다.</p>
+      <p class="impl"><b>우리에게</b> 검색창을 &#39;조건 입력&#39;에서 &#39;여행 계획 상담&#39;으로 바꾸는 흐름이라, 캠핑 일정·장소 추천형 검색을 먼저 시험해 볼 만하다.</p>
+      <p class="orig"><a href="https://lapaasvoice.com/airbnb-ai-search-starts-in-us-india-date-unclear/" target="_blank" rel="noopener">원문 ↗</a></p>
+    </article>
+  
+    <article class="move">
+      <div class="move-head"><span class="move-date">10/01</span> <b class="move-co">Airbnb</b>
+        <span class="stage stage-출시">출시</span> <span class="aud">고객</span></div>
+      <h3>AI 검색 + 호스트 요금 설정 도구</h3>
+      <p>에어비앤비가 AI 기반 검색과 추가 투숙객 서비스, 호스트용 가격 책정 도구를 내놨다고 전해졌다.</p>
+      <p class="impl"><b>우리에게</b> 검색은 고객용 AI, 요금 도구는 운영자용 AI로 나눠 함께 준비하는 접근을 참고할 만하다.</p>
+      <p class="orig"><a href="https://finance.yahoo.com/technology/ai/articles/airbnb-ai-search-launch-could-184600603.html" target="_blank" rel="noopener">원문 ↗</a></p>
+    </article>
+  
+    <article class="move">
+      <div class="move-head"><span class="move-date">10/01</span> <b class="move-co">Airbnb</b>
+        <span class="stage stage-출시">출시</span> <span class="aud">고객</span></div>
+      <h3>AI 검색·소셜 기능</h3>
+      <p>에어비앤비가 2026년 10월 1일 AI 검색, 호스트 가격 도구, 소셜 기능, 투숙객 서비스 강화를 포함한 플랫폼 업데이트를 공개했다.</p>
+      <p class="impl"><b>우리에게</b> AI 검색과 커뮤니티 기능을 묶어 체류 시간을 늘리는 방식은 캠핑 예약에도 적용해 볼 수 있다.</p>
+      <p class="orig"><a href="https://letsdatascience.com/news/airbnb-adds-ai-powered-search-and-social-features-dd4ce7ea" target="_blank" rel="noopener">원문 ↗</a></p>
+    </article>
+  
+    <article class="move">
+      <div class="move-head"><span class="move-date">10/01</span> <b class="move-co">Airbnb</b>
+        <span class="stage stage-출시">출시</span> <span class="aud">고객</span></div>
+      <h3>AI 검색, 호스트 도구</h3>
+      <p>에어비앤비가 AI 검색과 호스트 도구를 추가해 예약 전환율과 시장 확대를 노린다는 분석이 나왔다.</p>
+      <p class="impl"><b>우리에게</b> AI 검색의 목표를 &#39;전환율&#39;로 잡고 성과를 숫자로 측정하는 틀이 필요하다.</p>
+      <p class="orig"><a href="https://seekingalpha.com/news/4649097-airbnbs-new-ai-search-could-drive-growth-sponsored-listings" target="_blank" rel="noopener">원문 ↗</a></p>
+    </article>
+  
+    <article class="move">
+      <div class="move-head"><span class="move-date">10/01</span> <b class="move-co">Airbnb</b>
+        <span class="stage stage-출시">출시</span> <span class="aud">고객</span></div>
+      <h3>AI 검색 기반 숙소 탐색</h3>
+      <p>에어비앤비가 가을 제품 업데이트로 앱에 AI 검색을 추가했고, 전환율 중심의 신중한 단계적 확대를 택했다고 전해졌다.</p>
+      <p class="impl"><b>우리에게</b> 전면 도입보다 일부부터 열고 전환 지표를 보며 넓히는 순서가 안전하다.</p>
+      <p class="orig"><a href="https://theaiinsider.tech/2026/10/01/airbnb-introduces-ai-search-as-brian-chesky-bets-on-cautious-conversion-focused-rollout/" target="_blank" rel="noopener">원문 ↗</a></p>
+    </article>
+  
+    <article class="move">
+      <div class="move-head"><span class="move-date">10/01</span> <b class="move-co">Airbnb</b>
+        <span class="stage stage-출시">출시</span> <span class="aud">고객</span></div>
+      <h3>AI 검색</h3>
+      <p>에어비앤비의 새 AI 검색이 예약 전환을 높이고 광고(스폰서 노출) 수익 길을 열 수 있다는 증권사 전망이 나왔다.</p>
+      <p class="impl"><b>우리에게</b> AI 검색 결과에 광고를 얹는 수익 모델 가능성을 미리 검토해 둘 만하다.</p>
+      <p class="orig"><a href="https://www.citybiz.co/article/912774/airbnbs-ai-search-could-boost-bookings-and-open-door-to-advertising-revenue-jefferies-says/" target="_blank" rel="noopener">원문 ↗</a></p>
+    </article>
+  
+    <article class="move">
+      <div class="move-head"><span class="move-date">10/01</span> <b class="move-co">Airbnb</b>
+        <span class="stage stage-발표">발표</span> <span class="aud">고객</span></div>
+      <h3>AI 검색·스마트 필터·AI 고객 응대 도우미</h3>
+      <p>에어비앤비가 AI 검색, 여행 지도, 스마트 필터, AI 지원 어시스턴트 등 신기능을 곧 제공한다고 전해졌다.</p>
+      <p class="impl"><b>우리에게</b> 검색·필터·문의 응대를 한 묶음으로 AI화하는 구성을 우리 로드맵과 비교해 볼 만하다.</p>
+      <p class="orig"><a href="https://udaipurtimes.com/technology/airbnb-new-update-ai-search-travel-maps-and-social-features/cid19324336.htm" target="_blank" rel="noopener">원문 ↗</a></p>
+    </article>
+  
+    <article class="move">
+      <div class="move-head"><span class="move-date">10/01</span> <b class="move-co">Airbnb</b>
+        <span class="stage stage-발표">발표</span> <span class="aud">고객</span></div>
+      <h3>AI 검색·여행 지도</h3>
+      <p>에어비앤비가 여행 지도와 AI 검색을 담은 가을 업데이트를 예고했다.</p>
+      <p class="impl"><b>우리에게</b> 캠핑장도 지도 기반 탐색과 AI 검색을 묶는 방향을 미리 검토할 만하다.</p>
+      <p class="orig"><a href="https://www.newsbytesapp.com/news/science/airbnb-plans-fall-update-with-travel-map-and-ai-search/tldr" target="_blank" rel="noopener">원문 ↗</a></p>
+    </article>
+  
+  </div>
+</section>
+
+
+
+<section class="group">
+  <h2 class="sec">날짜별로 보기</h2>
+  <div class="days">
+  
+    <a class="day" href="../daily/2026-09-28.html">
+      <div class="day-head"><b>09-28</b><span>범용 모델 시대에서, 업무별 특화 모델 시대로</span></div>
+      <ol><li>세일즈포스가 CRM 전용 추론 모델 공개 → 업무 특화 모델 흐름</li><li>이미지 글자 인식·화자 구분 모델 등장 → 입력 자동화 문턱 낮아짐</li><li>스마트홈이 외부 AI에 개방 → 자체 AI 고집보다 연결이 경쟁력</li></ol>
+    </a>
+  
+    <a class="day" href="../daily/2026-09-29.html">
+      <div class="day-head"><b>09-29</b><span>모델은 싸지고 에이전트는 화면을 직접 잡는다</span></div>
+      <ol><li>앤트로픽이 더 싸고 빠른 Sonnet 5.5 공개 → 실서비스 투입 판단이 쉬워진다</li><li>Holo4 공개로 화면 조작 에이전트 확산 → 연동 없이 자동화할 길이 생긴다</li><li>메타가 기업용 AI 플랫폼 출범 → 도입 선택지와 협상 카드가 늘어난다</li></ol>
+    </a>
+  
+    <a class="day" href="../daily/2026-09-30.html">
+      <div class="day-head"><b>09-30</b><span>모델은 싸고 빨라지고, 에이전트는 앱 진열대로 옮겨간다</span></div>
+      <ol><li>앤스로픽이 Claude Sonnet 5.5를 공개—가격 그대로 성능·속도가 올랐다.</li><li>서울 리전 인리전 추론 지원으로 국내 데이터 처리 요건 대응이 쉬워졌다.</li><li>ChatGPT 플러그인이 앱처럼 바뀌어 대화창이 새 유통 채널로 열린다.</li></ol>
+    </a>
+  
+    <a class="day" href="../daily/2026-10-01.html">
+      <div class="day-head"><b>10-01</b><span>모델 세대교체와 &#39;대화창 커머스&#39;가 같은 날 왔다</span></div>
+      <ol><li>구글이 Gemini 4 Argon 공개 → 품질·비용 기준선 재검토 필요</li><li>OpenAI DevDay서 에이전트·마켓플레이스 공개 → 유통 경로가 바뀐다</li><li>에어비앤비·도어대시가 AI 대화형 기능 도입 → 예약 진입점 이동</li></ol>
+    </a>
+  
+    <a class="day" href="../daily/2026-10-02.html">
+      <div class="day-head"><b>10-02</b><span>에이전트 인프라가 깔리고, 데이터 문은 닫힌다</span></div>
+      <ol><li>구글이 클라우드 CLI용 원격 MCP 서버를 프리뷰로 열었다</li><li>레딧이 RSS·공개 API 접근을 닫아 공짜 수집이 어려워진다</li><li>Restate가 200억 유치, 에이전트 실행 인프라에 돈이 몰린다</li></ol>
+    </a>
+  
+    <a class="day" href="../daily/2026-10-03.html">
+      <div class="day-head"><b>10-03</b><span>에이전트 도구가 안정판으로, 판단·기억을 쪼개 쓰는 시대</span></div>
+      <ol><li>AWS가 판단 전용 소형 모델 Strands Decider 2B를 냈다 → 분기 결정을 싸게 처리</li><li>Pi 1.0·Pi Durable 공개, 타입스크립트 지원 → 에이전트 실서비스 적용 검토 가능</li><li>에어비앤비가 내부 개발까지 AI로 재설계 → 숙박·예약 업계 기준선이 오름</li></ol>
+    </a>
+  
+    <a class="day" href="../daily/2026-10-04.html">
+      <div class="day-head"><b>10-04</b><span>모델·SDK는 빨라지고, 의존성과 종속 리스크 관리가 숙제</span></div>
+      <ol><li>Meta가 AI 기기 오픈소스 키트를 공개 → 하드웨어 실험 문턱 낮아짐</li><li>OpenAI 파이썬 SDK 3.24.0 공개 → 음성·에이전트 상태 추적 바로 적용</li><li>vLLM이 Transformers 버전 상한 추가 → 추론 서버 깨짐 사고 예방</li></ol>
+    </a>
+  
+  </div>
+</section>
+
+
+</main>
+<footer class="wrap foot">
+  생성 2026-10-17 11:19 KST · 공식 RSS·API만 수집 · 원문 저작권은 각 출처에 있습니다
+</footer>
+<script src="../static/app.js?v=73b1c7e9b5"></script>
+</body>
+</html>

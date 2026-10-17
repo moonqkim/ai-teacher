@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>2026-09-28 · 개발 · 나의 AI 선생님</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../static/style.css?v=73b1c7e9b5">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="../index.html"><span class="logo">AI</span> 나의 AI 선생님</a>
+    <nav>
+      <a href="../index.html">오늘</a>
+      <a href="../weekly/2026-W41.html">주간 요약</a>
+      <a href="../archive.html">지난 소식</a>
+      <a href="../sources.html">소스 현황</a>
+      <button class="theme" type="button" aria-label="테마 전환" onclick="toggleTheme()">◐</button>
+    </nav>
+  </div>
+  
+  <div class="wrap viewbar" role="tablist" aria-label="보기 선택">
+    <a role="tab" href="../daily/2026-09-28.html" class="on" aria-selected="true">개발</a><a role="tab" href="../biz/daily/2026-09-28.html" class="" aria-selected="false">비즈니스</a><a role="tab" href="../peers/index.html" class="" aria-selected="false">동종 서비스 AI 현황판</a>
+  </div>
+  
+</header>
+<main class="wrap">
+
+
+
+
+<section class="hero">
+  <div class="date-nav">
+    <a href="../daily/2026-09-27.html">← 2026-09-27</a>
+    <span class="date">2026-09-28 · 개발</span>
+    <a href="../daily/2026-09-29.html">2026-09-29 →</a>
+  </div>
+  <h1>범용 모델 시대에서, 업무별 특화 모델 시대로</h1>
+  
+  <div class="tldr">
+    <div class="label">바쁘면 이것만 — 오늘 3줄 요약</div>
+    <ol><li>세일즈포스가 CRM 전용 추론 모델 공개 → 업무 특화 모델 흐름</li><li>이미지 글자 인식·화자 구분 모델 등장 → 입력 자동화 문턱 낮아짐</li><li>스마트홈이 외부 AI에 개방 → 자체 AI 고집보다 연결이 경쟁력</li></ol>
+  </div>
+  
+  <p class="sub">후보 133건 중 14건을 골랐어요 · 소스 40/49 정상
+    · 요약 Claude Code
+    </p>
+
+  
+</section>
+
+
+<section>
+  <h2 class="sec">오늘의 핵심 <small>한 줄씩만 읽어도 됩니다</small></h2>
+  <div class="grid top">
+    
+<article class="card full" data-cat="C7" data-text="세일즈포스, crm 추론 ai 모델 &#39;koa&#39; 공개 세일즈포스가 고객관리(crm) 추론용 ai 모델 koa를 공개했다. salesforce unveils koa: a breakthrough ai model for crm reasoning small business trends">
+  <div class="meta">
+    
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>Small Business Trends</span>
+    <span>· 09-27 02:11</span>
+    
+  </div>
+  <h3><a href="https://smallbiztrends.com/salesforce-unveils-koa-a-breakthrough-ai-model-for-crm-reasoning/" target="_blank" rel="noopener">세일즈포스, CRM 추론 AI 모델 &#39;Koa&#39; 공개</a></h3>
+  <p class="one">세일즈포스가 고객관리(CRM) 추론용 AI 모델 Koa를 공개했다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 범용 모델 대신 업무 데이터에 특화된 모델 흐름을 보여 준다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>만능 요리사 대신 한 분야만 전문으로 하는 셰프를 쓰는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>고객 문의·예약 이력 데이터로 업무 특화 모델이 범용 모델보다 나은지 작게 비교해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>기능·가격·제공 시점은 요약에 없으니 도입 판단은 공식 문서 확인 뒤로 미루는 게 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://smallbiztrends.com/salesforce-unveils-koa-a-breakthrough-ai-model-for-crm-reasoning/" target="_blank" rel="noopener">원제: Salesforce Unveils Koa: A Breakthrough AI Model for CRM Reasoning ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="A4" data-text="teleocr, 이미지 속 글자 읽는 모델 인기 이미지를 넣으면 텍스트로 바꿔 주는 모델이 허깅페이스에서 트렌딩. stardoc-ai/teleocr (hf 트렌딩) hf 트렌딩 모델">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>HF 트렌딩 모델</span>
+    <span>· 09-28 02:43</span>
+    
+  </div>
+  <h3><a href="https://huggingface.co/StarDoc-AI/TeleOCR" target="_blank" rel="noopener">TeleOCR, 이미지 속 글자 읽는 모델 인기</a></h3>
+  <p class="one">이미지를 넣으면 텍스트로 바꿔 주는 모델이 허깅페이스에서 트렌딩.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 문서·영수증 자동 입력의 문턱이 낮아진다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>사진을 보고 내용을 받아써 주는 직원과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>사업자등록증·예약 확인서·영수증 이미지에서 정보 자동 추출을 시험해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>이미지→텍스트 계열이니 한글·표 인식 정확도를 실제 서류 샘플로 먼저 측정하자.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://huggingface.co/StarDoc-AI/TeleOCR" target="_blank" rel="noopener">원제: StarDoc-AI/TeleOCR (HF 트렌딩) ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="A4" data-text="엔비디아, 화자 구분 음성 모델 공개 음성에서 말하는 구간과 화자를 나누는 엔비디아 모델이 트렌딩에 올랐다. nvidia/nemotron-3-diarization (hf 트렌딩) hf 트렌딩 모델">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>HF 트렌딩 모델</span>
+    <span>· 09-28 02:43</span>
+    
+  </div>
+  <h3><a href="https://huggingface.co/nvidia/Nemotron-3-Diarization" target="_blank" rel="noopener">엔비디아, 화자 구분 음성 모델 공개</a></h3>
+  <p class="one">음성에서 말하는 구간과 화자를 나누는 엔비디아 모델이 트렌딩에 올랐다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 통화·상담 녹음을 자동 정리하는 기반 기술이다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>회의 녹음을 듣고 누가 언제 말했는지 표시해 주는 서기와 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>고객센터 통화를 상담원·고객으로 나눠 기록하고 품질 분석에 쓸 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>음성 인식 모델과 붙여야 실제 대화록이 되니 파이프라인 구성이 필요하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://huggingface.co/nvidia/Nemotron-3-Diarization" target="_blank" rel="noopener">원제: nvidia/Nemotron-3-Diarization (HF 트렌딩) ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="C2" data-text="클라우드플레어 ceo, ai 시대의 웹을 말하다 클라우드플레어 ceo가 ai가 바꾸는 웹의 미래를 인터뷰로 논했다. can cloudflare ceo matthew prince save the web from ai? the verge ai">
+  <div class="meta">
+    
+    <span class="chip cat-C">C2 규제·정책</span>
+    <span>The Verge AI</span>
+    <span>· 09-26 23:00</span>
+    
+  </div>
+  <h3><a href="https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising" target="_blank" rel="noopener">클라우드플레어 CEO, AI 시대의 웹을 말하다</a></h3>
+  <p class="one">클라우드플레어 CEO가 AI가 바꾸는 웹의 미래를 인터뷰로 논했다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> AI 크롤러와 콘텐츠 접근 규칙이 웹 트래픽 구조를 흔들 수 있다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>고속도로 톨게이트 운영자가 통행 규칙을 다시 짜는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>우리 예약·커머스 사이트가 AI 봇에 어떻게 노출되는지 크롤러 정책을 점검해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>robots.txt와 봇 허용·차단, CDN 단계의 AI 크롤러 규칙을 담당자와 정리해 두면 좋다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising" target="_blank" rel="noopener">원제: Can Cloudflare CEO Matthew Prince save the web from AI? ↗</a></p>
+  
+</article>
+
+<article class="card full" data-cat="B2" data-text="스마트홈, 외부 ai에 문 열다 삼성·lg가 스마트홈에 제미나이·챗gpt를 연동하고 있다. 외부 ai에 문 여는 스마트홈…제미나이가 펫 돌보고, 챗gpt가 가전 제어 전자신문">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B2 산업별 적용</span>
+    <span>전자신문</span>
+    <span>· 09-27 16:00</span>
+    
+  </div>
+  <h3><a href="https://www.etnews.com/20260922000377" target="_blank" rel="noopener">스마트홈, 외부 AI에 문 열다</a></h3>
+  <p class="one">삼성·LG가 스마트홈에 제미나이·챗GPT를 연동하고 있다.</p>
+  
+  
+  <p class="why-line"><b>왜 중요?</b> 자체 AI 고집 대신 범용 AI를 붙이는 쪽으로 경쟁이 옮겨간다.</p>
+  
+  <dl class="teach fold">
+    
+    <div><dt>비유</dt><dd>우리 앱에 자체 지도 대신 구글 지도를 붙이는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약 앱의 음성·대화 기능을 자체 개발 대신 범용 AI 연동으로 먼저 실험해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>삼성이 약관을 개정해 &#39;AI가 사용자 목표로 실행 계획을 세우는&#39; 조항을 넣은 점 — 외부 AI 연동 시 약관·데이터 처리 고지 정비가 선행 과제다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.etnews.com/20260922000377" target="_blank" rel="noopener">원제: 외부 AI에 문 여는 스마트홈…제미나이가 펫 돌보고, 챗GPT가 가전 제어 ↗</a></p>
+  
+</article>
+
+  </div>
+</section>
+
+
+
+
+<section class="duo">
+  <div class="box tip">
+    <div class="label">C5 · 오늘 바로 써먹을 팁</div>
+    <h3>영수증·예약 서류 OCR 10분 테스트</h3>
+    <ol><li>실제 업무 이미지 5장을 고른다 (영수증, 숙박 바우처, 신분증 가림 처리본 등).</li><li>OCR(이미지 속 글자 인식) 모델에 같은 프롬프트로 5장을 넣고 결과를 텍스트로 받는다.</li><li>금액·날짜·인원처럼 틀리면 안 되는 필드만 골라 정답과 대조해 정확도를 센다.</li><li>틀린 항목의 패턴(흐림, 손글씨, 표 구조)을 메모해 자동화 적용 범위를 나눈다.</li><li>정확도가 낮은 구간은 사람 검수 단계로 남기고, 나머지만 자동 입력 후보로 정리한다.</li></ol>
+    <p class="why">이미지 글자 인식 모델이 쉬워졌다는 소식은, 우리 데이터로 직접 재봐야 도입 여부를 판단할 수 있다.</p>
+  </div>
+</section>
+
+
+<section class="tools">
+  <input class="js-q" type="search" placeholder="오늘 소식 검색" aria-label="검색">
+  <div class="chips js-chips">
+    <button class="on" data-f="all">전체</button>
+    
+    <button data-f="A1">A1 모델 출시·업데이트 <small>1</small></button>
+    
+    <button data-f="A2">A2 개발자 도구·API <small>2</small></button>
+    
+    <button data-f="A3">A3 AI 제품·서비스 <small>2</small></button>
+    
+    <button data-f="A4">A4 오픈소스 <small>2</small></button>
+    
+    <button data-f="B2">B2 산업별 적용 <small>2</small></button>
+    
+    <button data-f="B3">B3 국내 사례 <small>2</small></button>
+    
+    <button data-f="B4">B4 실패·사고 사례 <small>1</small></button>
+    
+    <button data-f="C2">C2 규제·정책 <small>1</small></button>
+    
+    <button data-f="C7">C7 내 업계 트랙 <small>1</small></button>
+    
+  </div>
+</section>
+
+
+
+
+
+<section class="group">
+  <h2 class="sec">A · 새로 나온 기술 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="A1">
+    <h4>A1 모델 출시·업데이트</h4>
+    <div class="grid">
+<article class="card" data-cat="A1" data-text="glm-5.3-flash를 &#39;판단 모델&#39;로 개조하기 오픈 모델을 의사결정용으로 바꾸는 실험이 해커뉴스에서 화제. turning glm-5.3-flash into a jev-like decision model hacker news (ai, 100점+)">
+  <div class="meta">
+    
+    <span class="chip cat-A">A1 모델 출시·업데이트</span>
+    <span>Hacker News (AI, 100점+)</span>
+    <span>· 09-27 00:49</span>
+    <a class="hn" href="https://news.ycombinator.com/item?id=49857656" target="_blank" rel="noopener">HN 106점</a>
+  </div>
+  <h3><a href="https://www.privatemode.ai/blog/system-one-from-glm-flash" target="_blank" rel="noopener">GLM-5.3-Flash를 &#39;판단 모델&#39;로 개조하기</a></h3>
+  <p class="one">오픈 모델을 의사결정용으로 바꾸는 실험이 해커뉴스에서 화제.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>가벼운 오픈 모델도 용도별로 손보면 판단 역할을 맡길 수 있다.</dd></div>
+    <div><dt>비유</dt><dd>범용 승용차를 배달용으로 개조해 쓰는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약 취소·환불 승인 같은 반복 판단에 소형 오픈 모델 튜닝을 시험해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>토론 글이라 검증된 벤치마크는 아니니, 우리 데이터로 직접 A/B 비교가 필요하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.privatemode.ai/blog/system-one-from-glm-flash" target="_blank" rel="noopener">원제: Turning GLM-5.3-Flash into a Jev-like decision model ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="A2">
+    <h4>A2 개발자 도구·API</h4>
+    <div class="grid">
+<article class="card" data-cat="A2" data-text="2026년 llm 흐름 총정리 발표 사이먼 윌리슨이 개발자 콘퍼런스 기조연설로 올해 llm 흐름을 정리했다. 2026 in llms (so far) simon willison">
+  <div class="meta">
+    
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>Simon Willison</span>
+    <span>· 09-28 08:54</span>
+    
+  </div>
+  <h3><a href="https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/" target="_blank" rel="noopener">2026년 LLM 흐름 총정리 발표</a></h3>
+  <p class="one">사이먼 윌리슨이 개발자 콘퍼런스 기조연설로 올해 LLM 흐름을 정리했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>1년치 변화를 한 번에 따라잡을 수 있는 정리 자료다.</dd></div>
+    <div><dt>비유</dt><dd>한 해 뉴스를 시간순으로 엮은 연말 특집 방송과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>팀 내 AI 기술 스터디 첫 자료로 함께 훑어보면 눈높이를 맞출 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>슬라이드에 저자 주석이 붙어 있어 맥락까지 함께 읽을 수 있다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/" target="_blank" rel="noopener">원제: 2026 in LLMs (so far) ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="A2" data-text="클로드로 만든 픽셀아트 앵무새 애니메이션 사진 몇 장을 넣어 발표 마지막 장면용 픽셀아트 애니메이션을 만들었다. kākāpō party simon willison">
+  <div class="meta">
+    
+    <span class="chip cat-A">A2 개발자 도구·API</span>
+    <span>Simon Willison</span>
+    <span>· 09-27 08:39</span>
+    
+  </div>
+  <h3><a href="https://simonwillison.net/2026/Sep/26/kakapo-party/" target="_blank" rel="noopener">클로드로 만든 픽셀아트 앵무새 애니메이션</a></h3>
+  <p class="one">사진 몇 장을 넣어 발표 마지막 장면용 픽셀아트 애니메이션을 만들었다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>이미지 기반 소소한 제작물도 프롬프트 한 번으로 나오는 단계가 됐다.</dd></div>
+    <div><dt>비유</dt><dd>사진을 주고 캐리커처를 즉석에서 받아오는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>캠핑·여행 상품 배너나 로딩 애니메이션 시안을 빠르게 뽑아 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>입력 사진의 저작권 출처는 직접 관리해야 한다(예시는 검색 이미지 사용).</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://simonwillison.net/2026/Sep/26/kakapo-party/" target="_blank" rel="noopener">원제: Kākāpō Party ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="A3">
+    <h4>A3 AI 제품·서비스</h4>
+    <div class="grid">
+<article class="card" data-cat="A3" data-text="메타 &#39;뮤즈&#39;, 신뢰 문제를 넘을까 메타의 ai 발표가 오픈ai·앤스로픽의 주목도를 가져갔다는 논의가 나왔다. can muse overcome meta’s trust issues? techcrunch ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A3 AI 제품·서비스</span>
+    <span>TechCrunch AI</span>
+    <span>· 09-28 04:57</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/27/can-muse-overcome-metas-trust-issues/" target="_blank" rel="noopener">메타 &#39;뮤즈&#39;, 신뢰 문제를 넘을까</a></h3>
+  <p class="one">메타의 AI 발표가 오픈AI·앤스로픽의 주목도를 가져갔다는 논의가 나왔다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 경쟁 구도와 함께 개인정보 신뢰 이슈가 변수로 떠올랐다.</dd></div>
+    <div><dt>비유</dt><dd>성능 좋은 신제품이지만 브랜드 평판이 발목을 잡는 상황과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>플랫폼 선택 시 성능뿐 아니라 고객 데이터 신뢰·약관 조건을 함께 평가해 두자.</dd></div>
+    <div><dt>개발자</dt><dd>팟캐스트 논평 수준이므로 제품 스펙은 공식 문서로 다시 확인해야 한다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/27/can-muse-overcome-metas-trust-issues/" target="_blank" rel="noopener">원제: Can Muse overcome Meta’s trust issues? ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="A3" data-text="내 목소리·얼굴로 만든 대화형 아바타 체험기 기자가 자신의 대화형 디지털 아바타를 만들어 직접 써 본 후기를 남겼다. i created an interactive digital avatar of myself — and you can talk to it techcrunch ai">
+  <div class="meta">
+    
+    <span class="chip cat-A">A3 AI 제품·서비스</span>
+    <span>TechCrunch AI</span>
+    <span>· 09-26 23:00</span>
+    
+  </div>
+  <h3><a href="https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/" target="_blank" rel="noopener">내 목소리·얼굴로 만든 대화형 아바타 체험기</a></h3>
+  <p class="one">기자가 자신의 대화형 디지털 아바타를 만들어 직접 써 본 후기를 남겼다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 분신이 실제로 쓸 만한지와 불편한 지점을 동시에 보여 준다.</dd></div>
+    <div><dt>비유</dt><dd>내 목소리로 대신 통화해 주는 대역을 고용한 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>숙소·캠핑장 상담용 아바타 안내원을 소규모로 시험해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>저자도 &#39;복합적인 감정&#39;이라 했듯, 본인 동의·초상권 처리 절차를 먼저 설계해야 한다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/" target="_blank" rel="noopener">원제: I created an interactive digital avatar of myself — and you can talk to it ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="A4">
+    <h4>A4 오픈소스</h4>
+    <div class="grid">
+<article class="card" data-cat="A4" data-text="teleocr, 이미지 속 글자 읽는 모델 인기 이미지를 넣으면 텍스트로 바꿔 주는 모델이 허깅페이스에서 트렌딩. stardoc-ai/teleocr (hf 트렌딩) hf 트렌딩 모델">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>HF 트렌딩 모델</span>
+    <span>· 09-28 02:43</span>
+    
+  </div>
+  <h3><a href="https://huggingface.co/StarDoc-AI/TeleOCR" target="_blank" rel="noopener">TeleOCR, 이미지 속 글자 읽는 모델 인기</a></h3>
+  <p class="one">이미지를 넣으면 텍스트로 바꿔 주는 모델이 허깅페이스에서 트렌딩.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>문서·영수증 자동 입력의 문턱이 낮아진다.</dd></div>
+    <div><dt>비유</dt><dd>사진을 보고 내용을 받아써 주는 직원과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>사업자등록증·예약 확인서·영수증 이미지에서 정보 자동 추출을 시험해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>이미지→텍스트 계열이니 한글·표 인식 정확도를 실제 서류 샘플로 먼저 측정하자.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://huggingface.co/StarDoc-AI/TeleOCR" target="_blank" rel="noopener">원제: StarDoc-AI/TeleOCR (HF 트렌딩) ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="A4" data-text="엔비디아, 화자 구분 음성 모델 공개 음성에서 말하는 구간과 화자를 나누는 엔비디아 모델이 트렌딩에 올랐다. nvidia/nemotron-3-diarization (hf 트렌딩) hf 트렌딩 모델">
+  <div class="meta">
+    
+    <span class="chip cat-A">A4 오픈소스</span>
+    <span>HF 트렌딩 모델</span>
+    <span>· 09-28 02:43</span>
+    
+  </div>
+  <h3><a href="https://huggingface.co/nvidia/Nemotron-3-Diarization" target="_blank" rel="noopener">엔비디아, 화자 구분 음성 모델 공개</a></h3>
+  <p class="one">음성에서 말하는 구간과 화자를 나누는 엔비디아 모델이 트렌딩에 올랐다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>통화·상담 녹음을 자동 정리하는 기반 기술이다.</dd></div>
+    <div><dt>비유</dt><dd>회의 녹음을 듣고 누가 언제 말했는지 표시해 주는 서기와 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>고객센터 통화를 상담원·고객으로 나눠 기록하고 품질 분석에 쓸 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>음성 인식 모델과 붙여야 실제 대화록이 되니 파이프라인 구성이 필요하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://huggingface.co/nvidia/Nemotron-3-Diarization" target="_blank" rel="noopener">원제: nvidia/Nemotron-3-Diarization (HF 트렌딩) ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+<section class="group">
+  <h2 class="sec">B · 산업 적용사례 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="B2">
+    <h4>B2 산업별 적용</h4>
+    <div class="grid">
+<article class="card" data-cat="B2" data-text="스마트홈, 외부 ai에 문 열다 삼성·lg가 스마트홈에 제미나이·챗gpt를 연동하고 있다. 외부 ai에 문 여는 스마트홈…제미나이가 펫 돌보고, 챗gpt가 가전 제어 전자신문">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B2 산업별 적용</span>
+    <span>전자신문</span>
+    <span>· 09-27 16:00</span>
+    
+  </div>
+  <h3><a href="https://www.etnews.com/20260922000377" target="_blank" rel="noopener">스마트홈, 외부 AI에 문 열다</a></h3>
+  <p class="one">삼성·LG가 스마트홈에 제미나이·챗GPT를 연동하고 있다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>자체 AI 고집 대신 범용 AI를 붙이는 쪽으로 경쟁이 옮겨간다.</dd></div>
+    <div><dt>비유</dt><dd>우리 앱에 자체 지도 대신 구글 지도를 붙이는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>예약 앱의 음성·대화 기능을 자체 개발 대신 범용 AI 연동으로 먼저 실험해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>삼성이 약관을 개정해 &#39;AI가 사용자 목표로 실행 계획을 세우는&#39; 조항을 넣은 점 — 외부 AI 연동 시 약관·데이터 처리 고지 정비가 선행 과제다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.etnews.com/20260922000377" target="_blank" rel="noopener">원제: 외부 AI에 문 여는 스마트홈…제미나이가 펫 돌보고, 챗GPT가 가전 제어 ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="B2" data-text="로봇마다 다르지만 두뇌는 하나로 여러 로봇의 경험을 한 모델에 모으는 &#39;로봇 파운데이션 모델&#39;이 주목받고 있다. 로봇은 달라도 두뇌는 하나로…&#39;범용 로봇 지능&#39; 뜬다 지디넷코리아">
+  <div class="meta">
+    
+    <span class="chip cat-B">B2 산업별 적용</span>
+    <span>지디넷코리아</span>
+    <span>· 09-27 14:01</span>
+    
+  </div>
+  <h3><a href="https://zdnet.co.kr/view/?no=20260927135147" target="_blank" rel="noopener">로봇마다 다르지만 두뇌는 하나로</a></h3>
+  <p class="one">여러 로봇의 경험을 한 모델에 모으는 &#39;로봇 파운데이션 모델&#39;이 주목받고 있다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>작업마다 새로 학습시키던 비용 구조가 바뀔 수 있다.</dd></div>
+    <div><dt>비유</dt><dd>기기마다 앱을 따로 만들다가 하나의 크로스플랫폼 코드로 합치는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>물류·매장 자동화 검토 시 &#39;이 작업 전용 로봇&#39;보다 범용 모델 기반 솔루션의 확장성을 비교 기준에 넣어 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>기사에서 &#39;범용&#39;은 한 로봇이 모든 일을 한다는 뜻이 아니라, 로봇 종류가 달라도 학습 지식을 공유한다는 의미로 설명된다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://zdnet.co.kr/view/?no=20260927135147" target="_blank" rel="noopener">원제: 로봇은 달라도 두뇌는 하나로…&#39;범용 로봇 지능&#39; 뜬다 ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="B3">
+    <h4>B3 국내 사례</h4>
+    <div class="grid">
+<article class="card" data-cat="B3" data-text="이재용·최태원·젠슨 황 28일 뉴욕 회동 세 사람이 뉴욕 행사에서 만날 예정이며 hbm·ai 인프라 협력이 관심사다. 이재용·최태원·젠슨 황, 28일 뉴욕서 만난다 지디넷코리아">
+  <div class="meta">
+    <span class="stars s4" role="img" aria-label="중요도 5점 만점에 4점" title="중요도 4/5"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star off" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
+    <span class="chip cat-B">B3 국내 사례</span>
+    <span>지디넷코리아</span>
+    <span>· 09-27 19:14</span>
+    
+  </div>
+  <h3><a href="https://zdnet.co.kr/view/?no=20260927191300" target="_blank" rel="noopener">이재용·최태원·젠슨 황 28일 뉴욕 회동</a></h3>
+  <p class="one">세 사람이 뉴욕 행사에서 만날 예정이며 HBM·AI 인프라 협력이 관심사다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 반도체 공급망의 큰 그림이 이 자리에서 읽힌다.</dd></div>
+    <div><dt>비유</dt><dd>주요 부품사와 완제품사 대표가 같은 행사장에서 마주치는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI 인프라 가격·수급 전망을 지켜보며 내년 GPU·클라우드 예산 시나리오를 두 가지로 준비해 둘 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>아직 만남 예정 단계이고 협력 내용은 확정 발표가 아니라 업계 관심사로만 언급됐다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://zdnet.co.kr/view/?no=20260927191300" target="_blank" rel="noopener">원제: 이재용·최태원·젠슨 황, 28일 뉴욕서 만난다 ↗</a></p>
+  
+</article>
+
+<article class="card" data-cat="B3" data-text="ai 숏폼, 신한은행이 정식 도입 스모어톡이 숏폼 생성 ai를 신한은행에 공급하는 계약을 체결했다고 밝혔다. 스모어톡, 신한은행에 숏폼 영상 ai 공급…금융권 유스케이스 첫 확보 ai타임스">
+  <div class="meta">
+    
+    <span class="chip cat-B">B3 국내 사례</span>
+    <span>AI타임스</span>
+    <span>· 09-28 00:01</span>
+    
+  </div>
+  <h3><a href="https://www.aitimes.com/news/articleView.html?idxno=215687" target="_blank" rel="noopener">AI 숏폼, 신한은행이 정식 도입</a></h3>
+  <p class="one">스모어톡이 숏폼 생성 AI를 신한은행에 공급하는 계약을 체결했다고 밝혔다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>규제가 엄격한 금융권도 생성 AI 콘텐츠를 정식 계약으로 받아들였다.</dd></div>
+    <div><dt>비유</dt><dd>매일 쓰던 PDF 보고서를 자동으로 영상 브리핑으로 바꿔 주는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>매일 바뀌는 특가·날씨·지역 정보를 숏폼으로 자동 생성해 상품 상세나 SNS에 붙이는 실험을 해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>담당자가 설명문만 입력하면 시나리오·장면 구성까지 자동화되는 구조 — 우리도 입력을 &#39;텍스트 한 덩이&#39;로 단순화하는 설계가 핵심이다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.aitimes.com/news/articleView.html?idxno=215687" target="_blank" rel="noopener">원제: 스모어톡, 신한은행에 숏폼 영상 AI 공급…금융권 유스케이스 첫 확보 ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="B4">
+    <h4>B4 실패·사고 사례</h4>
+    <div class="grid">
+<article class="card" data-cat="B4" data-text="ai 번호판 오인식에 총구 겨눔…소송 플록 카메라가 차를 도난 차량으로 잘못 표시해 경찰이 총을 겨눴고, 당사자가 소송을 냈다. york man was held at gunpoint over incorrect flock hit. sheriff blames illegal tag cover ai incident database">
+  <div class="meta">
+    
+    <span class="chip cat-B">B4 실패·사고 사례</span>
+    <span>AI Incident Database</span>
+    <span>· 09-27 09:00</span>
+    
+  </div>
+  <h3><a href="https://www.heraldonline.com/news/local/crime/article316428323.html" target="_blank" rel="noopener">AI 번호판 오인식에 총구 겨눔…소송</a></h3>
+  <p class="one">플록 카메라가 차를 도난 차량으로 잘못 표시해 경찰이 총을 겨눴고, 당사자가 소송을 냈다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 오탐이 사람의 안전으로 직결된 사례다.</dd></div>
+    <div><dt>비유</dt><dd>자동 검색 결과 하나를 확인 없이 그대로 믿고 행동하는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>AI 판정이 예약 취소·계정 정지 등 불이익으로 이어지는 흐름에 사람 확인 단계를 반드시 넣어야 한다.</dd></div>
+    <div><dt>개발자</dt><dd>소송은 6월 29일 제기된 단계이고, 보안관 측은 불법 번호판 커버를 원인으로 주장했다 — 책임 소재는 아직 다툼 중이다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.heraldonline.com/news/local/crime/article316428323.html" target="_blank" rel="noopener">원제: York man was held at gunpoint over incorrect Flock hit. Sheriff blames illegal tag cover ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+<section class="group">
+  <h2 class="sec">C · 더 보기 <small>제목만 훑어보세요</small></h2>
+  
+  <div class="catblock" data-cat="C2">
+    <h4>C2 규제·정책</h4>
+    <div class="grid">
+<article class="card" data-cat="C2" data-text="클라우드플레어 ceo, ai 시대의 웹을 말하다 클라우드플레어 ceo가 ai가 바꾸는 웹의 미래를 인터뷰로 논했다. can cloudflare ceo matthew prince save the web from ai? the verge ai">
+  <div class="meta">
+    
+    <span class="chip cat-C">C2 규제·정책</span>
+    <span>The Verge AI</span>
+    <span>· 09-26 23:00</span>
+    
+  </div>
+  <h3><a href="https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising" target="_blank" rel="noopener">클라우드플레어 CEO, AI 시대의 웹을 말하다</a></h3>
+  <p class="one">클라우드플레어 CEO가 AI가 바꾸는 웹의 미래를 인터뷰로 논했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>AI 크롤러와 콘텐츠 접근 규칙이 웹 트래픽 구조를 흔들 수 있다.</dd></div>
+    <div><dt>비유</dt><dd>고속도로 톨게이트 운영자가 통행 규칙을 다시 짜는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>우리 예약·커머스 사이트가 AI 봇에 어떻게 노출되는지 크롤러 정책을 점검해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>robots.txt와 봇 허용·차단, CDN 단계의 AI 크롤러 규칙을 담당자와 정리해 두면 좋다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising" target="_blank" rel="noopener">원제: Can Cloudflare CEO Matthew Prince save the web from AI? ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+  <div class="catblock" data-cat="C7">
+    <h4>C7 내 업계 트랙</h4>
+    <div class="grid">
+<article class="card" data-cat="C7" data-text="세일즈포스, crm 추론 ai 모델 &#39;koa&#39; 공개 세일즈포스가 고객관리(crm) 추론용 ai 모델 koa를 공개했다. salesforce unveils koa: a breakthrough ai model for crm reasoning small business trends">
+  <div class="meta">
+    
+    <span class="chip cat-C">C7 내 업계 트랙</span>
+    <span>Small Business Trends</span>
+    <span>· 09-27 02:11</span>
+    
+  </div>
+  <h3><a href="https://smallbiztrends.com/salesforce-unveils-koa-a-breakthrough-ai-model-for-crm-reasoning/" target="_blank" rel="noopener">세일즈포스, CRM 추론 AI 모델 &#39;Koa&#39; 공개</a></h3>
+  <p class="one">세일즈포스가 고객관리(CRM) 추론용 AI 모델 Koa를 공개했다.</p>
+  
+  
+  
+  
+  <dl class="teach fold">
+    <div><dt>왜 중요?</dt><dd>범용 모델 대신 업무 데이터에 특화된 모델 흐름을 보여 준다.</dd></div>
+    <div><dt>비유</dt><dd>만능 요리사 대신 한 분야만 전문으로 하는 셰프를 쓰는 것과 비슷하다.</dd></div>
+    <div><dt>나한테?</dt><dd>고객 문의·예약 이력 데이터로 업무 특화 모델이 범용 모델보다 나은지 작게 비교해 볼 수 있다.</dd></div>
+    <div><dt>개발자</dt><dd>기능·가격·제공 시점은 요약에 없으니 도입 판단은 공식 문서 확인 뒤로 미루는 게 안전하다.</dd></div>
+  </dl>
+  <button class="more" type="button">더 풀어서 보기</button>
+  
+  <p class="orig"><a href="https://smallbiztrends.com/salesforce-unveils-koa-a-breakthrough-ai-model-for-crm-reasoning/" target="_blank" rel="noopener">원제: Salesforce Unveils Koa: A Breakthrough AI Model for CRM Reasoning ↗</a></p>
+  
+</article>
+</div>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+<section class="box weekly-link">
+  <div class="label">주간 요약 — 10/05 ~ 10/11</div>
+  <h3><a href="../weekly/2026-W41.html">에이전트가 결제까지 — 판단·비용·보안은 쪼개서 관리 →</a></h3>
+</section>
+
+
+</main>
+<footer class="wrap foot">
+  생성 2026-10-17 11:19 KST · 공식 RSS·API만 수집 · 원문 저작권은 각 출처에 있습니다
+</footer>
+<script src="../static/app.js?v=73b1c7e9b5"></script>
+</body>
+</html>
