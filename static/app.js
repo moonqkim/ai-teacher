@@ -11,13 +11,7 @@ function toggleTheme() {
 var pages = document.querySelectorAll('.page');
 var scopes = pages.length ? Array.prototype.slice.call(pages) : [document];
 
-document.querySelectorAll('.card .more').forEach(function (btn) {
-  btn.addEventListener('click', function () {
-    var card = btn.closest('.card');
-    card.classList.toggle('open');
-    btn.textContent = card.classList.contains('open') ? '접기' : '더 풀어서 보기';
-  });
-});
+
 
 // ── 오늘 소식 검색·카테고리 필터 (페이지마다 따로) ──
 scopes.forEach(function (scope) {
