@@ -197,3 +197,6 @@ mark { background: var(--warn-soft); color: inherit; border-radius: 3px; padding
 .fb a:hover { opacity: 1; background: var(--surface-2); }
 .card .meta { padding-right: 56px; }
 .detail { margin: 2px 0 4px; font-size: 14.5px; color: var(--text); line-height: 1.6; }
+/* 카드 접기: 기본은 제목·한 줄 요약만, '자세히'를 누르면 설명·왜 중요?·우리 회사는·개발 포인트 */
+.card .fold { display: none; }
+.card.open .fold { display: block; }

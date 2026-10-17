@@ -13,6 +13,15 @@ var scopes = pages.length ? Array.prototype.slice.call(pages) : [document];
 
 
 
+document.querySelectorAll('.card .more').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var card = btn.closest('.card');
+    var open = card.classList.toggle('open');
+    btn.textContent = open ? '접기 ▴' : '자세히 ▾';
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+});
+
 // ── 오늘 소식 검색·카테고리 필터 (페이지마다 따로) ──
 scopes.forEach(function (scope) {
   var chips = scope.querySelector('.js-chips');
