@@ -65,6 +65,7 @@ nav a:hover { background: var(--surface-2); color: var(--text); }
 .cat-A { background: var(--a-soft); color: var(--a); }
 .cat-B { background: var(--b-soft); color: var(--b); }
 .cat-C { background: var(--c-soft); color: var(--c); }
+.chip.tag { background: var(--surface-2); color: var(--text); }
 .hn { color: var(--c); text-decoration: none; font-weight: 600; }
 /* 중요도: 5 = ★★★, 4 = ★★☆, 3 이하 표시 없음. 카드 박스 색은 바꾸지 않는다 (별만으로 강조) */
 .stars { display: inline-flex; gap: 1px; align-items: center; vertical-align: -3px; }
@@ -98,7 +99,7 @@ nav a:hover { background: var(--surface-2); color: var(--text); }
 .trend li { margin: 4px 0; }
 
 .tools { margin-top: 36px; display: flex; flex-direction: column; gap: 10px; }
-#q { width: 100%; padding: 10px 14px; border: 1px solid var(--line); background: var(--surface); color: var(--text);
+#q, .js-q { width: 100%; box-sizing: border-box; padding: 10px 14px; border: 1px solid var(--line); background: var(--surface); color: var(--text);
   border-radius: 10px; font: inherit; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chips button { border: 1px solid var(--line); background: var(--surface); color: var(--text); font: inherit; font-size: 13px;
