@@ -124,7 +124,7 @@ if (pages.length) {
   show();
 }
 
-// ── 동종 서비스 현황판: 그룹 필터 ──
+// ── 숙박업계 AI 현황판: 그룹 필터 ──
 scopes.forEach(function (scope) {
   var chips = scope.querySelector('.js-pchips');
   if (!chips) return;

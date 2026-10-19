@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex, nofollow">
 <title>2026-10-03 · 오늘 소식 · 최소한의 AI 뉴스</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="../static/style.css?v=d6cae4df78">
+<link rel="stylesheet" href="../static/style.css?v=633dbdbca7">
 <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
 </head>
 <body>
@@ -23,7 +23,7 @@
   </div>
   
   <div class="wrap viewbar" role="tablist" aria-label="보기 선택">
-    <a role="tab" href="../daily/2026-10-03.html" class="on" aria-selected="true">오늘 소식</a><a role="tab" href="../peers/index.html" class="" aria-selected="false">동종 서비스 AI 현황판</a>
+    <a role="tab" href="../daily/2026-10-03.html" class="on" aria-selected="true">오늘 소식</a><a role="tab" href="../peers/index.html" class="" aria-selected="false">숙박업계 AI 현황판</a>
   </div>
   
 </header>
@@ -75,7 +75,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>숙박 예약 업계의 AI 전환을 개발 방식까지 포함해 보여주는 사례다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>우리 예약 서비스도 &#39;고객 경험&#39;과 &#39;내부 개발 방식&#39; 두 축으로 AI 적용 지도를 그려 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>경쟁사 사례라 게스트 응대·검색 품질 지표를 어떻게 잡는지 벤치마킹 포인트로 삼을 만하다.</dd></div>
     </dl>
     
@@ -105,7 +105,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>에이전트 실행 도구가 안정판에 들어서면 실서비스 적용을 검토할 만하다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>프런트엔드와 같은 타입스크립트로 에이전트 실행부를 짜 볼 수 있어, 사내 자동화 시험에 적합하다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>&#39;Durable&#39;은 이름상 장시간·중단복구형 실행을 노린 것으로 보이니, 예약 처리처럼 중간에 끊기면 안 되는 작업에서 확인해 볼 지점이다.</dd></div>
     </dl>
     
@@ -135,7 +135,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>웹에 결정 모델(판단·선택 전용 모델)이 쏟아지는 흐름을 보여준다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>예약 취소·환불 승인처럼 규칙이 복잡한 판단 단계에 소형 결정 모델을 붙여 시험해 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>2B급 소형이라 비용·지연이 낮을 가능성이 커, 추천·필터링 단계의 경량 대안으로 벤치마크 후보에 올릴 만하다.</dd></div>
     </dl>
     
@@ -165,7 +165,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>대형 모델 학습 도구가 공개되면 자체 학습 진입 장벽이 낮아진다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>직접 학습까지는 아니어도, 사내 파인튜닝(기존 모델 추가 학습) 파이프라인 설계 참고용으로 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>MoE(전문가 혼합: 입력마다 일부 전문가 모듈만 켜는 구조) 학습은 GPU·네트워크 요구가 커서 소규모 팀엔 코드 구조 참고 가치가 더 크다.</dd></div>
     </dl>
     
@@ -181,16 +181,6 @@
 </section>
 
 
-
-
-<section class="duo">
-  <div class="box tip">
-    <div class="label">C5 · 오늘 바로 써먹을 팁</div>
-    <h3>10분 만에 &#39;판단&#39;과 &#39;생성&#39; 쪼개 보기</h3>
-    <ol><li>우리 챗봇/에이전트 프롬프트 1개를 열어, 모델이 &#39;고르는 일&#39;(의도 분류, 다음 도구 선택, 재질문 여부)을 표시한다.</li><li>표시한 부분만 떼어내 별도 호출로 만들고, 출력은 정해진 라벨 하나(예: search / book / ask_more)만 반환하게 지시한다.</li><li>실제 고객 문의 20건을 기존 통합 프롬프트와 분리한 판단 호출에 각각 넣어 라벨이 맞는지 수동으로 채점한다.</li><li>정확도가 같거나 더 높으면, 판단 호출만 더 작고 싸고 모델로 바꿔 20건을 다시 돌리고 토큰과 응답시간을 기록한다.</li><li>결과를 &#39;정확도 / 지연 / 비용&#39; 3칸 표로 정리해 팀 채널에 공유한다.</li></ol>
-    <p class="why">오늘 나온 판단 전용 소형 모델 흐름처럼, 결정 단계를 떼어내면 큰 모델을 덜 쓰고도 품질이 유지되는지 바로 확인할 수 있다.</p>
-  </div>
-</section>
 
 
 <section class="tools">
@@ -221,9 +211,6 @@
 
 
 
-
-
-
 <section class="group">
   <h2 class="sec">시장 움직임 — 사고·규제·투자 <small>제목만 훑어보세요</small></h2>
   
@@ -248,7 +235,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>AI 연산이 데이터센터 밖 &#39;우주 엣지&#39;로 번지는 흐름을 보여준다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>지도·위성 이미지 기반 캠핑·숙박 콘텐츠를 다룰 때, 전처리를 어디서 할지(현장 vs 서버) 설계 기준을 다시 점검해 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>핵심 포인트는 &#39;여러 회사 위성에서 돌아가는 개방형 소프트웨어&#39;를 노린다는 점 — 폐쇄형 통합 스택 대비 개방 플랫폼 전략의 사례로 참고할 만하다.</dd></div>
     </dl>
     
@@ -291,7 +278,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>웹에 결정 모델(판단·선택 전용 모델)이 쏟아지는 흐름을 보여준다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>예약 취소·환불 승인처럼 규칙이 복잡한 판단 단계에 소형 결정 모델을 붙여 시험해 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>2B급 소형이라 비용·지연이 낮을 가능성이 커, 추천·필터링 단계의 경량 대안으로 벤치마크 후보에 올릴 만하다.</dd></div>
     </dl>
     
@@ -321,7 +308,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>대형 모델 학습 도구가 공개되면 자체 학습 진입 장벽이 낮아진다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>직접 학습까지는 아니어도, 사내 파인튜닝(기존 모델 추가 학습) 파이프라인 설계 참고용으로 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>MoE(전문가 혼합: 입력마다 일부 전문가 모듈만 켜는 구조) 학습은 GPU·네트워크 요구가 커서 소규모 팀엔 코드 구조 참고 가치가 더 크다.</dd></div>
     </dl>
     
@@ -356,7 +343,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>숙박 예약 업계의 AI 전환을 개발 방식까지 포함해 보여주는 사례다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>우리 예약 서비스도 &#39;고객 경험&#39;과 &#39;내부 개발 방식&#39; 두 축으로 AI 적용 지도를 그려 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>경쟁사 사례라 게스트 응대·검색 품질 지표를 어떻게 잡는지 벤치마킹 포인트로 삼을 만하다.</dd></div>
     </dl>
     
@@ -386,7 +373,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>에이전트 실행 도구가 안정판에 들어서면 실서비스 적용을 검토할 만하다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>프런트엔드와 같은 타입스크립트로 에이전트 실행부를 짜 볼 수 있어, 사내 자동화 시험에 적합하다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>&#39;Durable&#39;은 이름상 장시간·중단복구형 실행을 노린 것으로 보이니, 예약 처리처럼 중간에 끊기면 안 되는 작업에서 확인해 볼 지점이다.</dd></div>
     </dl>
     
@@ -421,7 +408,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>다운로드 9,533·좋아요 248로 로컬 실행 수요가 꾸준함을 보여준다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>고객 접점에는 부적합하니, 내부 테스트용 로컬 추론 환경 점검 정도로만 쓰는 게 안전하다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>GGUF(로컬 CPU·GPU에서 돌리기 쉬운 모델 파일 형식)라 노트북 실험은 쉽지만, 무검열 모델은 커머스 서비스 투입 시 안전·법무 검토가 필수다.</dd></div>
     </dl>
     
@@ -451,7 +438,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>좋아요 374에 다운로드 18로, 관심은 크지만 실사용은 초기 단계다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>숙소·상품 사진을 읽어 설명이나 태그를 뽑는 용도로 소규모 검증을 해 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>image-text-to-text(이미지와 글을 함께 받아 글로 답하는 방식)라 이미지 품질 검수·리뷰 사진 분류 파이프라인 후보로 볼 만하다.</dd></div>
     </dl>
     
@@ -496,7 +483,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>AI 기업의 내부 정보 통제가 더 조여지고 있다는 신호다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>협력사·외부 툴과 일할 때 우리 쪽 정보 공유 범위를 문서로 못 박아 두자.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>사내 모델 평가 결과나 프롬프트 자산도 기밀 등급을 정해 두는 편이 좋다.</dd></div>
     </dl>
     
@@ -531,7 +518,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>하나의 로봇이 여러 환경을 오가는 설계가 계속 늘고 있다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>야외 레저·캠핑장 점검용 자율 기기 아이디어를 둘러보는 자료로 쓰자.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>ALBATROSS는 낙하산 없이 자동회전으로 착수하고 스스로 자세를 복구한다고 소개됐다.</dd></div>
     </dl>
     
@@ -566,7 +553,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>AI 3D 결과물의 가장 큰 약점인 &#39;수정 불가&#39;를 겨냥했다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>캠핑 굿즈·매장 집기 시안을 디자이너 없이 빠르게 만들어 보는 실험을 해 보자.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>편집 가능한 메시(3D 표면 데이터) 구조로 뽑아 준다는 점이 기존 생성 3D와 다른 지점이다.</dd></div>
     </dl>
     
@@ -596,7 +583,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>잡음 속 패턴을 찾는 AI가 새 데이터 영역을 열고 있다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>매장·숙소의 소리 데이터로 혼잡도나 이상 상황을 잡는 아이디어로 응용해 보자.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>라벨이 거의 없는 오디오에서 집단 패턴을 찾는 접근은 비정형 로그 분석에도 쓸 만하다.</dd></div>
     </dl>
     
@@ -631,7 +618,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>구형 하드웨어도 AI로 체감 성능을 끌어올리는 흐름이다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>저사양 기기 사용자용으로 서버 측 이미지 품질 보정을 검토해 보자.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>AMD와의 Project Amethyst 결과물이며 기존 PSSR과 다른 성능 등급으로 소개됐다.</dd></div>
     </dl>
     
@@ -661,7 +648,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>카메라+음성 안내가 접근성 기본 기능으로 자리잡는다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>예약 바우처·약관처럼 작은 글씨가 많은 화면의 접근성 대안을 점검해 보자.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>호환 안드로이드 기기에서 카메라 공유 방식으로 동작한다고 안내됐다.</dd></div>
     </dl>
     
@@ -696,7 +683,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>모델 내부 사고 과정도 공격 표적이 된다는 사례다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>우리 서비스의 프롬프트·중간 추론 로그가 외부로 새지 않게 저장·마스킹 정책을 점검하자.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>OpenAI의 주장 단계이며, 모델 출력에 내부 추론을 노출하지 않는 설계가 방어의 기본이다.</dd></div>
     </dl>
     
@@ -716,14 +703,14 @@
 
 <section class="box weekly-link">
   <div class="label">주간 요약 — 10/12 ~ 10/18</div>
-  <h3><a href="../weekly/2026-W42.html">AI가 자랑 단계를 지나 예약·커머스 현장에 직접 들어왔다 →</a></h3>
+  <h3><a href="../weekly/2026-W42.html">최상위 모델은 쏟아지고, 성과와 책임은 다시 계산대에 올랐다 →</a></h3>
 </section>
 
 
 </main>
 <footer class="wrap foot">
-  생성 2026-10-19 08:18 KST · 공식 RSS·API만 수집 · 원문 저작권은 각 출처에 있습니다
+  생성 2026-10-19 11:45 KST · 공식 RSS·API만 수집 · 원문 저작권은 각 출처에 있습니다
 </footer>
-<script src="../static/app.js?v=d6cae4df78"></script>
+<script src="../static/app.js?v=633dbdbca7"></script>
 </body>
 </html>

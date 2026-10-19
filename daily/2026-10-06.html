@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex, nofollow">
 <title>2026-10-06 · 오늘 소식 · 최소한의 AI 뉴스</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="../static/style.css?v=d6cae4df78">
+<link rel="stylesheet" href="../static/style.css?v=633dbdbca7">
 <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
 </head>
 <body>
@@ -23,7 +23,7 @@
   </div>
   
   <div class="wrap viewbar" role="tablist" aria-label="보기 선택">
-    <a role="tab" href="../daily/2026-10-06.html" class="on" aria-selected="true">오늘 소식</a><a role="tab" href="../peers/index.html" class="" aria-selected="false">동종 서비스 AI 현황판</a>
+    <a role="tab" href="../daily/2026-10-06.html" class="on" aria-selected="true">오늘 소식</a><a role="tab" href="../peers/index.html" class="" aria-selected="false">숙박업계 AI 현황판</a>
   </div>
   
 </header>
@@ -75,7 +75,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>대화형 AI가 새로운 광고·유입 채널로 열리기 시작했다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>여행·숙박 상품의 AI 채널 노출 실험을 마케팅팀과 미리 설계해 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>어트리뷰션(광고 성과 추적) 파트너십도 함께 확장된다고 해, 유입 측정 태깅 구조를 점검해 둘 만하다.</dd></div>
     </dl>
     
@@ -105,7 +105,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>큰 모델을 자체 장비로 돌리는 문턱이 낮아지고 있다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>고객 문의 분류·상품 설명 생성처럼 양이 많은 작업을 자체 장비로 돌려 API 비용을 비교해 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>T/s(초당 토큰 생성 수) 100은 체감상 충분히 빠른 수준이라, 사내용 추론 서버 PoC 근거로 쓸 만하다.</dd></div>
     </dl>
     
@@ -135,7 +135,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>초대형 모델도 가중치가 공개되는 흐름이 이어진다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>민감한 예약·고객 데이터를 외부에 보내지 않는 자체 운영 모델 후보로 검토해 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>공개 가중치(open-weight)는 완전 오픈소스와 달라 라이선스와 상업적 이용 조건을 먼저 확인해야 한다.</dd></div>
     </dl>
     
@@ -165,7 +165,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>공격 비용이 거의 0에 가까워져 누구나 노려질 수 있다</dd></div>
-      <div><dt>우리 회사는</dt><dd>로그인·예약 API의 자동화 공격 방어(속도 제한·이상 탐지)를 이번 주 점검 항목으로 올리기</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>크리덴셜 스터핑(유출 계정 대량 시도) 탐지와 봇 차단 지표를 대시보드에 상시 노출해 두면 좋다</dd></div>
     </dl>
     
@@ -195,7 +195,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>AI 생성 텍스트의 출처 표시가 규제 요건으로 들어오고 있다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>AI로 만든 상품 설명·리뷰 요약에 출처 표기 정책이 필요한지 미리 점검해 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>탐지 도구 접근이 연구자부터 시작된다고 밝힌 만큼, 당장 자체 검증은 어려울 것으로 보인다.</dd></div>
     </dl>
     
@@ -213,24 +213,12 @@
 
 
 
-<section class="duo">
-  <div class="box tip">
-    <div class="label">C5 · 오늘 바로 써먹을 팁</div>
-    <h3>우리 상품 질문 5개로 에이전트 &#39;지식 공백&#39; 찾기</h3>
-    <ol><li>고객이 자주 묻는 질문 5개를 적는다. 예: 환불 규정, 성수기 요금, 반려동물 동반, 체크인 시간, 재고 문의.</li><li>사내 문서를 붙이지 않은 상태로 쓰고 있는 AI에 그대로 물어본다.</li><li>답을 ○(정확)·△(일반론만)·✗(틀림)으로 표시한다.</li><li>△·✗ 질문의 정답이 &#39;어느 문서, 어느 DB 테이블&#39;에 있는지 한 줄씩 적는다.</li><li>그 목록을 에이전트에 연결할 데이터 소스 1순위 후보로 팀에 공유한다.</li></ol>
-    <p class="why">에이전트 품질은 모델보다 사내 지식 연결에서 갈린다는 지적이 나왔다. 어디가 비어 있는지 모르면 연결할 대상도 못 정한다. 질문 5개만으로 공백 위치가 드러난다.</p>
-  </div>
-</section>
-
-
 <section class="tools">
   <input class="js-q" type="search" placeholder="오늘 소식 검색" aria-label="검색">
   <div class="chips js-chips">
     <button class="on" data-f="all">전체</button>
     
     <button data-f="B2">B2 산업별 적용 <small>1</small></button>
-    
-    <button data-f="C7">C7 우리 업계 <small>1</small></button>
     
     <button data-f="B4">B4 실패·사고 사례 <small>1</small></button>
     
@@ -239,6 +227,8 @@
     <button data-f="A3">A3 AI 제품·서비스 <small>2</small></button>
     
     <button data-f="A4">A4 오픈소스 <small>2</small></button>
+    
+    <button data-f="C7">C7 숙박업계 AI·AX <small>1</small></button>
     
   </div>
 </section>
@@ -271,7 +261,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>AI가 사람 검토 없이 결정까지 내리는 사례가 실제 서비스로 등장</dd></div>
-      <div><dt>우리 회사는</dt><dd>사진 한 장으로 판단하는 흐름을 캠핑장·객실 상태 점검이나 반품 사유 자동 판정에 응용해 보기</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>자동 판정 기능은 신뢰도 기준선과 사람 개입 경로를 설계 단계에서 함께 넣어야 한다</dd></div>
     </dl>
     
@@ -280,49 +270,6 @@
   
   <p class="fb"><a href="https://github.com/moonqkim/ai-teacher/issues/new?title=%5B%F0%9F%91%8D%5D+AI%EA%B0%80+%EC%97%AC%EB%93%9C%EB%A6%84+%EC%B2%98%EB%B0%A9%EC%A0%84%EC%9D%84+%EC%A7%81%EC%A0%91+%EC%93%B4%EB%8B%A4&amp;body=%EC%9D%B4%EC%9C%A0%28%EC%84%A0%ED%83%9D%29%3A+%0A%0A---%0A%EC%95%84%EB%9E%98+%EC%A4%84%EC%9D%80+%EC%A7%80%EC%9A%B0%EC%A7%80+%EB%A7%88%EC%84%B8%EC%9A%94+%28%EC%9E%90%EB%8F%99+%EC%B2%98%EB%A6%AC%EC%9A%A9%29%0Acard%3A81aca6d8af3f54bd%0Averdict%3Agood%0A%EC%9B%90%EB%AC%B8%3A+https%3A%2F%2Fwww.theverge.com%2Fai-artificial-intelligence%2F1005075%2Fnolla-health-acne-ai-prescriptions" target="_blank" rel="noopener" title="이런 소식 좋아요">👍</a><a href="https://github.com/moonqkim/ai-teacher/issues/new?title=%5B%F0%9F%91%8E%5D+AI%EA%B0%80+%EC%97%AC%EB%93%9C%EB%A6%84+%EC%B2%98%EB%B0%A9%EC%A0%84%EC%9D%84+%EC%A7%81%EC%A0%91+%EC%93%B4%EB%8B%A4&amp;body=%EC%9D%B4%EC%9C%A0%28%EC%84%A0%ED%83%9D%29%3A+%0A%0A---%0A%EC%95%84%EB%9E%98+%EC%A4%84%EC%9D%80+%EC%A7%80%EC%9A%B0%EC%A7%80+%EB%A7%88%EC%84%B8%EC%9A%94+%28%EC%9E%90%EB%8F%99+%EC%B2%98%EB%A6%AC%EC%9A%A9%29%0Acard%3A81aca6d8af3f54bd%0Averdict%3Abad%0A%EC%9B%90%EB%AC%B8%3A+https%3A%2F%2Fwww.theverge.com%2Fai-artificial-intelligence%2F1005075%2Fnolla-health-acne-ai-prescriptions" target="_blank" rel="noopener" title="이런 소식은 별로예요">👎</a></p>
   <p class="orig"><a href="https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions" target="_blank" rel="noopener">원제: This startup is issuing AI-generated acne prescriptions ↗</a></p>
-  
-</article>
-</div>
-  </div>
-  
-</section>
-
-
-
-
-<section class="group">
-  <h2 class="sec">우리 업계 — 여행·숙박·캠핑·커머스 <small>제목만 훑어보세요</small></h2>
-  
-  <div class="catblock" data-cat="C7">
-    <h4>C7 우리 업계</h4>
-    <div class="grid">
-<article class="card" data-cat="C7" data-text="w컨셉, 대화형 ai 쇼핑 &#39;베타&#39; 시작 w컨셉이 vip 고객 대상 대화형 ai 쇼핑 에이전트 베타를 열었다. w컨셉, 대화형 ai 쇼핑 도입…&#39;대화·이미지&#39;로 상품 찾는다 전자신문">
-  <div class="meta">
-    <span class="stars s5" role="img" aria-label="중요도 5점 만점에 5점" title="중요도 5/5 — 업계 판도를 바꿀 소식"><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg><svg class="star on" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.85 5.95 6.55.85-4.8 4.55 1.22 6.5L12 17.3l-5.82 3.15 1.22-6.5-4.8-4.55 6.55-.85z"/></svg></span>
-    <span class="chip cat-C">C7 우리 업계</span>
-    <span>전자신문</span>
-    <span>· 10-05 14:45</span>
-    
-  </div>
-  <h3><a href="https://www.etnews.com/20261001000413" target="_blank" rel="noopener">W컨셉, 대화형 AI 쇼핑 &#39;베타&#39; 시작</a></h3>
-  <p class="one">W컨셉이 VIP 고객 대상 대화형 AI 쇼핑 에이전트 베타를 열었다.</p>
-  
-  
-  
-  <div class="fold">
-    
-    
-    <dl class="teach">
-      <div><dt>왜 중요?</dt><dd>검색창 중심 탐색이 대화·이미지 기반 추천으로 바뀌는 신호다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>우리도 VIP 등 좁은 대상부터 대화형 추천을 베타로 열어 반응을 볼 수 있다.</dd></div>
-      <div><dt>개발 포인트</dt><dd>상황·취향·날씨·구매 패턴을 함께 쓴다고 하니, 추천 품질은 모델보다 보유 데이터 연결 범위가 좌우할 가능성이 크다.</dd></div>
-    </dl>
-    
-  </div>
-  <button class="more" type="button" aria-expanded="false">자세히 ▾</button>
-  
-  <p class="fb"><a href="https://github.com/moonqkim/ai-teacher/issues/new?title=%5B%F0%9F%91%8D%5D+W%EC%BB%A8%EC%85%89%2C+%EB%8C%80%ED%99%94%ED%98%95+AI+%EC%87%BC%ED%95%91+%27%EB%B2%A0%ED%83%80%27+%EC%8B%9C%EC%9E%91&amp;body=%EC%9D%B4%EC%9C%A0%28%EC%84%A0%ED%83%9D%29%3A+%0A%0A---%0A%EC%95%84%EB%9E%98+%EC%A4%84%EC%9D%80+%EC%A7%80%EC%9A%B0%EC%A7%80+%EB%A7%88%EC%84%B8%EC%9A%94+%28%EC%9E%90%EB%8F%99+%EC%B2%98%EB%A6%AC%EC%9A%A9%29%0Acard%3A61b8d86ddd9c7409%0Averdict%3Agood%0A%EC%9B%90%EB%AC%B8%3A+https%3A%2F%2Fwww.etnews.com%2F20261001000413" target="_blank" rel="noopener" title="이런 소식 좋아요">👍</a><a href="https://github.com/moonqkim/ai-teacher/issues/new?title=%5B%F0%9F%91%8E%5D+W%EC%BB%A8%EC%85%89%2C+%EB%8C%80%ED%99%94%ED%98%95+AI+%EC%87%BC%ED%95%91+%27%EB%B2%A0%ED%83%80%27+%EC%8B%9C%EC%9E%91&amp;body=%EC%9D%B4%EC%9C%A0%28%EC%84%A0%ED%83%9D%29%3A+%0A%0A---%0A%EC%95%84%EB%9E%98+%EC%A4%84%EC%9D%80+%EC%A7%80%EC%9A%B0%EC%A7%80+%EB%A7%88%EC%84%B8%EC%9A%94+%28%EC%9E%90%EB%8F%99+%EC%B2%98%EB%A6%AC%EC%9A%A9%29%0Acard%3A61b8d86ddd9c7409%0Averdict%3Abad%0A%EC%9B%90%EB%AC%B8%3A+https%3A%2F%2Fwww.etnews.com%2F20261001000413" target="_blank" rel="noopener" title="이런 소식은 별로예요">👎</a></p>
-  <p class="orig"><a href="https://www.etnews.com/20261001000413" target="_blank" rel="noopener">원제: W컨셉, 대화형 AI 쇼핑 도입…&#39;대화·이미지&#39;로 상품 찾는다 ↗</a></p>
   
 </article>
 </div>
@@ -357,7 +304,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>공격 비용이 거의 0에 가까워져 누구나 노려질 수 있다</dd></div>
-      <div><dt>우리 회사는</dt><dd>로그인·예약 API의 자동화 공격 방어(속도 제한·이상 탐지)를 이번 주 점검 항목으로 올리기</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>크리덴셜 스터핑(유출 계정 대량 시도) 탐지와 봇 차단 지표를 대시보드에 상시 노출해 두면 좋다</dd></div>
     </dl>
     
@@ -392,7 +339,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>AI 생성 텍스트의 출처 표시가 규제 요건으로 들어오고 있다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>AI로 만든 상품 설명·리뷰 요약에 출처 표기 정책이 필요한지 미리 점검해 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>탐지 도구 접근이 연구자부터 시작된다고 밝힌 만큼, 당장 자체 검증은 어려울 것으로 보인다.</dd></div>
     </dl>
     
@@ -435,7 +382,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>대화형 AI가 새로운 광고·유입 채널로 열리기 시작했다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>여행·숙박 상품의 AI 채널 노출 실험을 마케팅팀과 미리 설계해 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>어트리뷰션(광고 성과 추적) 파트너십도 함께 확장된다고 해, 유입 측정 태깅 구조를 점검해 둘 만하다.</dd></div>
     </dl>
     
@@ -465,7 +412,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>영상 제작을 사람이 아닌 자동화 흐름에 맡기는 시도다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>캠핑장·숙소 상세 영상이나 숏폼을 반자동으로 대량 생성하는 파이프라인을 테스트해 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>&#39;에이전트용&#39;이라는 점에서 UI보다 명령·API 중심 설계일 가능성이 커, 자동화 연동 여부를 먼저 확인하자.</dd></div>
     </dl>
     
@@ -500,7 +447,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>큰 모델을 자체 장비로 돌리는 문턱이 낮아지고 있다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>고객 문의 분류·상품 설명 생성처럼 양이 많은 작업을 자체 장비로 돌려 API 비용을 비교해 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>T/s(초당 토큰 생성 수) 100은 체감상 충분히 빠른 수준이라, 사내용 추론 서버 PoC 근거로 쓸 만하다.</dd></div>
     </dl>
     
@@ -530,7 +477,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>초대형 모델도 가중치가 공개되는 흐름이 이어진다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>민감한 예약·고객 데이터를 외부에 보내지 않는 자체 운영 모델 후보로 검토해 볼 수 있다.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>공개 가중치(open-weight)는 완전 오픈소스와 달라 라이선스와 상업적 이용 조건을 먼저 확인해야 한다.</dd></div>
     </dl>
     
@@ -575,7 +522,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>로봇이 사람과 물리적으로 겨루는 영역엔 규제가 먼저 온다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>로봇·AI가 오프라인 고객 접점(캠핑장·매장)에 들어갈 때 안전 규제 검토를 기획 단계에 넣어 두자.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>물리적 상호작용이 있는 제품은 기능보다 인증·면책 요건이 일정의 병목이 되기 쉽다.</dd></div>
     </dl>
     
@@ -605,7 +552,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>하드웨어 세대교체 비용과 폐기 처리가 현실 과제로 떠올랐다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>기기·키오스크 같은 하드웨어 도입 시 교체·폐기 비용까지 총비용에 넣어 산정해 보자.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>분해가 비싸면 폐기가 설계 요건이 된다 — 수명 종료 시나리오를 초기 스펙에 적어 두면 좋다.</dd></div>
     </dl>
     
@@ -640,7 +587,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>저가 단말 이용자층이 줄면 서비스의 최소 사양 전략도 흔들린다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>저가·구형 안드로이드 비중을 로그로 확인하고, 경량 모드·웹 대체 경로를 점검해 보자.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>메모리 가격 상승은 서버 비용에도 영향 — 캐시·인메모리 의존 설계의 비용 가정을 다시 보자.</dd></div>
     </dl>
     
@@ -670,7 +617,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>AI 인프라가 지역 수용성 문제를 안고 있다는 신호다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>AI 기능을 홍보할 때 환경·지역 민감도 논란도 함께 고려해 메시지를 다듬자.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>비판 측은 의도를 의심하는 중 — 친환경 서사는 근거 수치 없이 쓰면 역풍을 맞기 쉽다.</dd></div>
     </dl>
     
@@ -705,7 +652,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>macOS 27에서 끄기 토글이 사라져 모델 파일이 디스크에 남는다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>사내 맥 환경의 디스크 여유 확보나 빌드 머신 정리에 참고해 보자.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>OS가 온디바이스 모델을 기본 적재하는 흐름 — 로컬 AI 전제 기능은 용량·끄기 옵션을 함께 설계하자.</dd></div>
     </dl>
     
@@ -740,7 +687,7 @@
     
     <dl class="teach">
       <div><dt>왜 중요?</dt><dd>AI 에이전트 트래픽이 서비스 가용성을 위협하는 사례다.</dd></div>
-      <div><dt>우리 회사는</dt><dd>예약·상품 페이지에 들어오는 AI 에이전트 트래픽을 식별·제한하는 규칙을 점검해 보자.</dd></div>
+      
       <div><dt>개발 포인트</dt><dd>봇 차단보다 식별·레이트리밋·robots 정책·캐시 분리가 현실적인 1차 방어선이다.</dd></div>
     </dl>
     
@@ -760,14 +707,14 @@
 
 <section class="box weekly-link">
   <div class="label">주간 요약 — 10/12 ~ 10/18</div>
-  <h3><a href="../weekly/2026-W42.html">AI가 자랑 단계를 지나 예약·커머스 현장에 직접 들어왔다 →</a></h3>
+  <h3><a href="../weekly/2026-W42.html">최상위 모델은 쏟아지고, 성과와 책임은 다시 계산대에 올랐다 →</a></h3>
 </section>
 
 
 </main>
 <footer class="wrap foot">
-  생성 2026-10-19 08:18 KST · 공식 RSS·API만 수집 · 원문 저작권은 각 출처에 있습니다
+  생성 2026-10-19 11:45 KST · 공식 RSS·API만 수집 · 원문 저작권은 각 출처에 있습니다
 </footer>
-<script src="../static/app.js?v=d6cae4df78"></script>
+<script src="../static/app.js?v=633dbdbca7"></script>
 </body>
 </html>
