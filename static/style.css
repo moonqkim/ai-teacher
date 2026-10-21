@@ -194,6 +194,11 @@ mark { background: var(--warn-soft); color: inherit; border-radius: 3px; padding
 /* 독자 피드백 */
 .card { position: relative; }
 .card .meta { padding-right: 56px; }
+/* 편집자 👍/👎 — 로컬 검토 서버(127.0.0.1)에서 열었을 때만 app.js 가 붙인다. 공개 사이트에는 없다 */
+.fb { position: absolute; top: 12px; right: 14px; margin: 0; display: flex; gap: 4px; }
+.fb button { border: 0; background: none; font-size: 14px; padding: 2px 6px; border-radius: 8px; opacity: .4; cursor: pointer; }
+.fb button:hover { opacity: 1; background: var(--surface-2); }
+.fb button.on { opacity: 1; background: var(--surface-2); box-shadow: inset 0 0 0 1px var(--line); }
 .detail { margin: 2px 0 4px; font-size: 14.5px; color: var(--text); line-height: 1.6; }
 /* 카드 접기: 기본은 제목·한 줄 요약만, '자세히'를 누르면 설명·왜 중요?·개발 포인트 */
 .card .fold { display: none; }

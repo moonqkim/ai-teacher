@@ -137,3 +137,33 @@ scopes.forEach(function (scope) {
     });
   });
 });
+
+// ── 편집자 👍/👎: 로컬 검토 서버(uv run python -m teacher serve)로 열었을 때만 ──
+// 공개 사이트(GitHub Pages)에서는 /api/notes 가 없어서 버튼을 아예 만들지 않는다
+if (location.hostname === '127.0.0.1' || location.hostname === 'localhost') {
+  fetch('/api/notes').then(function (r) { if (!r.ok) throw new Error(); return r.json(); }).then(function (d) {
+    var states = d.states || {};
+    function paint(id, state) {
+      document.querySelectorAll('.card[data-id="' + id + '"] .fb button').forEach(function (b) {
+        b.classList.toggle('on', b.dataset.v === state);
+      });
+    }
+    document.querySelectorAll('.card[data-id]').forEach(function (card) {
+      var box = document.createElement('p');
+      box.className = 'fb';
+      [['good', '👍', '좋은 기사'], ['bad', '👎', '별로인 기사']].forEach(function (x) {
+        var b = document.createElement('button');
+        b.type = 'button'; b.dataset.v = x[0]; b.textContent = x[1]; b.title = x[2] + ' (다시 누르면 취소)';
+        b.addEventListener('click', function () {
+          fetch('/api/notes', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: card.dataset.id, title: card.dataset.title, verdict: x[0] }) })
+            .then(function (r) { return r.json(); })
+            .then(function (res) { paint(card.dataset.id, res.state); });
+        });
+        box.appendChild(b);
+      });
+      card.appendChild(box);
+      paint(card.dataset.id, states[card.dataset.id]);
+    });
+  }).catch(function () {});
+}
